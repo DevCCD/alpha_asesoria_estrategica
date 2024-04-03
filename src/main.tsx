@@ -1,20 +1,52 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
 
 import App from './App.tsx'
 import Capacidades from './Capacidades.tsx'
+import Consultoria from './Consultoria.tsx'
+import Observatorio from './Observatorio.tsx'
+import Nosotros from './Nosotros.tsx'
+import Experiencia from './Experiencia.tsx'
+import Contacto from './Contacto.tsx'
+import Academia from './Academia.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <div>404 No Encontrada</div>
+    errorElement: <Link to="/">Volver al Inicio, página no encontrada</Link>
   },
   {
     path: '/capacidades',
     element: <Capacidades />
   },
+  {
+    path: '/capacidades/consultoria',
+    element: <Consultoria />
+  },
+  {
+    path: '/capacidades/academia',
+    element: <Academia />
+  },
+  {
+    path: '/observatorio',
+    element: <Observatorio />
+  }
+  ,
+  {
+    path: '/nosotros',
+    element: <Nosotros />
+  },
+  {
+    path: '/nosotros/experiencia',
+    element: <Experiencia />
+  },
+  {
+    path: '/contacto',
+    element: <Contacto />
+  }
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

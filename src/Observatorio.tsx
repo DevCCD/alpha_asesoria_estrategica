@@ -2,16 +2,16 @@ import './styles.css';
 
 import  Navbar  from './components/Navbar'; 
 import Footer from './components/Footer';
-import MainCapacidades from './components/MainCapacidades';
+import MainObservatorio from './components/MainObservatorio';
 
-function Capacidades() {
+function Observatorio() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainObservatorio />
             <Footer />
         </>
     )
 }
 
-export default Capacidades
+export default Observatorio;

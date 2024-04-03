@@ -2,16 +2,16 @@ import './styles.css';
 
 import  Navbar  from './components/Navbar'; 
 import Footer from './components/Footer';
-import MainCapacidades from './components/MainCapacidades';
+import MainConsultoria from './components/MainConsultoria';
 
-function Capacidades() {
+function Consultoria() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainConsultoria />
             <Footer />
         </>
     )
 }
 
-export default Capacidades
+export default Consultoria

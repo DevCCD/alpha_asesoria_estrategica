@@ -5,7 +5,7 @@ import globe from '../assets/hero.svg'
 function Hero() {
     return (
         <>
-            <main className='main'>
+            <main>
                 <div className="hero-container">
                     <img 
                         src={globe}    

@@ -7,11 +7,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <body id="body-alpha">
       <Navbar />
       <Hero />
       <Footer />
-    </body>
     </>
   )
 }

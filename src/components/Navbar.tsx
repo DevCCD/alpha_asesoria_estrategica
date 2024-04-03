@@ -56,24 +56,24 @@ function Navbar() {
                     <i onClick={closeMenu}><IoMdClose /></i>
                 </div>
                 <li className="nav__item dropdown">
-                    <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i className='bx bxs-chevron-down'></i>
+                    <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i><FaChevronDown /></i>
                     </Link>
                     <div className="megamenu">
                         <ul className="content">
                             <li className="megamenu_item header__megamenu">Servicio Alpha</li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="#">Servicio Premium Alpha</a>
+                                    <a href="/servicio">Servicio Premium Alpha</a>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="#">Asistencia Técnica Alpha</a>
+                                    <a href="/asistencia">Asistencia Técnica Alpha</a>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <Link to="capacidades.html">Ver todo <i ><IoArrowForwardOutline /></i></Link>
+                                    <Link to="/capacidades">Ver todo <i ><IoArrowForwardOutline /></i></Link>
                                 </div>
                             </li>
                         </ul>
@@ -81,32 +81,32 @@ function Navbar() {
                             <li className="megamenu_item header__megamenu">Consultoría</li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html#macro">Macro</a>
+                                    <Link to="/capacidades/consultoria#macro">Macro</Link>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html#micro">Micro</a>
+                                    <Link to="/capacidades/consultoria#micro">Micro</Link>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html#estructuracion">Estructuración <br></br> y Financiamiento de Proyectos</a>
+                                    <Link to="/capacidades/consultoria#estructuracion">Estructuración <br></br> y Financiamiento de Proyectos</Link>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html#ifd">IFD</a>
+                                    <Link to="/capacidades/consultoria#ifd">IFD</Link>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html#peritajes">Peritajes</a>
+                                    <Link to="/capacidades/consultoria#peritajes">Peritajes</Link>
                                 </div>
                             </li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="capacidades/consultoria.html">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                    <a href="/capacidades/consultoria">Ver todo <i><IoArrowForwardOutline /></i></a>
                                 </div>
                             </li>
                         </ul>
@@ -114,50 +114,50 @@ function Navbar() {
                             <li className="megamenu_item header__megamenu">Academia</li>
                             <li className="megamenu_item">
                                 <div className="megamenu__link">
-                                    <a href="academia.html">Formación Carrera de Economía</a>
+                                    <a href="/capacidades/academia">Formación Carrera de Economía</a>
                                 </div>
                                 <div className="megamenu__link">
-                                    <a href="academia.html">Gestión de Inversión Publica</a>
+                                    <a href="/capacidades/academia">Gestión de Inversión Publica</a>
                                 </div>
                                 <div className="megamenu__link">
-                                    <a href="academia.html">Programa Aprendo Haciendo en Inversión Pública</a>
+                                    <a href="/capacidades/academia">Programa Aprendo Haciendo en Inversión Pública</a>
                                 </div>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="academia.html">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/capacidades/academia">Ver todo <i><IoArrowForwardOutline /></i></a>
                                     </div>
                                 </li>
                             </li>
                         </ul>
                     </div>
                     </li>
-                    <li className="nav__item dropdown"><a href="observatorio.html" className="nav__link dropdown__link">Observatorio <i><FaChevronDown /></i></a>
+                    <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">Observatorio <i><FaChevronDown /></i></Link>
                         <div className="megamenu">
                             <ul className="content">
                                 <li className="megamenu_item header__megamenu">Economía Peruana</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="observatorio.html">Actividad Económica</a>
+                                        <Link to="/observatorio">Actividad Económica</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="observatorio.html#">Evolución del factor no explicado de tipo de cambio</a>
+                                        <Link to="/observatorio">Evolución del factor no explicado de tipo de cambio</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="observatorio.html#">Condiciones monetarias (tasa + tipo de cambio)</a>
+                                        <Link to="/observatorio">Condiciones monetarias (tasa + tipo de cambio)</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="observatorio.html#">Indicador de demanda</a>
+                                        <a href="/observatorio">Indicador de demanda</a>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="observatorio.html#">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></a>
                                     </div>
                                 </li>
                             </ul>
@@ -165,19 +165,21 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Mercado de Valores</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="#">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li className="nav__item dropdown"><a href="contacto.html" className="nav__link dropdown__link">Nosotros <i><FaChevronDown /></i></a>
+                    <li className="nav__item dropdown">
+                        <Link to="/nosotros" className="nav__link dropdown__link">Nosotros      <i><FaChevronDown /></i>
+                        </Link>
                         <div className="megamenu">
                             <ul className="content">
                                 <li className="megamenu_item header__megamenu">¿Quiénes somos?</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="nosotros.html">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/nosotros">Ver todo <i><IoArrowForwardOutline /></i></a>
                                     </div>
                                 </li>
                             </ul>
@@ -185,19 +187,21 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Nuestra experiencia</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="experiencia.html">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/nosotros/experiencia">Ver todo <i><IoArrowForwardOutline /></i></a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li className="nav__item dropdown"><a href="contacto.html" className="nav__link dropdown__link">Contacto <i><FaChevronDown /></i></a>
+                    <li className="nav__item dropdown">
+                        <Link to="/contacto" className="nav__link dropdown__link">Contacto <i><FaChevronDown /></i>
+                        </Link>
                         <div className="megamenu">
                             <ul className="content">
                                 <li className="megamenu_item header__megamenu">Contacto</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="contacto.html#contacto">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/contacto">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -205,14 +209,18 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Trabaja con nosotros</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="contacto.html#trabaja">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/contacto">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li className="nav__item"><a href="blog.html" className="nav__link">Blog Alpha</a></li>
-                    <li className="nav__item"><a href="repositorio.html" className="nav__link">Repositorio <i className='bx bx-file-blank'></i></a></li>
+                    <li className="nav__item">
+                        <Link to="/blog" className="nav__link">Blog Alpha</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/repositorio" className="nav__link">Repositorio <i className='bx bx-file-blank'></i></Link>
+                    </li>
                     {/* <!-- Options --> */}
                     <li className="nav__item option">
                         <a href="#" className="nav__link">

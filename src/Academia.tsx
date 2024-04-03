@@ -2,16 +2,16 @@ import './styles.css';
 
 import  Navbar  from './components/Navbar'; 
 import Footer from './components/Footer';
-import MainCapacidades from './components/MainCapacidades';
+import MainAcademia from './components/MainAcademia';
 
-function Capacidades() {
+function Academia() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainAcademia />
             <Footer />
         </>
     )
 }
 
-export default Capacidades
+export default Academia;

@@ -2,16 +2,16 @@ import './styles.css';
 
 import  Navbar  from './components/Navbar'; 
 import Footer from './components/Footer';
-import MainCapacidades from './components/MainCapacidades';
+import MainNosotros from './components/MainNosotros';
 
-function Capacidades() {
+function Nosotros() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainNosotros />
             <Footer />
         </>
     )
 }
 
-export default Capacidades
+export default Nosotros;

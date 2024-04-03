@@ -2,16 +2,16 @@ import './styles.css';
 
 import  Navbar  from './components/Navbar'; 
 import Footer from './components/Footer';
-import MainCapacidades from './components/MainCapacidades';
+import MainExperiencia from './components/MainExperiencia';
 
-function Capacidades() {
+function Experiencia() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainExperiencia />
             <Footer />
         </>
     )
 }
 
-export default Capacidades
+export default Experiencia;
