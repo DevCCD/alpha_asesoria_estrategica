@@ -1032,6 +1032,7 @@ h1.display {
     flex-direction: column;
     align-items: start;
     gap: .3rem;
+    width: auto;
 }
 
 .bg-profile {
@@ -1053,6 +1054,10 @@ h1.display {
 .banner__info h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.banner__image {
+    width: auto;
 }
 
 .banner__image img {
