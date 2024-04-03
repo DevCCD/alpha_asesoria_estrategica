@@ -20,17 +20,11 @@ function Navbar() {
         document.body.classList.toggle('light');
     };
 
-    //Menu 
-    const navMenu = document.getElementById('nav-menu');
-    
-    const toggleMenu = () => {
-        navMenu.classList.toggle('show__menu')
-    }
+    // Mostrar Menu
+    const toggleMenu = () => document.getElementById('nav-menu')?.classList.toggle('show__menu');
+    // Cerrar Menu
+    const closeMenu = () => document.getElementById('nav-menu')?.classList.remove('show__menu');
 
-    const closeMenu = () => {
-        navMenu.classList.remove('show__menu')
-    }
-    
     return (
     <>
     <header>
@@ -52,84 +46,84 @@ function Navbar() {
                 </div>
                 {/* <!-- Lista --> */}
                 <ul className="nav__list" id="nav-menu">
-                <div className="close__menu" id="close-menu">
-                    <i onClick={closeMenu}><IoMdClose /></i>
-                </div>
-                <li className="nav__item dropdown">
-                    <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i><FaChevronDown /></i>
-                    </Link>
-                    <div className="megamenu">
-                        <ul className="content">
-                            <li className="megamenu_item header__megamenu">Servicio Alpha</li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <a href="/servicio">Servicio Premium Alpha</a>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <a href="/asistencia">Asistencia Técnica Alpha</a>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades">Ver todo <i ><IoArrowForwardOutline /></i></Link>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul className="content"> 
-                            <li className="megamenu_item header__megamenu">Consultoría</li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades/consultoria#macro">Macro</Link>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades/consultoria#micro">Micro</Link>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades/consultoria#estructuracion">Estructuración <br></br> y Financiamiento de Proyectos</Link>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades/consultoria#ifd">IFD</Link>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <Link to="/capacidades/consultoria#peritajes">Peritajes</Link>
-                                </div>
-                            </li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <a href="/capacidades/consultoria">Ver todo <i><IoArrowForwardOutline /></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul className="content">
-                            <li className="megamenu_item header__megamenu">Academia</li>
-                            <li className="megamenu_item">
-                                <div className="megamenu__link">
-                                    <a href="/capacidades/academia">Formación Carrera de Economía</a>
-                                </div>
-                                <div className="megamenu__link">
-                                    <a href="/capacidades/academia">Gestión de Inversión Publica</a>
-                                </div>
-                                <div className="megamenu__link">
-                                    <a href="/capacidades/academia">Programa Aprendo Haciendo en Inversión Pública</a>
-                                </div>
+                    <div className="close__menu" id="close-menu">
+                        <i onClick={closeMenu}><IoMdClose /></i>
+                    </div>
+                    <li className="nav__item dropdown">
+                        <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i><FaChevronDown /></i>
+                        </Link>
+                        <div className="megamenu">
+                            <ul className="content">
+                                <li className="megamenu_item header__megamenu">Servicio Alpha</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/capacidades/academia">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <a href="/servicio">Servicio Premium Alpha</a>
                                     </div>
                                 </li>
-                            </li>
-                        </ul>
-                    </div>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <a href="/asistencia">Asistencia Técnica Alpha</a>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades">Ver todo <i ><IoArrowForwardOutline /></i></Link>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul className="content"> 
+                                <li className="megamenu_item header__megamenu">Consultoría</li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades/consultoria#macro">Macro</Link>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades/consultoria#micro">Micro</Link>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades/consultoria#estructuracion">Estructuración <br></br> y Financiamiento de Proyectos</Link>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades/consultoria#ifd">IFD</Link>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <Link to="/capacidades/consultoria#peritajes">Peritajes</Link>
+                                    </div>
+                                </li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <a href="/capacidades/consultoria">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul className="content">
+                                <li className="megamenu_item header__megamenu">Academia</li>
+                                <li className="megamenu_item">
+                                    <div className="megamenu__link">
+                                        <a href="/capacidades/academia">Formación Carrera de Economía</a>
+                                    </div>
+                                    <div className="megamenu__link">
+                                        <a href="/capacidades/academia">Gestión de Inversión Publica</a>
+                                    </div>
+                                    <div className="megamenu__link">
+                                        <a href="/capacidades/academia">Programa Aprendo Haciendo en Inversión Pública</a>
+                                    </div>
+                                    <li className="megamenu_item">
+                                        <div className="megamenu__link">
+                                            <a href="/capacidades/academia">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        </div>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">Observatorio <i><FaChevronDown /></i></Link>
                         <div className="megamenu">
