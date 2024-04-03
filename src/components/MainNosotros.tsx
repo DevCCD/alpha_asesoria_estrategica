@@ -34,7 +34,7 @@ function MainNosotros() {
                     <h2 className="nombre__card">Luis Carranza</h2>
                     <h3 className="cargo__card">Director</h3>
                     <p>Doctor en Economía por la Universidad de Minnesota, Estados Unidos. Luis Carranza es director de Alpha Analítica y del Instituto de Gobierno y Gestión Pública de la Universidad de San Martín de Porres. Ha sido presidente ejecutivo de CAF, Ministro de Economía y Finanzas del Perú en dos oportunidades, viceministro de Hacienda y director del Banco Central de Reserva del Perú, jefe para América Latina y Mercados Emergentes del BBVA, consultor del BID, economista del FMI y asistente de investigación en la Reserva Federal de Minneapolis.</p>
-                    <Link to="/nosotros/profile">Leer más...</Link>
+                    <Link to="/nosotros/perfil">Leer más...</Link>
                 </div>
             </div>
         </main>

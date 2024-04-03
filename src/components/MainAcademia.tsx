@@ -8,7 +8,7 @@ function MainAcademia() {
                     <h1>Academia</h1>
                 </div>
                 <div className="banner_right">
-                    <img src="academia.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922036/alpha/images/academia_xbwykz.jpg" />
                 </div>
             </div>
             <div className="display__title">
@@ -16,13 +16,13 @@ function MainAcademia() {
             </div>
             <div className="container__academia">
                 <div className="grid__academia_1">
-                    <img src="talento.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712119865/alpha/images/objetivo1_v30kqa.png" />
                     <div>
                         <p>Cerrar brecha de formación en la Carrera de Economía</p>
                     </div>
                 </div>
                 <div className="grid__academia_2">
-                    <img src="riesgos.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712120361/alpha/images/objetivo2_sxorg3.jpg" />
                     <div>
                         <p>Contar con economistas de primer nivel que no sólo manejen aspectos teóricos y conceptuales sino estén capacitados para aplicar sus conocimientos a aspectos concretos de su realidad social y económica</p>
                     </div>
@@ -34,10 +34,10 @@ function MainAcademia() {
                         <h3>BENEFICIARIOS</h3>
                         <p>Docentes y estudiantes de la Carrera de Economía (provincias)</p>
                     </div>
-                    <img src="talento.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712120513/alpha/images/objetivo3_qw3u9u.jpg"/>
                 </div>
                 <div className="grid__capacidades_2">
-                    <img src="riesgos.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712120608/alpha/images/objetivo4_lnoc2v.jpg" />
                     <div>
                         <h3>IMPACTO</h3>
                         <p>Desarrollo de Regiones</p>
@@ -48,7 +48,7 @@ function MainAcademia() {
                         <h3>BASES</h3>
                         <p>Capital humano, productividad, crecimiento sostenible</p>
                     </div>
-                    <img src="contactos.jpg" loading="lazy" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712120612/alpha/images/objetivo5_nqmjes.jpg" />
                 </div>
             </div>
             <div className="container__caracteristicas">
@@ -56,7 +56,7 @@ function MainAcademia() {
                     <h1>Características</h1>
                     <p>Universidades Beneficiarias: Universidades públicas de provincias – Alumnos de la Carrera de Economía y otras carreras que incluyan cursos de Economía.</p>
                 </div>
-                <img src="ciclo_caracteristicas.png" />
+                <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922021/alpha/images/ciclo_caracteristicas_dqeor6.png" />
             </div>
             <div className="display__title">
                 <h2>Beneficios</h2>

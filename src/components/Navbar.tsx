@@ -57,12 +57,12 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Servicio Alpha</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/servicio">Servicio Premium Alpha</a>
+                                        <Link to="/servicio">Servicio Premium Alpha</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/asistencia">Asistencia Técnica Alpha</a>
+                                        <Link to="/asistencia">Asistencia Técnica Alpha</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
@@ -100,7 +100,7 @@ function Navbar() {
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/capacidades/consultoria">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/capacidades/consultoria">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -108,17 +108,17 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Academia</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/capacidades/academia">Formación Carrera de Economía</a>
+                                        <Link to="/capacidades/academia">Formación Carrera de Economía</Link>
                                     </div>
                                     <div className="megamenu__link">
-                                        <a href="/capacidades/academia">Gestión de Inversión Publica</a>
+                                        <Link to="/capacidades/academia">Gestión de Inversión Publica</Link>
                                     </div>
                                     <div className="megamenu__link">
-                                        <a href="/capacidades/academia">Programa Aprendo Haciendo en Inversión Pública</a>
+                                        <Link to="/capacidades/academia">Programa Aprendo Haciendo en Inversión Pública</Link>
                                     </div>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
-                                            <a href="/capacidades/academia">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                            <Link to="/capacidades/academia">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                         </div>
                                     </li>
                                 </li>
@@ -146,12 +146,12 @@ function Navbar() {
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/observatorio">Indicador de demanda</a>
+                                        <Link to="/observatorio">Indicador de demanda</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -159,7 +159,7 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Mercado de Valores</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -173,7 +173,7 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">¿Quiénes somos?</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/nosotros">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/nosotros">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -181,7 +181,7 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Nuestra experiencia</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <a href="/nosotros/experiencia">Ver todo <i><IoArrowForwardOutline /></i></a>
+                                        <Link to="/nosotros/experiencia">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
                             </ul>
@@ -220,16 +220,16 @@ function Navbar() {
                         <a href="#" className="nav__link">
                             {/* <!-- Bandera --> */}
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1807_3306)">
-                            <path d="M2.44444 3.05566C1.79614 3.05566 1.17438 3.3132 0.715961 3.77163C0.257539 4.23005 0 4.8518 0 5.50011L0 16.5001C0 17.1484 0.257539 17.7702 0.715961 18.2286C1.17438 18.687 1.79614 18.9446 2.44444 18.9446H7.33333V3.05566H2.44444Z" fill="#D91023"/>
-                            <path d="M7.33398 3.05566H14.6673V18.9446H7.33398V3.05566Z" fill="#EEEEEE"/>
-                            <path d="M19.5549 3.05566H14.666V18.9446H19.5549C20.2032 18.9446 20.825 18.687 21.2834 18.2286C21.7418 17.7702 21.9993 17.1484 21.9993 16.5001V5.50011C21.9993 4.8518 21.7418 4.23005 21.2834 3.77163C20.825 3.3132 20.2032 3.05566 19.5549 3.05566Z" fill="#D91023"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1807_3306">
-                            <rect width="22" height="22" fill="white"/>
-                            </clipPath>
-                            </defs>
+                                <g clip-path="url(#clip0_1807_3306)">
+                                <path d="M2.44444 3.05566C1.79614 3.05566 1.17438 3.3132 0.715961 3.77163C0.257539 4.23005 0 4.8518 0 5.50011L0 16.5001C0 17.1484 0.257539 17.7702 0.715961 18.2286C1.17438 18.687 1.79614 18.9446 2.44444 18.9446H7.33333V3.05566H2.44444Z" fill="#D91023"/>
+                                <path d="M7.33398 3.05566H14.6673V18.9446H7.33398V3.05566Z" fill="#EEEEEE"/>
+                                <path d="M19.5549 3.05566H14.666V18.9446H19.5549C20.2032 18.9446 20.825 18.687 21.2834 18.2286C21.7418 17.7702 21.9993 17.1484 21.9993 16.5001V5.50011C21.9993 4.8518 21.7418 4.23005 21.2834 3.77163C20.825 3.3132 20.2032 3.05566 19.5549 3.05566Z" fill="#D91023"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1807_3306">
+                                <rect width="22" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
                             </svg>
                         </a>
                     </li>

@@ -4,6 +4,7 @@
 /* variables principales */
 :root {
     --primary-color: #1F497D;
+    --light-primary-color: #ADC8EB;
     --white-color: #ffffff;
     --black-color: #000000;
     --light-gray: #EBEBEB;
@@ -419,6 +420,10 @@ ul + ul {
         padding: 0 !important;
     }
 
+    .bg-profile {
+        gap: 0 !important;
+    }
+
     /* Consultoría */
     .grid__micro_1 h1,
     .grid__micro_2 h1 {
@@ -642,7 +647,7 @@ h1.display {
 
 .banner_left, 
 .banner_right {
-    width: 50%;
+    
 }
 
 .banner_left, 
@@ -718,6 +723,7 @@ h1.display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: var(--white-color);
 }
 
 .grid__capacidades_1, 
@@ -1024,13 +1030,15 @@ h1.display {
 .banner__info {
     display: flex;
     flex-direction: column;
-    padding-left: 15vw;
     align-items: start;
     gap: .3rem;
 }
 
 .bg-profile {
     background: var(--gradient--dark);
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .banner__info h1,
@@ -1213,18 +1221,20 @@ h1.display {
 }
 
 .grid__academia_1 {
+    background: var(--light-gray);
     width: 33.33%;
 }
 
 .grid__academia_2 {
     width: 66.66%;
+    background: var(--white-color);
 }
 
 .container__caracteristicas {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url(caracteristicas.jpg);
+    background: url(https://res.cloudinary.com/ccdcloudy/image/upload/v1711922356/alpha/images/caracteristicas_knkkvl.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20%;
@@ -1470,7 +1480,7 @@ grid-area: enviar;
 .campo select,
 .campo option {
     padding: 0.4vw;
-    border: 1px solid #3b609b;
+    border: 1px solid var(--light-primary-color);
     width: 100%;
     font-family: "Poppins";
 }
@@ -1484,7 +1494,7 @@ grid-area: enviar;
 
 .campo button {
     font-family: 'Poppins', sans-serif;
-    background-color: #1F497D;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -1494,9 +1504,9 @@ grid-area: enviar;
 }
 
 .campo button:hover {
-    background-color: #fff;
-    color: #1F497D;
-    border: 1px solid #1F497D;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 /* Checkbox */
@@ -1549,7 +1559,7 @@ margin-right: 10px;
     .campo textarea,
     .campo select,
     .campo option {
-        border: 1px solid #3b609b;
+        border: 1px solid var(--primary-color);
     }
 
     .campo textarea {
@@ -1574,12 +1584,6 @@ margin-right: 10px;
     .formulario-contacto {
         padding-left: 2em;
         padding-right: 2em;
-    }
-
-    .informacion h2 {
-    }
-
-    .informacion p {
     }
 }
 
@@ -1637,19 +1641,19 @@ align-content: center;
 
 .correo button {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-    color: #1F497D;
+    background-color: var(--white-color);
+    color: var(--primary-color);
     padding: 10px 15px;
-    border: 1px solid #92c0c9;
+    border: 1px solid var(--light-primary-color);
     cursor: pointer;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 .correo button:hover {
-    background-color: #1F497D;
-    border: 1px solid #92c0c9;
-    color: #fff
+    background-color: var(--primary-color);
+    border: 1px solid var(--light-primary-color);
+    color: var(--white-color);
 }
 
 /* Enlaces indice */
@@ -1665,7 +1669,7 @@ align-content: center;
         "Columna1 Columna2 Columna3 Columna4"
         "LogoCopy LogoCopy LogoCopy LogoCopy";
 
-    color: #000;
+    color: var(--black-color);
     padding-left: 8em;
     padding-right: 8em;
     padding-top: 1em;
@@ -1702,7 +1706,7 @@ font-family: "Poppins";
 }
 
 .columna a {
-    color: #000;
+    color: var(--black-color);
     text-decoration: none;
 }
 
@@ -1752,7 +1756,7 @@ font-family: "Poppins";
     width: 32px;
     border-radius: 50%;
     margin-right: 4px;
-    box-shadow: inset 30px #000;
+    box-shadow: inset 30px var(--black-color);
 }
 
 
@@ -1813,9 +1817,6 @@ font-family: "Poppins";
         padding-top: 1em;
     }
 
-    .texto h3 {
-    }
-
     .correo {
 
         display: flex;
@@ -1831,10 +1832,10 @@ font-family: "Poppins";
 
     .correo button {
         font-family: 'Poppins', sans-serif;
-        background-color: #fff;
-        color: #1F497D;
+        background-color: var(--white-color);
+        color: var(--primary-color);
         padding: 10px 15px;
-        border: 1px solid #92c0c9;
+        border: 1px solid var(--light-primary-color);
         cursor: pointer;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -1877,7 +1878,7 @@ font-family: "Poppins";
     }
 
     .linea hr {
-        border-color: #bfbfbf;
+        border-color: var(--light-gray);
         margin-left: 2em;
         margin-right: 2em;
 
@@ -1890,8 +1891,8 @@ font-family: "Poppins";
 
     .logofooter {
 
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 2em;
+        padding-right: 2em;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -1902,7 +1903,6 @@ font-family: "Poppins";
     .logofooter svg {
         grid-area: logo;
         width: auto;
-        height: 8vw;
 
     }
 

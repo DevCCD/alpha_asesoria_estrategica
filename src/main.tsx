@@ -10,6 +10,7 @@ import Nosotros from './Nosotros.tsx'
 import Experiencia from './Experiencia.tsx'
 import Contacto from './Contacto.tsx'
 import Academia from './Academia.tsx'
+import Perfil from './Perfil.tsx'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: '/contacto',
     element: <Contacto />
+  },
+  {
+    path: '/nosotros/perfil', //id
+    element: <Perfil />
   }
   
 ])
