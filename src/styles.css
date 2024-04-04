@@ -518,6 +518,11 @@ ul + ul {
     .servicio__right {
         width: 100% !important;
     }
+
+    /* Contactanos */
+    .informacion h2 {
+        font-size: 2rem !important;
+    }
 }
 
 /* Hero */
@@ -1414,7 +1419,7 @@ h1.display {
 /* Formulario Contacto */
 .formulario-contacto {
     display: grid;
-    background-color: #f7f7f7;
+    background-color: var(--light-gray);
     padding-top: 4em;
     padding-left: 8vw;
     padding-right: 8vw;
@@ -1428,7 +1433,7 @@ h1.display {
 .informacion h2 {
     font-family: "Lora", sans-serif;
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 24px;
 }
 
