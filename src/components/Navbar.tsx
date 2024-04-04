@@ -1,4 +1,5 @@
 import '../styles.css';
+import '../styles.scss';
 
 import { MdSunny } from 'react-icons/md';
 import { IoArrowForwardOutline, IoMenu, IoMoon } from 'react-icons/io5';

@@ -188,21 +188,6 @@ function MainExperiencia () {
                     </div>
                 </div>
                 <div className="card">
-                    <img src="/ImagenesAAE/Enrique.png" className="card-img" />
-                    <div className="card-content">
-                    <h3 className="card-title">Enrique Castillo</h3>
-                    <p className="card-subtitle">Corporativo Global</p>
-                    <p className="card-description">Posgrado en economía avanzada y administración de empresas por el IESE Business
-                        School, University of Navarra, España. Miguel Marín es socio fundador y CEO de Análisis Económico Integral
-                        (AEI), consultoría estratégica con sede en Madrid (España) especializada en asuntos públicos y análisis
-                        económico, con más de 20 años en el ámbito público y privado europeo. Marín ha sido asesor en la Comisión
-                        Económica y de Asuntos Monetarios del Parlamento Europeo, tiene experiencia como asesor de grandes empresas
-                        del IBEX 35 y colaborador con principales think tanks y centros de estudios europeo, como el Instituto de
-                        Estudios Económicos, el Martens Centre y The European House Ambrosetti, entre otros.</p>
-                    <a href="#" className="read-more">Leer más</a>
-                    </div>
-                </div>
-                <div className="card">
                     <img src="/ImagenesAAE/Jose-Enrique.png" className="card-img" />
                     <div className="card-content">
                     <h3 className="card-title">José Enrique Galdón</h3>

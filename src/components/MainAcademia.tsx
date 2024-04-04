@@ -231,7 +231,7 @@ function MainAcademia() {
             <div className="display__title">
                 <h2>Directores Académicos</h2>
             </div>
-
+            
         </main>
     )
 }

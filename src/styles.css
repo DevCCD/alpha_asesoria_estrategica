@@ -8,6 +8,7 @@
     --white-color: #ffffff;
     --black-color: #000000;
     --light-gray: #EBEBEB;
+    --gray-color: #555555;
 
     --gradient-light: linear-gradient(90deg, rgb(211, 222, 233) 0%, rgb(151, 187, 224) 50%, rgb(159, 164, 168) 100%);
     --gradient--dark: linear-gradient(90deg, rgba(0,52,105,1) 0%, rgba(49,89,130,1) 50%, rgba(0,52,105,1) 100%);
@@ -176,20 +177,7 @@ nav {
     color: var(--white-color);
 }
 
-.nav__link:hover {
-    font-weight: 600;
-}
 
-.dropdown__link {
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-}
-
-.dropdown__link i {
-    display: flex;
-    align-items: center;
-}
 
 .dropdown__icon {
     font-size: 1rem;
@@ -272,256 +260,6 @@ ul + ul {
     .megamenu {
         justify-content: start;
         flex-wrap: wrap;
-    }
-}
-
-/* Movil/Mobile */
-/* 1380px */
-@media screen and (max-width:1350px) { 
-    .megamenu {
-        flex-direction: column;
-        position: static;
-        box-shadow: none;
-        border-radius: 0;
-        height: 0;
-        max-width: 350px;
-        overflow: hidden;
-        padding-bottom: 0;
-    }
-
-    .nav__link {
-        color: #555;
-    }
-
-    .dropdown:hover .megamenu {
-        height: 100%;
-    }
-
-    .nav__list {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        max-width: 350px;
-        top: 0;
-        background-color: var(--white-color);
-        flex-direction: column;
-        overflow-x: hidden;
-        display: block;
-        transition: .3s;
-    }
-
-    .nav__item:hover {
-        border-bottom: none;
-    }
-
-    ul {
-        border-left: 1px solid #0000002e;
-    }
-
-    .toggle__menu, 
-    .close__menu {
-        display: block;
-        cursor: pointer;
-        font-size: 22px;
-    }
-    .toggle__menu i:hover {
-        color: var(--primary-color);
-    }
-    .close__menu {
-        margin: 1rem 1rem 1rem auto;
-        width: 32px;
-        height: 32px;
-        text-align: center;
-    }
-    .close__menu:hover {
-        color: var(--primary-color);
-    }
-    .close__menu i {
-        line-height: 32px;
-        color: #555;
-    }
-
-    .show__menu {
-        left: 0;
-    }
-
-    header, .navcontainer {
-        display: block;
-        height: 70px;
-    }
-
-    /*Capacidades*/
-    .banner__container {
-        flex-direction: column !important;
-    }
-    .banner_left, 
-    .banner_right {
-        width: 100% !important;
-    }
-    .banner_left h1, 
-    .banner_center h1 {
-        font-size: 2.75rem !important;
-    }
-
-    .banner_right {
-        height: 400px !important;
-    }
-
-    .container__capacidades,
-    .container__macro {
-        flex-direction: column;
-    }
-    .grid__capacidades_1,
-    .grid__capacidades_3,
-    .grid__macro_1,
-    .grid__macro_2,
-    .grid__macro_3 {
-        flex-direction: column !important;
-        width: 100% !important;
-    }
-
-    .grid__capacidades_1 div, 
-    .grid__capacidades_2 div, 
-    .grid__capacidades_3 div, 
-    .grid__macro_1 div, 
-    .grid__macro_2 div, 
-    .grid__macro_3 div {
-        min-height: auto !important;
-    }
-
-    .grid__capacidades_2 {
-        flex-direction: column-reverse !important;
-        width: 100% !important;
-    }
-
-    /* Contacto */
-    .container__contactos aside,
-    .container__trabaja aside {
-        display: none;
-    }
-
-    .container__contactos, 
-    .container__trabaja {
-        padding: 1rem !important;
-    }
-
-    .input-group {
-        flex-direction: column !important;
-        gap: 0 !important;
-    }
-
-    /* Aliados */
-
-    .display__title h2 {
-        font-size: 2rem !important;
-    }
-
-    .card__person {
-        padding: 2rem !important;
-    }
-
-    .banner__info {
-        align-items: center !important;
-        padding: 0 !important;
-    }
-
-    .bg-profile {
-        gap: 0 !important;
-    }
-
-    /* Consultoría */
-    .grid__micro_1 h1,
-    .grid__micro_2 h1 {
-        font-size: 2rem !important;
-        font-weight: 600 !important;
-    }
-
-    .container__estruc {
-        flex-direction: column !important;
-    }
-
-    .imagen__estruc h1 {
-        font-size: 2rem !important;
-    }
-
-    .imagen__estruc {
-        width: 100% !important;
-    }
-
-    .subcontainer__estruc {
-        width: 100% !important;
-    }
-
-    .subcontainer__estruc .estruc__down,
-    .subcontainer__estruc div p {
-        font-size: 1rem !important;
-    }
-
-    .container__instrumentos p {
-        font-size: 1.2rem !important;
-    }
-
-    .grid__micro_1 img,
-    .grid__micro_2 img {
-        width: 100% !important;
-    }
-
-    /* Academia */
-    .container__academia {
-        flex-direction: column !important;
-    }
-
-    .grid__academia_1,
-    .grid__academia_2 {
-        width: 100% !important;
-    }
-
-    .container__etiqueta {
-        width: 90% !important;
-    }
-
-    .container__caracteristicas img {
-        padding: 10%;
-        width: 100% !important;
-    }
-
-    .container__caracteristicas {
-        flex-direction: column;
-    }
-
-    .container__economia {
-        flex-direction: column !important;
-        gap: 1rem !important;
-    }
-    
-    .economia__left {
-        max-width: max-content !important;
-    }
-
-    .economia__right {
-        width: auto !important;
-        display: flex !important;
-        justify-content: center !important;
-    }
-
-    .container__condiciones {
-        flex-direction: column !important;
-    }
-
-    /* Servicio Alpha */
-    .container__servicio {
-        flex-direction: column;
-    }
-
-    .servicio__left,
-    .servicio__right {
-        width: 100% !important;
-    }
-
-    /* Contactanos */
-    .informacion h2 {
-        font-size: 2rem !important;
     }
 }
 
@@ -693,12 +431,21 @@ h1.display {
     min-height: 200px;
 }
 
+.banner__blog__title h1,
 .banner_left h1, 
 .banner_center h1 {
     color: var(--white-color);
     font-family: 'Lora', sans-serif;
     font-size: 4rem;
     font-weight: 500;
+    margin: 0;
+}
+
+.banner__blog__title p {
+    color: var(--gray-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -1018,7 +765,7 @@ h1.display {
 }
 
 .card__person .profile__image {
-    background: url("https://res.cloudinary.com/ccdcloudy/image/upload/v1712098635/alpha/images/luis-carranza-profile_s7yrbz.png"),
+    background: url(https://res.cloudinary.com/ccdcloudy/image/upload/v1711922064/alpha/images/luis-carranza-profile_gxfus2.png),
         var(--white-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1421,8 +1168,8 @@ h1.display {
     display: grid;
     background-color: var(--light-gray);
     padding-top: 4em;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 10rem;
+    padding-right: 10rem;
     padding-bottom: 3em;
     align-items: start;
     justify-content: center;
@@ -1598,57 +1345,7 @@ margin-right: 10px;
 
 /* Responsive Formulario */
 @media screen and (max-width: 700px) {
-    .formulario-contacto {
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: 1fr;
-        grid-gap: 24px;
-        padding: 36px;
-    }
-
-    .campos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nombre"
-        "apellido"
-        "puesto"
-        "empresa"
-        "celular"
-        "correo"
-        "industria"
-        "pais"
-        "mensaje"
-        "aviso"
-        "combo-correo"
-        "combo-whatsapp"
-        "enviar "
-        ;
-    }
-
-    .campo textarea {
-        height: 50px;
-    }
-
-    #combo-correo input,
-    #combo-whatsapp input {
-        transform: scale(1);
-    }
-
-    #combo-whatsapp {
-        margin-left: 0px;
-    }
-
-    .combo-correo,
-    .combo-whatsapp {
-        width: 50px;
-
-    }
-
-    .formulario-contacto {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+    
 }
 
 .Suscribete {
@@ -2051,32 +1748,6 @@ font-family: "Poppins";
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 1350px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .nuestro-equipo {
-        display: grid;
-        grid-gap: 20px;
-        padding: 1rem !important;
-        grid-template-columns: 1fr;
-    }
-
-    .card-content {
-        padding: 0;
-        align-items: center;
-    }
-
-    .card-title {
-        font-size: 3rem;
-    }
-
-    .card-subtitle {
-        font-size: 1rem;
-    }
-}
-
 /* Servicio Alpha */
 .container__servicio {
     display: flex;
@@ -2101,4 +1772,402 @@ font-family: "Poppins";
     width: 100%;
     height: 500px;
     object-fit: cover;
+}
+
+/* Blog Alpha */
+.banner__blog {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner__blog h1 {
+    color: var(--black-color);
+}
+
+.banner__blog__title {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10rem;
+}
+
+.container__publi {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-gray);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 10rem;
+}
+
+.container__title__blog {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title__tags {
+    color: var(--gray-color);
+}
+
+.title__tags span {
+    color: var(--primary-color);
+}
+
+.container__blog {
+    display: flex;
+    width: 100%;
+}
+
+.subrayado__blog {
+    background: #cacaca;
+    height: 1px;
+    width: 100%;
+}
+
+
+/* Movil/Mobile */
+/* 1380px */
+@media screen and (max-width:1350px) { 
+    .megamenu {
+        flex-direction: column;
+        position: static;
+        box-shadow: none;
+        border-radius: 0;
+        height: 0;
+        max-width: 350px;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+
+    .nav__link {
+        color: #555;
+    }
+
+    .dropdown:hover .megamenu {
+        height: 100%;
+    }
+
+    .nav__list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        max-width: 350px;
+        top: 0;
+        background-color: var(--white-color);
+        flex-direction: column;
+        overflow-x: hidden;
+        display: block;
+        transition: .3s;
+    }
+
+    .nav__item:hover {
+        border-bottom: none;
+    }
+
+    ul {
+        border-left: 1px solid #0000002e;
+    }
+
+    .toggle__menu, 
+    .close__menu {
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .toggle__menu i:hover {
+        color: var(--primary-color);
+    }
+    .close__menu {
+        margin: 1rem 1rem 1rem auto;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+    .close__menu:hover {
+        color: var(--primary-color);
+    }
+    .close__menu i {
+        line-height: 32px;
+        color: #555;
+    }
+
+    .show__menu {
+        left: 0;
+    }
+
+    header, .navcontainer {
+        display: block;
+        height: 70px;
+    }
+
+    /*Capacidades*/
+    .banner__container {
+        flex-direction: column !important;
+    }
+    .banner_left, 
+    .banner_right {
+        width: 100% !important;
+    }
+
+    .banner__blog__title h1,
+    .banner_left h1, 
+    .banner_center h1 {
+        font-size: 2.75rem !important;
+    }
+
+    .banner_right {
+        height: 400px !important;
+    }
+
+    .container__capacidades,
+    .container__macro {
+        flex-direction: column;
+    }
+    .grid__capacidades_1,
+    .grid__capacidades_3,
+    .grid__macro_1,
+    .grid__macro_2,
+    .grid__macro_3 {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .grid__capacidades_1 div, 
+    .grid__capacidades_2 div, 
+    .grid__capacidades_3 div, 
+    .grid__macro_1 div, 
+    .grid__macro_2 div, 
+    .grid__macro_3 div {
+        min-height: auto !important;
+    }
+
+    .grid__capacidades_2 {
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+    }
+
+    /* Contacto */
+    .container__contactos aside,
+    .container__trabaja aside {
+        display: none;
+    }
+
+    .container__contactos, 
+    .container__trabaja {
+        padding: 1rem !important;
+    }
+
+    .input-group {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    /* Aliados */
+
+    .display__title h2 {
+        font-size: 2rem !important;
+    }
+
+    .card__person {
+        padding: 2rem !important;
+    }
+
+    .banner__info {
+        align-items: center !important;
+        padding: 0 !important;
+    }
+
+    .bg-profile {
+        gap: 0 !important;
+    }
+
+    /* Consultoría */
+    .grid__micro_1 h1,
+    .grid__micro_2 h1 {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .container__estruc {
+        flex-direction: column !important;
+    }
+
+    .imagen__estruc h1 {
+        font-size: 2rem !important;
+    }
+
+    .imagen__estruc {
+        width: 100% !important;
+    }
+
+    .subcontainer__estruc {
+        width: 100% !important;
+    }
+
+    .subcontainer__estruc .estruc__down,
+    .subcontainer__estruc div p {
+        font-size: 1rem !important;
+    }
+
+    .container__instrumentos p {
+        font-size: 1.2rem !important;
+    }
+
+    .grid__micro_1 img,
+    .grid__micro_2 img {
+        width: 100% !important;
+    }
+
+    /* Academia */
+    .container__academia {
+        flex-direction: column !important;
+    }
+
+    .grid__academia_1,
+    .grid__academia_2 {
+        width: 100% !important;
+    }
+
+    .container__etiqueta {
+        width: 90% !important;
+    }
+
+    .container__caracteristicas img {
+        padding: 10%;
+        width: 100% !important;
+    }
+
+    .container__caracteristicas {
+        flex-direction: column;
+    }
+
+    .container__economia {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    .economia__left {
+        max-width: max-content !important;
+    }
+
+    .economia__right {
+        width: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .container__condiciones {
+        flex-direction: column !important;
+    }
+
+    /* Servicio Alpha */
+    .container__servicio {
+        flex-direction: column;
+    }
+
+    .servicio__left,
+    .servicio__right {
+        width: 100% !important;
+    }
+
+    /* Contactanos */
+    .informacion h2 {
+        font-size: 2rem !important;
+    }
+
+    .formulario-contacto {
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+        padding: 36px;
+    }
+
+    .campos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nombre"
+        "apellido"
+        "puesto"
+        "empresa"
+        "celular"
+        "correo"
+        "industria"
+        "pais"
+        "mensaje"
+        "aviso"
+        "combo-correo"
+        "combo-whatsapp"
+        "enviar "
+        ;
+    }
+
+    .campo textarea {
+        height: 50px;
+    }
+
+    #combo-correo input,
+    #combo-whatsapp input {
+        transform: scale(1);
+    }
+
+    #combo-whatsapp {
+        margin-left: 0px;
+    }
+
+    .combo-correo,
+    .combo-whatsapp {
+        width: 50px;
+
+    }
+
+    .formulario-contacto {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Nosotros Card */
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nuestro-equipo {
+        display: grid;
+        grid-gap: 20px;
+        padding: 1rem !important;
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        padding: 0;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Blog Alpha */
+    .container__publi,
+    .banner__blog__title {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container__title__blog {
+        flex-direction: column;
+    }
 }
