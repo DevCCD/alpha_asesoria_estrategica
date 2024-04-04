@@ -57,12 +57,12 @@ function Navbar() {
                                 <li className="megamenu_item header__megamenu">Servicio Alpha</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <Link to="/servicio">Servicio Premium Alpha</Link>
+                                        <Link to="/capacidades/servicio">Servicio Premium Alpha</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <Link to="/asistencia">Asistencia Técnica Alpha</Link>
+                                        <Link to="/capacidades/servicio">Asistencia Técnica Alpha</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
@@ -136,12 +136,12 @@ function Navbar() {
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <Link to="/observatorio">Evolución del factor no explicado de tipo de cambio</Link>
+                                        <Link to="/observatorio">Tipo de Cambio: Fundamentos y otros factores</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
-                                        <Link to="/observatorio">Condiciones monetarias (tasa + tipo de cambio)</Link>
+                                        <Link to="/observatorio">Condiciones monetarias</Link>
                                     </div>
                                 </li>
                                 <li className="megamenu_item">
@@ -155,14 +155,14 @@ function Navbar() {
                                     </div>
                                 </li>
                             </ul>
-                            <ul className="content"> 
+                            {/* <ul className="content"> 
                                 <li className="megamenu_item header__megamenu">Mercado de Valores</li>
                                 <li className="megamenu_item">
                                     <div className="megamenu__link">
                                         <Link to="/observatorio">Ver todo <i><IoArrowForwardOutline /></i></Link>
                                     </div>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </li>
                     <li className="nav__item dropdown">

@@ -63,7 +63,7 @@ body.light .nav__link {
 
 body.light .nav__item:hover, 
 body.light .active  {
-    border-bottom: 3px var(--primary-color) solid;
+    box-shadow: inset 0 -3px 0 0 var(--primary-color);
 }
 
 body.light .toggle__menu, 
@@ -76,7 +76,7 @@ body.light nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    height: 72px;
+    height: 70px;
 }
 
 body.light .navcontainer {
@@ -107,6 +107,8 @@ body.light .banner__info h3 {
     justify-content: center;
     width: 100%;
     display: flex;
+    position: fixed;
+    background: var(--gradient--dark);
 }
 
 header {
@@ -115,7 +117,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: rgb(0 0 0 / 40%) 0px 90px 40px -10px inset;
+    /* box-shadow: rgb(0 0 0 / 40%) 0px 90px 40px -10px inset; */
     height: 140px;
     z-index: 99;
     font-family: "Poppins", sans-serif;
@@ -153,16 +155,20 @@ nav {
 
 .nav__item {
     margin: 0 1.5rem;
-    padding: 1.4rem 0;
+    padding: 1.3rem 0;
     transition: all .03s ease;
 }
 
 .nav__item:hover, .active {
-    border-bottom: 3px #fff solid;
+    box-shadow: inset 0 -3px 0 0 var(--white-color);
 }
 
 .option {
-    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.option:hover {
+    color: #1F497D;
 }
 
 .nav__link {
@@ -192,7 +198,7 @@ nav {
 .megamenu {
     position: absolute;
     width: 100%;
-    top: 72px;
+    top: 70px;
     left: 0;
     background-color: var(--white-color);
     display: flex;
@@ -502,12 +508,22 @@ ul + ul {
     .container__condiciones {
         flex-direction: column !important;
     }
+
+    /* Servicio Alpha */
+    .container__servicio {
+        flex-direction: column;
+    }
+
+    .servicio__left,
+    .servicio__right {
+        width: 100% !important;
+    }
 }
 
 /* Hero */
-
 main {
     background: linear-gradient(90deg, rgba(0,52,105,1) 0%, rgba(49,89,130,1) 50%, rgba(0,52,105,1) 100%);
+    transition: all .9s ease;
     height: max-content;
     position: relative;
     top: 0;
@@ -541,13 +557,12 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 500;
-    margin-bottom: 12px;
 }
 
 .hero-text h4 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -723,6 +738,13 @@ h1.display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.container__programa img {
+    object-fit: contain !important;
+}
+
+.container__macro {
     background: var(--white-color);
 }
 
@@ -750,6 +772,7 @@ h1.display {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 }
 
 .grid__macro_1 div, 
@@ -759,8 +782,9 @@ h1.display {
 }
 
 .container__capacidades h3 {
-    font-size: 20px;
-    font-weight: 650;
+    font-family: 'Lora', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .container__capacidades p {
@@ -846,6 +870,11 @@ h1.display {
     margin-right: 1rem;
 }
 
+.info__contact i:hover,
+.banner__info i:hover {
+    background: var(--primary-color);
+}
+
 .social__list {
     display: inline-flex;
     flex-direction: column;
@@ -880,7 +909,7 @@ h1.display {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    padding-bottom: 2rem;
 }
 
 .input-group {
@@ -901,6 +930,7 @@ h1.display {
 .input-group input,
 .input-full label,
 .input-full input {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -1284,7 +1314,7 @@ h1.display {
     display: flex;
     flex-direction: row;
     background: var(--white-color);
-    padding: 3rem;
+    padding: 2.5rem;
     justify-content: center;
     align-items: center;
     gap: 15rem;
@@ -1328,6 +1358,39 @@ h1.display {
     width: 100%;
 }
 
+.economia__right,
+.condiciones__right,
+.condiciones__left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.condiciones__left h2,
+.condiciones__right h2,
+.economia__right h2,
+.condiciones__left p,
+.condiciones__right p,
+.economia__right p {
+    font-family: 'Lora', sans-serif;
+}
+.condiciones__right h2,
+.condiciones__left h2,
+.economia__right h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.economia__right p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.condicion__desc {
+    text-align: start;
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .condiciones__left, 
 .condiciones__right {
     display: flex;
@@ -1365,7 +1428,7 @@ h1.display {
 .informacion h2 {
     font-family: "Lora", sans-serif;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 24px;
 }
 
@@ -1376,27 +1439,27 @@ h1.display {
 }
 
 .campos {
-display: grid;
-font-weight: 500;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-areas: "nombre  nombre  apellido apellido"
-    "puesto puesto empresa empresa"
-    "celular celular correo correo"
-    "industria industria  pais pais"
-    "mensaje mensaje mensaje mensaje"
-    "aviso aviso aviso aviso"
-    "combo-correo   combo-whatsapp . . "
-    "enviar . . .";
+    display: grid;
+    font-weight: 500;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nombre  nombre  apellido apellido"
+        "puesto puesto empresa empresa"
+        "celular celular correo correo"
+        "industria industria  pais pais"
+        "mensaje mensaje mensaje mensaje"
+        "aviso aviso aviso aviso"
+        "combo-correo   combo-whatsapp . . "
+        "enviar . . .";
 
-font-family: "Poppins";
-
+    font-family: "Poppins";
+    gap: .8rem;
 }
 
 .campo {
-margin-bottom: 4px;
-display: grid;
-padding: 4px 16px;
-width: 100%;
+    margin-bottom: 4px;
+    display: grid;
+    padding: 4px 0;
+    width: 100%;
 }
 
 .nombre {
@@ -1487,6 +1550,7 @@ grid-area: enviar;
     padding: 0.4vw;
     border: 1px solid var(--light-primary-color);
     width: 100%;
+    padding: 10px;
     font-family: "Poppins";
 }
 
@@ -1555,13 +1619,6 @@ margin-right: 10px;
         "combo-whatsapp"
         "enviar "
         ;
-    }
-
-    .campo input,
-    .campo textarea,
-    .campo select,
-    .campo option {
-        border: 1px solid var(--primary-color);
     }
 
     .campo textarea {
@@ -1820,7 +1877,6 @@ font-family: "Poppins";
     }
 
     .correo {
-
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -1905,11 +1961,139 @@ font-family: "Poppins";
     .logofooter svg {
         grid-area: logo;
         width: auto;
-
     }
 
     .logofooter p {
         grid-area: copy;
         text-align: end;
     }
+}
+
+/* Experiencia Nosotros */
+.nuestro-equipo {
+    background: var(--white-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 15rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--white-color);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card:hover {
+    box-shadow: 0px 16px 32px -1px rgba(5,28,44,.2),0px 0px 1px 0px rgba(5,28,44,.15);
+}
+
+.card-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 1rem;
+    align-items: center;
+}
+
+.card-subtitle,
+.card-description,
+.read-more {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+    font-family: 'Lora', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-subtitle {
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.read-more {
+    display: flex;
+    padding-top: 2rem;
+    color: var(--black-color);
+    text-decoration: none;
+    align-content: flex-end;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nuestro-equipo {
+        display: grid;
+        grid-gap: 20px;
+        padding: 1rem !important;
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        padding: 0;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: 3rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Servicio Alpha */
+.container__servicio {
+    display: flex;
+    width: 100%;
+}
+
+.servicio__left,
+.servicio__right {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    background: var(--light-gray);
+    width: 50%;
+}
+
+.servicio__left p,
+.servicio__right p {
+    padding: 2rem;
+}
+
+.servicio__left img,
+.servicio__right img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }

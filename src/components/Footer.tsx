@@ -1,7 +1,8 @@
 import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
-import '../styles.css';
 import { IoMdMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+import '../styles.css';
+import '../data/data.js';
 
 function Footer() {
     return (
@@ -391,7 +392,7 @@ function Footer() {
                             <Link to="/observatorio">Actividad Económica</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio">Evolución del factor no explicado de tipo de cambio</Link>
+                            <Link to="/observatorio">Tipo de Cambio: Fundamentos y otros factores</Link>
                         </li>
                         <li>
                             <Link to="/observatorio">Condiciones monetarias</Link>
@@ -399,11 +400,11 @@ function Footer() {
                         <li>
                             <Link to="/observatorio">Indicador de demanda</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/observatorio">
                                 <h3>Mercado de Valores</h3>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                     </div>
                     <div className="columna Columna3">
@@ -455,7 +456,7 @@ function Footer() {
                             <Link to="/contacto">Trabaja con nosotros</Link>
                         </li>
                         <li className="logos-redes"> 
-                            <Link to="tel:+51999999999">
+                            <Link to={""}>
                                 <i><FaPhone /></i>
                             </Link> 
                             <Link to="mailto:">

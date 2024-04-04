@@ -3,7 +3,7 @@ import '../styles.css';
 function MainCapacidades() {
     return (
         <>
-            <main className='main'>
+            <main>
                 <div className="banner__container">
                     <div className="banner_left">
                         <h1>Capacidades</h1>

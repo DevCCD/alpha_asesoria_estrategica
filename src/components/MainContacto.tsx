@@ -40,16 +40,16 @@ function MainContacto () {
                         <form>
                         <div className="input-group">
                             <div>
-                                <label htmlFor="nombre">Nombre:</label>
+                                <label htmlFor="nombre">Nombre</label>
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
                             </div>
                             <div>
-                                <label htmlFor="apellido">Apellido:</label>
+                                <label htmlFor="apellido">Apellido</label>
                                 <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
                             </div>
                         </div>
                         <div className="input-full">
-                            <label htmlFor="email">Email:</label>
+                            <label htmlFor="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="Email" required />
                         </div>
                         <button className="hero-btn" type="submit">Enviar</button>

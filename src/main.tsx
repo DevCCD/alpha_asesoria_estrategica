@@ -11,6 +11,7 @@ import Experiencia from './Experiencia.tsx'
 import Contacto from './Contacto.tsx'
 import Academia from './Academia.tsx'
 import Perfil from './Perfil.tsx'
+import Servicio from './Servicio.tsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: '/capacidades/academia',
     element: <Academia />
+  },
+  {
+    path: '/capacidades/servicio',
+    element: <Servicio />
   },
   {
     path: '/observatorio',
@@ -51,7 +56,6 @@ const router = createBrowserRouter([
     path: '/nosotros/perfil', //id
     element: <Perfil />
   }
-  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

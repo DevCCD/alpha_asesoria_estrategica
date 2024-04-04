@@ -13,7 +13,7 @@ function Hero() {
                     <div className="hero-text">
                         <h1>Alpha</h1>
                         <h4>Asesoría Estratégica</h4>
-                        <p>Generación de confianza y alta capacidad de análisis.</p>
+                        <p>Generación de confianza y alta capacidad de análisis</p>
                         <button className="hero-btn">Escríbenos</button>
                     </div>
                 </div>
