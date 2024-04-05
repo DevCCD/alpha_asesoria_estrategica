@@ -10,10 +10,10 @@
     transition: transform .2s ease-in-out;
 }
 
+.nav__item:hover,
 .nav__link:hover {
     font-weight: 500;
-    
-    i {
-        transform: rotate(180deg);
+    .arrow__link {
+        transform: rotate(180deg);  
     }
 }

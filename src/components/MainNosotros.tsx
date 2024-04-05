@@ -10,35 +10,41 @@ function MainNosotros() {
                     <h1>Nuestros Aliados</h1>
                 </div>
             </div>
-            <div className="display__title">
-                <h2 className="gray-bg">Empresas</h2>
-            </div>
             <div className="container__empresas">
-                <div className="sub__container__empresas">
-                    <div>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098337/alpha/images/logoccd_ublvsl.png" alt="CCD" />
-                    </div>
-                    <div>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098336/alpha/images/logoanalisis_economico_integral_cover_necqnm.png" alt="AEI" />
-                    </div>
-                    <div>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098340/alpha/images/logoglobalgradient_enjkcg.png" alt="Global Gradient" />
+                <div className='card__container'>
+                    <h2>Empresas</h2>
+                    <div className="sub__container__empresas">
+                        <div>
+                            <Link to={"https://competitividadccd.com"} target='_blank'>
+                                <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098337/alpha/images/logoccd_ublvsl.png" alt="CCD" />
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to={"https://www.aei-publicaffairs.com"} target='_blank'>
+                                <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098336/alpha/images/logoanalisis_economico_integral_cover_necqnm.png" alt="AEI" />
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to={"https://www.globalgradient.es"} target='_blank'>
+                                <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098340/alpha/images/logoglobalgradient_enjkcg.png" alt="Global Gradient" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="display__title">
+            <div className="equipo__title">
                 <h2 className="gray-bg">Nuestro Equipo</h2>
             </div>
-            <div className="container__equipo">
+            <div className="nuestro__equipo">
                 {equipo.map((eq) => (
-                <div key={eq._id} className="card__person">
-                    <div className="profile__image">
-                        <img src={eq.imageUrl} />
+                <div key={eq._id} className="card">
+                    <img src={eq.imageUrl} className="card-img" />
+                    <div className="card-content">
+                    <h3 className="card-title">{eq.nombre}</h3>
+                    <p className="card-subtitle">{eq.cargo}</p>
+                    <p className="card-description">{eq.descripcion}</p>
+                    <Link to={`/nosotros/perfil/${eq._id}`} className="read-more">Leer más</Link>
                     </div>
-                    <h2 className="nombre__card">{eq.nombre}</h2>
-                    <h3 className="cargo__card">{eq.cargo}</h3>
-                    <p>{eq.descripcion}</p>
-                    <Link to={`/nosotros/perfil/${eq._id}`}>Leer más...</Link>
                 </div>
                 ))}
             </div>

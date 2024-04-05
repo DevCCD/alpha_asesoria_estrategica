@@ -708,21 +708,45 @@ h1.display {
 }
 
 .container__empresas {
-    position: relative;
-    z-index: 300;
-    background-color: var(--white-color);
-    width: 100%;
-    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray);
     z-index: 1;
 }
 
+.card__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white-color);
+    margin: 2rem;
+}
+
+.card__container h2 {
+    padding: 1rem 0 0 0;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
 .sub__container__empresas {
-    max-width: 1380px;
-    min-width: 1000px;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.sub__container__empresas div {
+    width: 500px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.sub__container__empresas div:hover {
+    box-shadow: 0px 16px 32px -1px rgba(5,28,44,.2), 0px 0px 1px 0px rgba(5,28,44,.15);
 }
 
 .container__empresas img {
@@ -1663,13 +1687,25 @@ align-content: center;
 }
 
 /* Experiencia Nosotros */
-.nuestro-equipo {
-    background: var(--white-color);
+.nuestro__equipo {
+    background: var(--light-gray);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     padding: 0 15rem;
     padding-bottom: 1rem;
+}
+
+.equipo__title {
+    display: flex;
+    justify-content: center;
+    background: var(--light-gray);
+    padding-bottom: 2rem;
+}
+
+.equipo__title h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 
 .card {
@@ -1831,7 +1867,7 @@ align-content: center;
 
 .card__blog {
     flex: 1 0 calc(30% - 10px);
-    margin: 0 20px 30px 20px;
+    margin: .5rem;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -2249,7 +2285,7 @@ align-content: center;
         grid-template-columns: 1fr 1fr;
     }
 
-    .nuestro-equipo {
+    .nuestro__equipo {
         display: grid;
         grid-gap: 20px;
         padding: 1rem !important;

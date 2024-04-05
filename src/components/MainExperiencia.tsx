@@ -1,7 +1,4 @@
-import { Link } from 'react-router-dom';
 import '../styles.css';
-import equipo from '../data/equipo';
-
 function MainExperiencia () {
     return (
         <main>
@@ -81,22 +78,6 @@ function MainExperiencia () {
                         <p>Mundo académico: IE University, Universidad de Navarra, USMP, IESE BS, CEU-San Pablo</p>
                     </div>
                 </div>
-            </div>
-            <div className="display__title">
-                <h2>Nuestro Equipo</h2>
-            </div>
-            <div className="nuestro-equipo">
-                {equipo.map((eq) => (
-                <div key={eq._id} className="card">
-                    <img src={eq.imageUrl} className="card-img" />
-                    <div className="card-content">
-                    <h3 className="card-title">{eq.nombre}</h3>
-                    <p className="card-subtitle">{eq.cargo}</p>
-                    <p className="card-description">{eq.descripcion}</p>
-                    <Link to={`/nosotros/perfil/${eq._id}`} className="read-more">Leer más</Link>
-                    </div>
-                </div>
-                ))}
             </div>
         </main>
     )

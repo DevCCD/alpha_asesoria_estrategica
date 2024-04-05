@@ -51,7 +51,7 @@ function Navbar() {
                         <i onClick={closeMenu}><IoMdClose /></i>
                     </div>
                     <li className="nav__item dropdown">
-                        <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i><FaChevronDown /></i>
+                        <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i className='arrow__link'><FaChevronDown /></i>
                         </Link>
                         <div className="megamenu">
                             <ul className="content">
@@ -126,7 +126,7 @@ function Navbar() {
                             </ul>
                         </div>
                     </li>
-                    <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">Observatorio <i><FaChevronDown /></i></Link>
+                    <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">Observatorio <i className='arrow__link'><FaChevronDown /></i></Link>
                         <div className="megamenu">
                             <ul className="content">
                                 <li className="megamenu_item header__megamenu">Economía Peruana</li>
@@ -167,7 +167,7 @@ function Navbar() {
                         </div>
                     </li>
                     <li className="nav__item dropdown">
-                        <Link to="/nosotros" className="nav__link dropdown__link">Nosotros      <i><FaChevronDown /></i>
+                        <Link to="/nosotros" className="nav__link dropdown__link">Nosotros      <i className='arrow__link'><FaChevronDown /></i>
                         </Link>
                         <div className="megamenu">
                             <ul className="content">
@@ -189,7 +189,7 @@ function Navbar() {
                         </div>
                     </li>
                     <li className="nav__item dropdown">
-                        <Link to="/contacto" className="nav__link dropdown__link">Contacto <i><FaChevronDown /></i>
+                        <Link to="/contacto" className="nav__link dropdown__link">Contacto <i className='arrow__link'><FaChevronDown /></i>
                         </Link>
                         <div className="megamenu">
                             <ul className="content">
