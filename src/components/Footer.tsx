@@ -1,8 +1,6 @@
-import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
-import { IoMdMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import '../styles.css';
-import '../data/data.js';
+import  redes  from '../data/redes';
 
 function Footer() {
     return (
@@ -455,22 +453,12 @@ function Footer() {
                         <li>
                             <Link to="/contacto">Trabaja con nosotros</Link>
                         </li>
-                        <li className="logos-redes"> 
-                            <Link to={""}>
-                                <i><FaPhone /></i>
-                            </Link> 
-                            <Link to="mailto:">
-                                <i><IoMdMail /></i>
-                            </Link> 
-                            <Link to="">
-                                <i><FaXTwitter /></i>
-                            </Link>
-                            <Link to="">
-                                <i><FaFacebookF /></i>
-                            </Link>
-                            <Link to="">
-                                <i><FaLinkedinIn /></i>
-                            </Link>
+                        <li className="logos-redes">
+                            {redes.map((red) => (
+                                <Link key={red._id} to={red.url}>
+                                    <i><red.icono /></i>
+                                </Link>
+                            ))}
                         </li>
                     </ul>
                     </div>

@@ -231,7 +231,96 @@ function MainAcademia() {
             <div className="display__title">
                 <h2>Directores Académicos</h2>
             </div>
-            
+            <div className="container_personas">
+                <div className="Foto">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712263882/alpha/images/Luis-Carranza_zlm0nc.jpg" />
+                </div>
+                <div className="Descripcion">
+                    <h1 className="Nombre">Luis Carranza</h1>
+                    <h3 className="Universidad">PhD. Universidad de Minnesota<br />USMP</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Rethinking Fiscal Rules, 2023, JCE</p>
+                    <p>• Public Infrastructure Investment and fiscal sustainability in Latin America, 2014, JES</p>
+                    <p>• The relationship between investment and large Exchange rate depreciations in dollarized economies, 2011,
+                    JIMF
+                    </p>
+                    <p>• Understanding the relationship between financial develpment and monetary policy, 2010, RIE</p>
+                </div>
+            </div>
+            <div className="container_personas2">
+                <div className="Descripcion">
+                    <h1 className="Nombre">José Enrique Galdon Sánchez</h1>
+                    <h3 className="Universidad">PhD. Universidad de Minnesota<br />Universidad Pública de Navarra</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Loan production and monetary policy, 2019, MD</p>
+                    <p>• Outsourcing and peripheral services, 2015, EER</p>
+                    <p>• Exchange rate volatility and economic performance, 2003, EMR</p>
+                    <p>• Competitive pressure and labor productivity, 2002, AER</p>
+                </div>
+                <div className="Foto">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265621/alpha/images/Jose-Galdon-Sanchez_p6jtdj.png" />
+                </div>
+            </div>
+            <div className="display__title">
+                <h2>Profesores</h2>
+            </div>
+            <div className="container_personas">
+                <div className="Foto Foto-3">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265667/alpha/images/JavierGomezBiscarri_wyoldu.jpg" />    
+                </div>
+                <div className="Descripcion">
+                    <h1 className="Nombre">Javier Gómez Biscarri</h1>
+                    <h3 className="Universidad">Universidad Pompeu-Fabra, Barcelona</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Understanding the relationship between financial develpment and monetary policy, 2010, RIE</p>
+                    <p>• Exchange rate and inflation dynamics, 2009, JDE</p>
+                    <p>• Changes in the dynamic behavior of emerging market volatility, 2006, EMR
+                    </p>
+                    <p>• Stock market cycles, financial liberalization and volatility, 2003, JIMF</p>
+                </div>
+            </div>
+            <div className="container_personas2">
+                <div className="Descripcion">
+                    <h1 className="Nombre">Julián Diaz Saavedra</h1>
+                    <h3 className="Universidad">PhD. Carlos III<br />Universidad de Granada</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Rethinkin fiscal rules, 2023, JCE</p>
+                    <p>• The future of spanish pensions, 2017, JPEF</p>
+                    <p>• Pension reform, 2015, SAE</p>
+                    <p>• Spanish minimun pensions after 2013</p>
+                    <p>• Delaying retirement in Spain, 2009, RED</p>
+                </div>
+                <div className="Foto Foto-4">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265813/alpha/images/JulianDiaz_lhbz0p.jpg" />    
+                </div>
+            </div>
+            <div className="container_personas">
+                <div className="Foto">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265848/alpha/images/FotoJavierHualde_monah1.jpg" />
+                </div>
+                <div className="Descripcion">
+                    <h1 className="Nombre">Javier Hualde Bilbao</h1>
+                    <h3 className="Universidad">PhD. LSE<br />Universidad Pública de Navarra</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Truncated sum of squares estimation of fractional time series models with deterministic trends, 2020, ET
+                    </p>
+                    <p>• Fixed bandwidth inference for fractional cointegration, 2019, JTSA</p>
+                    <p>• Local whittle estimation of long memory: standard versus bias-reducing techniques, 2019, E&S</p>
+                </div>
+            </div>
+            <div className="container_personas2">
+                <div className="Descripcion">
+                    <h1 className="Nombre">Marianna Battaglia</h1>
+                    <h3 className="Universidad">PhD. Universidad de Bocconi<br />Universidad de Alicante</h3>
+                    <p>Algunas publicaciones</p>
+                    <p>• Repayment Flexibility and Risk Taking: Experimental Evidence from Credit Contracts, 2023, RES</p>
+                    <p>• Segregation, Fertility and Son Preference: the Case of the Roma in Serbia, 2021, JDE</p>
+                    <p>• Equal Access to Education: An Evaluation of the Roma Teaching Assistant Program in Serbia, 2015, WD</p>
+                </div>
+                <div className="Foto">
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265919/alpha/images/MariannaBattaglia_n7lrls.jpg" />
+                </div>
+            </div>
         </main>
     )
 }

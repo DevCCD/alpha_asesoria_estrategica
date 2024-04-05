@@ -23,7 +23,7 @@ function Hero() {
                     <h1 className="display">Tasa de Interés Real</h1>
                     <p>¿Cómo impacta actualmente y en perspectiva a la empresa y a tus inversiones personales?</p>
                     <button className="section-btn">Escríbenos</button>
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922014/alpha/images/tasa_pdrrci.png" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" />
                 </div>
             </section>
         </>

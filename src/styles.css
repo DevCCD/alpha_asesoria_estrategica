@@ -764,11 +764,9 @@ h1.display {
     gap: .3rem;
 }
 
-.card__person .profile__image {
-    background: url(https://res.cloudinary.com/ccdcloudy/image/upload/v1711922064/alpha/images/luis-carranza-profile_gxfus2.png),
-        var(--white-color);
-    background-repeat: no-repeat;
-    background-size: cover;
+.card__person .profile__image img {
+    background: var(--white-color);
+    object-fit: cover;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -1829,6 +1827,71 @@ font-family: "Poppins";
     width: 100%;
 }
 
+/* Directores Academicos */
+.container_personas {
+    background: var(--light-gray);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+.container_personas2 {
+    font-family: "Poppins", sans-serif;
+    background: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.Subtitulo>h2 {
+    font-family: "Lora", sans-serif; 
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.Foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+}
+
+.Foto>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 520px;
+}
+
+.Descripcion>.Nombre {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.Descripcion>.Universidad {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.Descripcion>p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
 
 /* Movil/Mobile */
 /* 1380px */
@@ -2169,5 +2232,15 @@ font-family: "Poppins";
 @media screen and (max-width:400px) {
     .container__title__blog {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .container_personas {
+    flex-direction: column;
+    }
+
+    .container_personas2 {
+        flex-direction: column-reverse;
     }
 }

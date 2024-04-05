@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     element: <Contacto />
   },
   {
-    path: '/nosotros/perfil', //id
+    path: '/nosotros/perfil/:_id', //id
     element: <Perfil />
   },
   {
