@@ -1827,6 +1827,52 @@ font-family: "Poppins";
     width: 100%;
 }
 
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 15rem;
+    font-family: "Poppins", sans-serif;
+    background: var(--light-gray);
+}
+
+.card__blog {
+    flex: 1 0 calc(30% - 10px);
+    margin: 0 20px 30px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card__blog img {
+    width: 100%;
+    height: auto;
+}
+
+.card__blog h3 {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.card__blog h3:hover {
+    color: var(--primary-color);
+}
+
+.card__blog p {
+    margin: 0 10px 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding: 0 10px;
+}
+
+.card__blog a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
 /* Directores Academicos */
 .container_personas {
     background: var(--light-gray);
@@ -2227,11 +2273,21 @@ font-family: "Poppins";
     .banner__blog__title {
         padding: 0 2rem;
     }
+
+    .contenedor-cards {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width:400px) {
     .container__title__blog {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .card__blog {
+        flex: 1 0 calc(100% - 10px);
     }
 }
 
