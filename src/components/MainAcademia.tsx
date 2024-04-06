@@ -133,7 +133,7 @@ function MainAcademia() {
                     </div>
                 </div>
             </div>
-            <div className="display__title">
+            <div id='carrera' className="display__title">
                 <h2>Cursos</h2>
             </div>
             <div className="container__macro">
@@ -194,7 +194,7 @@ function MainAcademia() {
                     </div>
                 </div>
             </div>
-            <div className="display__title">
+            <div id='publica' className="display__title">
                 <h2>Gestión de Inversión Publica</h2>
             </div>
             <div className="container__macro">
@@ -212,7 +212,7 @@ function MainAcademia() {
                     </div>
                 </div>
             </div>
-            <div className="display__title">
+            <div id='aprendo' className="display__title">
                 <h2>Programa Aprendo Haciendo en Inversión Pública</h2>
             </div>
             <div className="container__macro">
@@ -223,8 +223,8 @@ function MainAcademia() {
                         <sub>Programa Aprendo Haciendo en Inversión Pública</sub>
                         <p>• Convenio Fortalecimiento de Capacidades en Gestión de Inversión Publica</p>
                         <p>• Pasantías</p>
-                        <p>• Practicas Preprofesionales</p>
-                        <p>• Observatorio Permanente del Programa Aprendo Haciendo en Inversión Públicas</p>
+                        <p>• Prácticas Preprofesionales</p>
+                        <p>• Observatorio Permanente del Programa Aprendo Haciendo en Inversión Pública</p>
                     </div>
                 </div>
             </div>

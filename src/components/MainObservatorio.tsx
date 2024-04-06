@@ -8,7 +8,7 @@ function MainObservatorio () {
                     <h1>Economía Peruana</h1>
                 </div>
             </div>
-            <div className="container__economia">
+            <div id='actividad' className="container__economia">
                 <div className="economia__left">
                     <h1>Actividad Económica</h1>
                     <p>El indicador líder de la Actividad Económica No Primaria prevé un ligero efecto rebote en los 2 primeros meses del año 2024, principalmente por la baja base de comparación por los conflictos sociales de los primeros meses del año pasado. Para los siguientes meses dicho rebote se irá diluyendo, y el indicador líder se encontrará alrededor de cero</p>
@@ -19,7 +19,7 @@ function MainObservatorio () {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183980/alpha/images/grafico1_ufb7of.png" />
                 </div>
             </div>
-            <div className="container__economia gray-bg">
+            <div id='tipocambio' className="container__economia gray-bg">
                 <div className="economia__left">
                     <h1>Tipo de Cambio: Fundamentos y otros factores</h1>
                     <p>El factor político desvió la explicación del comportamiento del Tipo de Cambio en sus fundamentos económicos como los términos de intercambio, diferenciales nacional e internacional de la productividad y la inflación, entre otros. Dicho desvío se ha disipado en los últimos trimestres, el comportamiento del Tipo de Cambio incorpora principalmente los fundamentos económicos</p>
@@ -30,7 +30,7 @@ function MainObservatorio () {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183983/alpha/images/grafico2_xiqbuk.png" />
                 </div>
             </div>
-            <div className="container__economia">
+            <div id='condiciones' className="container__economia">
                 <div className="economia__left">
                     <h1>Condiciones Monetarias</h1>
                     <p>En Febrero 2024 el BCRP disminuyó su tasa de referencia a 6.25%, registrando el sexto recorte consecutivo después de un ciclo de tasas de interés altas para combatir la inflación. En el último mes la expectativa de inflación se ha anclado en aproximadamente 2.65%, propiciando que la tasa de interés real y el costo de financiamiento para las empresas continúen altas</p>
@@ -41,7 +41,7 @@ function MainObservatorio () {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" />
                 </div>
             </div>
-            <div className="container__indicador gray-bg">
+            <div id='indicador' className="container__indicador gray-bg">
                 <h1>Indicador de demanda</h1>
                 <div className="container__condiciones">
                     <div className="condiciones__left">

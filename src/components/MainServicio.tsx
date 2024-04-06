@@ -12,7 +12,7 @@ function MainServicio () {
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712187062/alpha/images/servicioalpha_d8u3va.jpg" />
                     </div>
                 </div>
-                <div className="display__title">
+                <div id='premium' className="display__title">
                     <h2>Servicio Premium Alpha</h2>
                 </div>
                 <div className="container__servicio">
@@ -35,7 +35,7 @@ function MainServicio () {
                         <p><b>4 reuniones anuales</b> presenciales con la empresa para presentación de los temas relevantes o discutir algún punto de interés para la dirección</p>
                     </div>
                 </div>
-                <div className="display__title">
+                <div id='asistencia' className="display__title">
                     <h2>Asistencia Técnica Alpha</h2>
                 </div>
                 <div className="container__servicio">

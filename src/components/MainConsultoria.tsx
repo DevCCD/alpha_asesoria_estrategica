@@ -102,7 +102,7 @@ function MainConsultoria() {
                         </div>
                     </div>
                 </div>
-                <div className="display__title" id="peritaje">
+                <div className="display__title" id="peritajes">
                     <h2>Peritaje Económico Financiero</h2>
                 </div>
                 <div className="container__macro">
