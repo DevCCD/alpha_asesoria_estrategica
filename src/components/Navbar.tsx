@@ -7,8 +7,16 @@ import { FaChevronDown } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { useState } from 'react';
 import { Link, ScrollRestoration } from 'react-router-dom';
+import { idiomaAtom } from '../atom/idiomaAtom';
+import { useAtom } from "jotai";
+import SelectIdioma from './selectIdioma';
 
 function Navbar() {
+
+    /* Idioma */
+    const [idioma] = useAtom(idiomaAtom);
+
+    /* Tema */
 
     const [theme, setTheme] = useState('light');
 
@@ -52,7 +60,9 @@ function Navbar() {
                             <i onClick={closeMenu}><IoMdClose /></i>
                         </div>
                         <li className="nav__item dropdown">
-                            <Link to="/capacidades" className="nav__link dropdown__link">Capacidades <i className='arrow__link'><FaChevronDown /></i>
+                            <Link to="/capacidades" className="nav__link dropdown__link">
+                                {idioma == "es" ? "Capacidades" : "Capabilities"} 
+                                <i className='arrow__link'><FaChevronDown /></i>
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
@@ -127,7 +137,7 @@ function Navbar() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">Observatorio <i className='arrow__link'><FaChevronDown /></i></Link>
+                        <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">{idioma == "es" ? "Observatorio" : "Observatory"} <i className='arrow__link'><FaChevronDown /></i></Link>
                             <div className="megamenu">
                                 <ul className="content">
                                     <li className="megamenu_item header__megamenu">Economía Peruana</li>
@@ -160,7 +170,7 @@ function Navbar() {
                             </div>
                         </li>
                         <li className="nav__item dropdown">
-                            <Link to="/nosotros" className="nav__link dropdown__link">Nosotros <i className='arrow__link'><FaChevronDown /></i>
+                            <Link to="/nosotros" className="nav__link dropdown__link">{idioma == "es" ? "Nosotros" : "About us"} <i className='arrow__link'><FaChevronDown /></i>
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
@@ -182,7 +192,7 @@ function Navbar() {
                             </div>
                         </li>
                         <li className="nav__item dropdown">
-                            <Link to="/contacto" className="nav__link dropdown__link">Contacto <i className='arrow__link'><FaChevronDown /></i>
+                            <Link to="/contacto" className="nav__link dropdown__link">{idioma == "es" ? "Contacto" : "Contact"} <i className='arrow__link'><FaChevronDown /></i>
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
@@ -204,27 +214,16 @@ function Navbar() {
                             </div>
                         </li>
                         <li className="nav__item">
-                            <Link to="/blog" className="nav__link">Blog Alpha</Link>
+                            <Link to="/blog" className="nav__link">{idioma == "es" ? "Blog Alpha" : "Alpha Blog"}</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/repositorio" className="nav__link">Repositorio <i className='bx bx-file-blank'></i></Link>
+                            <Link to="/repositorio" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
                         </li>
                         {/* <!-- Options --> */}
                         <li className="nav__item option">
-                            <a href="#" className="nav__link">
-                                {/* <!-- Bandera --> */}
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1807_3306)">
-                                    <path d="M2.44444 3.05566C1.79614 3.05566 1.17438 3.3132 0.715961 3.77163C0.257539 4.23005 0 4.8518 0 5.50011L0 16.5001C0 17.1484 0.257539 17.7702 0.715961 18.2286C1.17438 18.687 1.79614 18.9446 2.44444 18.9446H7.33333V3.05566H2.44444Z" fill="#D91023"/>
-                                    <path d="M7.33398 3.05566H14.6673V18.9446H7.33398V3.05566Z" fill="#EEEEEE"/>
-                                    <path d="M19.5549 3.05566H14.666V18.9446H19.5549C20.2032 18.9446 20.825 18.687 21.2834 18.2286C21.7418 17.7702 21.9993 17.1484 21.9993 16.5001V5.50011C21.9993 4.8518 21.7418 4.23005 21.2834 3.77163C20.825 3.3132 20.2032 3.05566 19.5549 3.05566Z" fill="#D91023"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_1807_3306">
-                                    <rect width="22" height="22" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
+                            <a className="nav__link">
+                                {/* <!-- Idioma --> */}
+                                <SelectIdioma />
                             </a>
                         </li>
                         {/* <!-- Tema --> */}

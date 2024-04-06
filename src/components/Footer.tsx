@@ -2,28 +2,26 @@ import { Link } from 'react-router-dom';
 import '../styles.css';
 import  redes  from '../data/redes';
 
-function Footer() {
+function Footer({ idioma }) {
     return (
         <>
             {/* <!--Footer Contacto --> */}
             <div id='contacto' className="formulario-contacto">
                 <div className="informacion">
-                <h2>Contáctanos</h2>
-                <p>Si desea obtener más información sobre nuestros servicios, complete el formulario y cuéntenos un poco más sobre
-                    usted y lo que está buscando. Un miembro del equipo se pondrá en contacto contigo lo antes posible.
+                <h2>{idioma == "es" ? "Contáctanos" : "Contact us"}</h2>
+                <p>{idioma == "es" ? "Si desea obtener más información sobre nuestros servicios, complete el formulario y cuéntenos un poco más sobre usted y lo que está buscando. Un miembro del equipo se pondrá en contacto contigo lo antes posible." : "If you would like more information about our services, please fill out the form and tell us a little more about yourself and what you are looking for. A member of the team will contact you as soon as possible."}
                 </p>
                 <br />
-                <p>Al enviar este formulario, acepta que Alpha Asesoría Estratégica se comunique con usted sobre sus productos y
-                    servicios. Nunca compartiremos tus datos con terceros y podrás darte de baja en cualquier momento.</p>
+                <p>{idioma == "es" ? "Al enviar este formulario, acepta que Alpha Asesoría Estratégica se comunique con usted sobre sus productos y servicios. Nunca compartiremos tus datos con terceros y podrás darte de baja en cualquier momento." : "By submitting this form, you agree that Alpha Asesoría Estratégica contacts you about its products and services. We will never share your data with third parties and you can unsubscribe at any time."}</p>
                 </div>
                 <form action="#">
                 <div className="campos">
                     <div className="campo nombre">
-                    <label>Nombre</label>
+                    <label>{idioma == "es" ? "Nombre" : "First name"}</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
                     </div>
                     <div className="campo apellido">
-                    <label>Apellido</label>
+                    <label>{idioma == "es" ? "Apellido" : "Last name"}</label>
                     <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
                     </div>
                     <div className="campo puesto">
@@ -403,24 +401,24 @@ function Footer() {
                     <div className="columna Columna3">
                     <ul>
                         <li>
-                            <Link to="/consultoria">
+                            <Link to="/capacidades/consultoria">
                                 <h3>Consultoría</h3>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/consultoria#macro">Macro</Link>
+                            <Link to="/capacidades/consultoria#macro">Macro</Link>
                         </li>
                         <li>
-                            <Link to="/consultoria#micro">Micro</Link>
+                            <Link to="/capacidades/consultoria#micro">Micro</Link>
                         </li>
                         <li>
-                            <Link to="/consultoria#estructuracion">Estructuración y Financiamiento de Proyectos</Link>
+                            <Link to="/capacidades/consultoria#estructuracion">Estructuración y Financiamiento de Proyectos</Link>
                         </li>
                         <li>
-                            <Link to="/consultoria#ifd">IFD</Link>
+                            <Link to="/capacidades/consultoria#ifd">IFD</Link>
                         </li>
                         <li>
-                            <Link to="/consultoria#peritajes">Peritajes</Link>
+                            <Link to="/capacidades/consultoria#peritajes">Peritajes</Link>
                         </li>
                     </ul>
                     </div>
