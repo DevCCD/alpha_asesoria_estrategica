@@ -3,11 +3,11 @@ import '../styles.css';
 import globe from '../assets/hero.svg'
 import { Link } from 'react-router-dom';
 
-interface HeroProps {
+interface IdiomaProps {
     idioma: string;
 }
 
-const Hero = ({ idioma } : HeroProps) => {
+const Hero = ({ idioma } : IdiomaProps) => {
     return (
         <>
             <main>
@@ -32,9 +32,9 @@ const Hero = ({ idioma } : HeroProps) => {
                     <h1 className="display">{idioma=="es" ? "Tasa de Interés Real" :  "Real Interest Rate" }</h1>
                     <p>{idioma == "es" ? "¿Cómo impacta actualmente y en perspectiva a la empresa y a tus inversiones personales?" : "How does it currently and in perspective impact the company and your personal investments?"}</p>
                     <Link to={"/#contacto"}>
-                        <button className="section-btn">Escríbenos</button>
+                        <button className="section-btn">{idioma == "es" ? "Escríbenos" : "Contact us" }</button>
                     </Link>
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" />
+                    <img src={idioma == "es" ? "https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png"} />
                 </div>
             </section>
         </>

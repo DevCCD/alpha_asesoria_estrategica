@@ -1,13 +1,17 @@
 import '../styles.css';
 import blog from '../data/blog.tsx'
 
-function MainBlog() {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainBlog({ idioma } : IdiomaProps) {
     return (
         <>
             <main>
                 <div className="gray-bg banner__blog">
                     <div className="banner__blog__title">
-                        <h1>Blog Alpha</h1>
+                        <h1>{ idioma == "es" ? "Blog Alpha" : "Alpha Blog" }</h1>
                         <p>Publicaciones sobre nuestra gente, nuestras capacidades, nuestra investigación y el rostro en constante cambio de nuestra empresa</p>
                     </div>
                 </div>

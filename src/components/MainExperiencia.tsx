@@ -1,13 +1,18 @@
 import '../styles.css';
-function MainExperiencia () {
+
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainExperiencia ({ idioma } : IdiomaProps) {
     return (
         <main>
             <div className="container__macro container__objetivos">
                 <div className="grid__macro_2 grid__micro_2">
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712160420/alpha/images/experiencia1_emm5de.jpg" />
                     <div>
-                        <h1>Crecimiento en entorno cambiante</h1>
-                        <p>Generamos pensamiento estratégico para empresas en un entorno económico, social  y político cambiante con diversidad de riesgos
+                        <h1>{ idioma == "es" ? "Crecimiento en entorno cambiante" : "Growth in a changing environment"}</h1>
+                        <p>{ idioma == "es" ? "Generamos pensamiento estratégico para empresas en un entorno económico, social  y político cambiante con diversidad de riesgos" : "We generate strategic thinking for companies in a changing economic, social and political environment with a diversity of risks." }
                         </p>
                     </div>
                 </div>

@@ -1,12 +1,16 @@
 import '../styles.css';
 
-function MainRepositorio() {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainRepositorio({ idioma } : IdiomaProps) {
     return (
         <>
             <main>
                 <div className="banner__container">
                     <div className="banner_center">
-                        <h1>Repositorio</h1>
+                        <h1>{ idioma == "es" ? "Repositorio" : "Repository" }</h1>
                     </div>
                 </div>
             </main>

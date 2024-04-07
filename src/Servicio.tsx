@@ -13,8 +13,8 @@ function Servicio() {
     return (
         <>
             <Navbar />
-            <MainServicio />
-            <Footer idioma = {idioma}/>
+            <MainServicio idioma = {idioma} />
+            <Footer idioma = {idioma} />
         </>
     )
 }

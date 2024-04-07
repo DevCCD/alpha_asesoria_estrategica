@@ -13,8 +13,8 @@ function Consultoria() {
     return (
         <>
             <Navbar />
-            <MainConsultoria />
-            <Footer idioma = {idioma}/>
+            <MainConsultoria idioma = {idioma} />
+            <Footer idioma = {idioma} />
         </>
     )
 }

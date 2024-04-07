@@ -13,7 +13,7 @@ function Blog() {
     return (
         <>
             <Navbar />
-            <MainBlog />
+            <MainBlog idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

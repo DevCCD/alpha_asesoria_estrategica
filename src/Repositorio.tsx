@@ -13,8 +13,8 @@ function Repositorio() {
     return (
         <>
             <Navbar />
-            <MainRepositorio />
-            <Footer idioma = {idioma}/>
+            <MainRepositorio idioma = {idioma} />
+            <Footer idioma = {idioma} />
         </>
     )
 }

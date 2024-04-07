@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom';
 import '../styles.css';
 import equipo from '../data/equipo';
 
-function MainNosotros() {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainNosotros({ idioma } : IdiomaProps) {
     return ( 
         <main>
             <div className="banner__container">
                 <div className="banner_center mapimage">
-                    <h1>Nuestros Aliados</h1>
+                    <h1>{ idioma == "es" ? "Nuestros Aliados" : "Our Allies" }</h1>
                 </div>
             </div>
             <div className="container__empresas">

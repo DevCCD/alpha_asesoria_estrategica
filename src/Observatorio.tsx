@@ -13,8 +13,8 @@ function Observatorio() {
     return (
         <>
             <Navbar />
-            <MainObservatorio />
-            <Footer idioma = {idioma}/>
+            <MainObservatorio idioma = {idioma} />
+            <Footer idioma = {idioma} />
         </>
     )
 }

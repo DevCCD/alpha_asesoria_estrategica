@@ -3,8 +3,12 @@ import { Link, useParams } from 'react-router-dom';
 
 import equipo, { Perfil } from '../data/equipo';
 
-function MainPerfil() {
-    const params = useParams<{ _id: string }>(); 
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainPerfil({ idioma } : IdiomaProps) {
+    const params = useParams<{ _id: string }>();
     const idPerfil = params._id;
 
     const perfil: Perfil | undefined = equipo.find(item => item._id === idPerfil);
@@ -28,7 +32,7 @@ function MainPerfil() {
             <div className="container__acercade">
                 <div className="container__exp">
                     <div className="line"></div>
-                    <h4>ACERCA DE</h4>
+                    <h4>{ idioma == "es" ? "ACERCA DE" : "ABOUT" }</h4>
                     <p>{perfil.descripcionLarga}</p>
                 </div>
             </div>

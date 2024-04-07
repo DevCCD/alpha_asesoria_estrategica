@@ -13,7 +13,7 @@ function Perfil() {
     return (
         <>
             <Navbar />
-            <MainPerfil />
+            <MainPerfil idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

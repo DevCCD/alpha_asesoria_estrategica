@@ -13,7 +13,7 @@ function Experiencia() {
     return (
         <>
             <Navbar />
-            <MainExperiencia />
+            <MainExperiencia idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

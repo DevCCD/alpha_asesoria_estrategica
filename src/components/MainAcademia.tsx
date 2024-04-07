@@ -1,18 +1,22 @@
 import '../styles.css';
 
-function MainAcademia() {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainAcademia({ idioma } : IdiomaProps) {
     return (
         <main>
             <div className="banner__container">
                 <div className="banner_left">
-                    <h1>Academia</h1>
+                    <h1>{idioma == "es" ? "Academia" : "Academy" }</h1>
                 </div>
                 <div className="banner_right">
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922036/alpha/images/academia_xbwykz.jpg" />
                 </div>
             </div>
             <div className="display__title">
-                <h2>Objetivos</h2>
+                <h2>{ idioma == "es" ? "Objetivos" : "Goals" }</h2>
             </div>
             <div className="container__academia">
                 <div className="grid__academia_1">

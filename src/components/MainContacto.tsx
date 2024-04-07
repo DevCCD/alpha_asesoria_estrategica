@@ -2,12 +2,16 @@ import '../styles.css';
 import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
 import { IoLogoWhatsapp, IoMdMail } from 'react-icons/io';
 
-function MainContacto () {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainContacto ({ idioma } : IdiomaProps) {
     return (
         <main>
             <div className="banner__container">
                 <div className="banner_center">
-                    <h1>Contacto</h1>
+                    <h1>{ idioma == "es" ? "Contacto" : "Contact" }</h1>
                 </div>
             </div>
             <div className="container__contactos" id="contacto">

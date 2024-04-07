@@ -13,7 +13,7 @@ function Contacto() {
     return (
         <>
         <Navbar />
-        <MainContacto />
+        <MainContacto idioma = {idioma} />
         <Footer idioma = {idioma}/>
         </>
     )

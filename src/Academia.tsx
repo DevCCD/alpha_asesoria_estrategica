@@ -13,7 +13,7 @@ function Academia() {
     return (
         <>
             <Navbar />
-            <MainAcademia />
+            <MainAcademia idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

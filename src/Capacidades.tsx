@@ -13,7 +13,7 @@ function Capacidades() {
     return (
         <>
             <Navbar />
-            <MainCapacidades />
+            <MainCapacidades idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

@@ -1,11 +1,15 @@
 import '../styles.css';
 
-function MainObservatorio () {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainObservatorio ({ idioma } : IdiomaProps) {
     return (
         <main>
             <div className="banner__container">
                 <div className="banner_center">
-                    <h1>Economía Peruana</h1>
+                    <h1>{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</h1>
                 </div>
             </div>
             <div id='actividad' className="container__economia">

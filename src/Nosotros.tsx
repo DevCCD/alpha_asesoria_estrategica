@@ -13,7 +13,7 @@ function Nosotros() {
     return (
         <>
             <Navbar />
-            <MainNosotros />
+            <MainNosotros idioma = {idioma} />
             <Footer idioma = {idioma}/>
         </>
     )

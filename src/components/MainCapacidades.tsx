@@ -1,12 +1,16 @@
 import '../styles.css';
 
-function MainCapacidades() {
+interface IdiomaProps {
+    idioma: string;
+}
+
+function MainCapacidades({ idioma } : IdiomaProps) {
     return (
         <>
             <main>
                 <div className="banner__container">
                     <div className="banner_left">
-                        <h1>Capacidades</h1>
+                        <h1>{ idioma == "es" ? "Capacidades" : "Capabilities" }</h1>
                     </div>
                     <div className="banner_right">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922019/alpha/images/capacidades_db0zfc.jpg" loading="lazy" alt="Imagen Capacidades" />
