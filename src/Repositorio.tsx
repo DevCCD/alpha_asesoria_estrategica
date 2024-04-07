@@ -4,12 +4,17 @@ import  Navbar  from './components/Navbar';
 import Footer from './components/Footer';
 import MainRepositorio from './components/MainRepositorio';
 
+import { idiomaAtom } from './atom/idiomaAtom';
+import { useAtom } from "jotai";
+
 function Repositorio() {
+    const [idioma] = useAtom(idiomaAtom);
+
     return (
         <>
             <Navbar />
             <MainRepositorio />
-            <Footer />
+            <Footer idioma = {idioma}/>
         </>
     )
 }

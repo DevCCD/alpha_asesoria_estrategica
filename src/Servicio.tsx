@@ -4,12 +4,17 @@ import  Navbar  from './components/Navbar';
 import Footer from './components/Footer';
 import MainServicio from './components/MainServicio';
 
+import { idiomaAtom } from './atom/idiomaAtom';
+import { useAtom } from "jotai";
+
 function Servicio() {
+    const [idioma] = useAtom(idiomaAtom);
+
     return (
         <>
-        <Navbar />
-        <MainServicio />
-        <Footer />
+            <Navbar />
+            <MainServicio />
+            <Footer idioma = {idioma}/>
         </>
     )
 }

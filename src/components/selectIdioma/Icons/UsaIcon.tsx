@@ -1,15 +1,11 @@
-const UsaIcon = (props) => {
+const UsaIcon = () => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			viewBox='0 0 512 512'
-			width={props.size}
-			height={props.size}
-			style={{
-				enableBackground: "new 0 0 512 512",
-			}}
+			width='24'
+			height='24'
 			xmlSpace='preserve'
-			{...props}
 		>
 			<path
 				style={{
