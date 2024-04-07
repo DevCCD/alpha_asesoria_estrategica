@@ -3,7 +3,11 @@ import '../styles.css';
 import globe from '../assets/hero.svg'
 import { Link } from 'react-router-dom';
 
-const Hero = ({ idioma } ) => {
+interface HeroProps {
+    idioma: string;
+}
+
+const Hero = ({ idioma } : HeroProps) => {
     return (
         <>
             <main>
