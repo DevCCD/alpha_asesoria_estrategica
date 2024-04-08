@@ -262,7 +262,7 @@ function MainAcademia({ idioma } : IdiomaProps) {
                     <p>• Competitive pressure and labor productivity, 2002, AER</p>
                 </div>
                 <div className="Foto">
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265621/alpha/images/Jose-Galdon-Sanchez_p6jtdj.png" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/pgtdnoqhfm1ttwsiouns" />
                 </div>
             </div>
             <div className="display__title">
