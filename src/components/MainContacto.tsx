@@ -31,7 +31,7 @@ function MainContacto ({ idioma } : IdiomaProps) {
                         <a href=""><i><FaXTwitter /></i>Twitter</a>
                         <a href=""><i><FaFacebookF /></i>Facebook</a>
                         <a href=""><i><FaLinkedinIn /></i>LinkedIn</a>
-                        <a href=""><i><IoLogoWhatsapp /></i>Whatsapp</a>
+                        <a href=""><i><IoLogoWhatsapp /></i>WhatsApp</a>
                     </div>
                 </div>
             </div>
