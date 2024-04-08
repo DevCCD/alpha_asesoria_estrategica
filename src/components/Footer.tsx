@@ -358,7 +358,7 @@ function Footer({ idioma } : IdiomaProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/academia#carrera">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
+                            <Link to="/capacidades/academia">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
                         </li>
                         <li>
                             <Link to="/capacidades/academia#publica">{ idioma == "es" ? "Gestion Pública" : "Public Management" }</Link>
