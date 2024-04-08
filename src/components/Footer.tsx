@@ -387,7 +387,7 @@ function Footer({ idioma } : IdiomaProps) {
                             <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors"}</Link>
+                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</Link>
                         </li>
                         <li>
                             <Link to="/observatorio#condiciones">{ idioma == "es" ? "Condiciones monetarias" : "Monetary conditions" }</Link>
@@ -414,7 +414,7 @@ function Footer({ idioma } : IdiomaProps) {
                             <Link to="/capacidades/consultoria#estructuracion">{ idioma == "es" ? "Estructuración y Financiamiento de Proyectos" : "Project Structuring and Financing" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#ifd">{ idioma == "es" ? "IFD" : "IFD" }</Link>
+                            <Link to="/capacidades/consultoria#ifd">{ idioma == "es" ? "IFD" : "DFI" }</Link>
                         </li>
                         <li>
                             <Link to="/capacidades/consultoria#peritajes">{ idioma == "es" ? "Peritajes" : "Expert reports" }</Link>

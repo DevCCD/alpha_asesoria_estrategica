@@ -16,7 +16,7 @@ function MainNosotros({ idioma } : IdiomaProps) {
             </div>
             <div className="container__empresas">
                 <div className='card__container'>
-                    <h2>Empresas</h2>
+                    <h2>{ idioma == "es" ? "Empresas" : "Companies" }</h2>
                     <div className="sub__container__empresas">
                         <div>
                             <Link to={"https://competitividadccd.com"} target='_blank'>
@@ -37,7 +37,7 @@ function MainNosotros({ idioma } : IdiomaProps) {
                 </div>
             </div>
             <div className="equipo__title">
-                <h2 className="gray-bg">Nuestro Equipo</h2>
+                <h2 className="gray-bg">{ idioma == "es" ? "Nuestro Equipo" : "Our team" }</h2>
             </div>
             <div className="nuestro__equipo">
                 {equipo.map((eq) => (
