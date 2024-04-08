@@ -429,7 +429,7 @@ function Footer({ idioma } : IdiomaProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/nosotros/experiencia">{ idioma == "es" ? "Experience" : "" }</Link>
+                            <Link to="/nosotros/experiencia">{ idioma == "es" ? "Experiencia" : "Experience" }</Link>
                         </li>
                         <li>
                             <Link to="/nosotros">{ idioma == "es" ? "Nuestro Equipo" : "Our team" }</Link>
