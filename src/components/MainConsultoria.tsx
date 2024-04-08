@@ -23,7 +23,7 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                     <div className="grid__macro_1">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922070/alpha/images/macro1_iqavtp.jpg" alt="Talento" />
                         <div>
-                            <p>{ idioma == "es" ? "Análisis, Impactos, escenarios y proyecciones económicas" : "Analysis, Impacts, scenarios and economic projections" }</p>
+                            <p>{ idioma == "es" ? "Análisis, impactos, escenarios y proyecciones económicas" : "Analysis, impacts, scenarios and economic projections" }</p>
                         </div>
                     </div>
                     <div className="grid__macro_2">

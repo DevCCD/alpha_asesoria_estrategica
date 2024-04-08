@@ -7,7 +7,12 @@ interface IdiomaProps {
 function MainExperiencia ({ idioma } : IdiomaProps) {
     return (
         <main>
-            <div className="container__macro container__objetivos">
+            <div className="banner__container">
+                <div className="banner_center mapimage">
+                    <h1>{ idioma == "es" ? "Nuestra Experiencia" : "Our Experience" }</h1>
+                </div>
+            </div>
+            <div className="container__macro">
                 <div className="grid__macro_2 grid__micro_2">
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712160420/alpha/images/experiencia1_emm5de.jpg" />
                     <div>
