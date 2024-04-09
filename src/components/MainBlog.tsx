@@ -1,6 +1,6 @@
 import '../styles.css';
 import blog from '../data/blog.tsx'
-import { useState } from 'react';
+/* import { useState } from 'react'; */
 
 interface IdiomaProps {
     idioma: string;
@@ -16,11 +16,11 @@ interface IdiomaProps {
 
 function MainBlog({ idioma } : IdiomaProps) {
 
-    const [data, setData] = useState();
+    /* const [data, setData] = useState();
 
     fetch('https://alpha-project-backend.vercel.app/api/v1/blog')
         .then(function(response) { return response.json(); })
-        .then(function(res) { setData(res); });
+        .then(function(res) { setData(res); }); */
 
     return (
         <>
