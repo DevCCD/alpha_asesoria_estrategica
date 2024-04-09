@@ -2143,7 +2143,7 @@ align-content: center;
         font-size: 2rem !important;
     }
 
-    .formulario-contacto {
+    .formulario__contacto {
         align-items: center;
         justify-content: center;
         grid-template-columns: 1fr;
@@ -2190,7 +2190,7 @@ align-content: center;
 
     }
 
-    .formulario-contacto {
+    .formulario__contacto {
         padding-left: 2rem;
         padding-right: 2rem;
     }

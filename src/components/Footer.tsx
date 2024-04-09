@@ -239,7 +239,7 @@ function Footer({ idioma } : IdiomaProps) {
                             <option value="PG">Papúa Nueva Guinea</option>
                             <option value="PK">Paquistán</option>
                             <option value="PY">Paraguay</option>
-                            <option value="PE" selected>Perú</option>
+                            <option value="PE">Perú</option>
                             <option value="PN">Pitcairn</option>
                             <option value="PF">Polinesia Francesa</option>
                             <option value="PL">Polonia</option>
@@ -302,7 +302,7 @@ function Footer({ idioma } : IdiomaProps) {
                             <option value="YU">Yugoslavia</option>
                             <option value="ZM">Zambia</option>
                             <option value="ZW">Zimbabue</option>
-                        </select>
+                        </select> {/* JSON */}
                     </div>
                     <div className="campo mensaje">
                         <label>{idioma == "es" ? "Consulta" : "Message"}</label>
