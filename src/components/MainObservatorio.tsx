@@ -12,7 +12,8 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <h1>{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</h1>
                 </div>
             </div>
-            <div id='actividad' className="container__economia">
+            <div className="container__economia">
+                <div className='invisible__top' id='actividad' />
                 <div className="economia__left">
                     <h1>{ idioma == "es" ? " Actividad Económica" : "Economic activity" }</h1>
                     <p>{ idioma == "es" ? "El indicador líder de la Actividad Económica No Primaria prevé un ligero efecto rebote en los 2 primeros meses del año 2024, principalmente por la baja base de comparación por los conflictos sociales de los primeros meses del año pasado. Para los siguientes meses dicho rebote se irá diluyendo, y el indicador líder se encontrará alrededor de cero" : "The leading indicator of Non-Primary Economic Activity foresees a slight rebound effect in the first 2 months of 2024, mainly due to the low comparison base due to the social conflicts of the first months of last year. For the following months, this rebound will be diluted, and the leading indicator will be around zero" }</p>
@@ -23,7 +24,8 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183980/alpha/images/grafico1_ufb7of.png" />
                 </div>
             </div>
-            <div id='tipocambio' className="container__economia gray-bg">
+            <div className="container__economia gray-bg">
+                <div className='invisible__top' id='tipocambio' />
                 <div className="economia__left">
                     <h1>{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</h1>
                     <p>{ idioma == "es" ? "El factor político desvió la explicación del comportamiento del Tipo de Cambio en sus fundamentos económicos como los términos de intercambio, diferenciales nacional e internacional de la productividad y la inflación, entre otros. Dicho desvío se ha disipado en los últimos trimestres, el comportamiento del Tipo de Cambio incorpora principalmente los fundamentos económicos" : "The political factor diverted the explanation of the behavior of the Exchange Rate from its economic foundations such as the terms of trade, national and international productivity differentials and inflation, among others. This deviation has dissipated in recent quarters, the behavior of the Exchange Rate mainly incorporates economic fundamentals" }</p>
@@ -34,7 +36,8 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183983/alpha/images/grafico2_xiqbuk.png" />
                 </div>
             </div>
-            <div id='condiciones' className="container__economia">
+            <div className="container__economia">
+                <div className='invisible__top' id='condiciones' />
                 <div className="economia__left">
                     <h1>{ idioma == "es" ? "Condiciones Monetarias" : "Monetary Conditions" }</h1>
                     <p>{ idioma == "es" ? "En Febrero 2024 el BCRP disminuyó su tasa de referencia a 6.25%, registrando el sexto recorte consecutivo después de un ciclo de tasas de interés altas para combatir la inflación. En el último mes la expectativa de inflación se ha anclado en aproximadamente 2.65%, propiciando que la tasa de interés real y el costo de financiamiento para las empresas continúen altas" : "In February 2024, the BCRP decreased its reference rate to 6.25%, registering the sixth consecutive cut after a cycle of high interest rates to combat inflation. In the last month, inflation expectations have been anchored at approximately 2.65%, causing the real interest rate and the cost of financing for companies to remain high" }</p>
@@ -45,7 +48,8 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" />
                 </div>
             </div>
-            <div id='indicador' className="container__indicador gray-bg">
+            <div className="container__indicador gray-bg">
+                <div className='invisible__top' id='indicador' />
                 <h1>{ idioma == "es" ? "Indicador de demanda" : "Demand indicator" }</h1>
                 <div className="container__condiciones">
                     <div className="condiciones__left">

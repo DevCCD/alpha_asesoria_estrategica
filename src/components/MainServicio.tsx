@@ -16,7 +16,8 @@ function MainServicio ({ idioma } : IdiomaProps) {
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712187062/alpha/images/servicioalpha_d8u3va.jpg" />
                     </div>
                 </div>
-                <div id='premium' className="display__title">
+                <div className="display__title">
+                    <div className='invisible__top' id='premium' />
                     <h2>{ idioma == "es" ? "Servicio Premium Alpha" : "Alpha Premium Service" }</h2>
                 </div>
                 <div className="container__servicio">
@@ -39,7 +40,8 @@ function MainServicio ({ idioma } : IdiomaProps) {
                         <p><b>{ idioma == "es" ? "4 reuniones anuales " : "4 annual meetings " }</b>{ idioma == "es" ? " presenciales con la empresa para presentación de los temas relevantes o discutir algún punto de interés para la dirección" : "in person with the company to present relevant topics or discuss any point of interest for management" }</p>
                     </div>
                 </div>
-                <div id='asistencia' className="display__title">
+                <div className="display__title">
+                <div className='invisible__top' id='asistencia' />
                     <h2>{ idioma == "es" ? "Asistencia Técnica Alpha" : "Alpha Technical Assistance" }</h2>
                 </div>
                 <div className="container__servicio">

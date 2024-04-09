@@ -10,7 +10,8 @@ function Footer({ idioma } : IdiomaProps) {
     return (
         <>
             {/* <!--Footer Contacto --> */}
-            <div id='contacto' className="formulario-contacto">
+            <div className="formulario__contacto">
+                <div className='invisible__top' id="contactar" />
                 <div className="informacion">
                     <h2>{idioma == "es" ? "Contáctanos" : "Contact us"}</h2>
                     <p>{idioma == "es" ? "Si desea obtener más información sobre nuestros servicios, complete el formulario y cuéntenos un poco más sobre usted y lo que está buscando. Un miembro del equipo se pondrá en contacto contigo lo antes posible." : "If you would like more information about our services, please fill out the form and tell us a little more about yourself and what you are looking for. A member of the team will contact you as soon as possible."}

@@ -16,7 +16,8 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1711922353/alpha/images/consultoria_m05zps.jpg" alt="Imagen Capacidades" />
                     </div>
                 </div>
-                <div className="display__title" id="macro">
+                <div className="display__title">
+                    <div className='invisible__top' id='macro' />
                     <h2>Macro</h2>
                 </div>
                 <div className="container__macro">
@@ -39,7 +40,8 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                         </div>
                     </div>
                 </div>
-                <div className="display__title" id="micro">
+                <div className="display__title">
+                    <div className='invisible__top' id="micro" />
                     <h2>Micro</h2>
                 </div>
                 <div className="container__macro">
@@ -65,7 +67,8 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                         </div>
                     </div>
                 </div>
-                <div className="display__title" id="estructuracion">
+                <div className="display__title">
+                    <div className='invisible__top' id="estructuracion" />
                     <h2>{ idioma == "es" ? "Estructuración y financiamiento de proyectos" : "Project structuring and financing" }</h2>
                 </div>
                 <div className="container__estruc">
@@ -83,7 +86,8 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                         <p className="estruc__down">{ idioma == "es" ? "Conexiones con agencias de desarrollo internacionales y con conglomerados internacionales" : "Connections with international development agencies and international conglomerates" }</p>
                     </div>
                 </div>
-                <div className="display__title" id="ifd">
+                <div className="display__title">
+                    <div className='invisible__top'id="ifd" />
                     <h2>{ idioma == "es" ? "Instrumentos Financieros Derivados (IFD)" : "Derivative Financial Instruments (DFI)" }</h2>
                 </div>
                 <div className="container__capacidades container__instrumentos">
@@ -106,7 +110,8 @@ function MainConsultoria({ idioma } : IdiomaProps) {
                         </div>
                     </div>
                 </div>
-                <div className="display__title" id="peritajes">
+                <div className="display__title">
+                                        <div className='invisible__top' id="peritajes" />
                     <h2>{ idioma == "es" ? "Peritaje Económico Financiero" : "Financial Economic Expertise" }</h2>
                 </div>
                 <div className="container__macro">

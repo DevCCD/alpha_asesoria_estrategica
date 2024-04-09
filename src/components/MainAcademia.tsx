@@ -198,7 +198,8 @@ function MainAcademia({ idioma } : IdiomaProps) {
                     </div>
                 </div>
             </div>
-            <div id='publica' className="display__title">
+            <div className="display__title">
+                <div className='invisible__top' id='publica' />
                 <h2>{ idioma == "es" ? "Gestión de Inversión Publica" : "Public Investment Management" }</h2>
             </div>
             <div className="container__macro">
@@ -216,7 +217,8 @@ function MainAcademia({ idioma } : IdiomaProps) {
                     </div>
                 </div>
             </div>
-            <div id='aprendo' className="display__title">
+            <div className="display__title">
+                <div className='invisible__top' id='aprendo' />
                 <h2>{ idioma == "es" ? "Programa Aprendo Haciendo en Inversión Pública" : "Learn by Doing Program in Public Investment" }</h2>
             </div>
             <div className="container__macro">

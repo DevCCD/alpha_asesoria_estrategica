@@ -14,7 +14,8 @@ function MainContacto ({ idioma } : IdiomaProps) {
                     <h1>{ idioma == "es" ? "Contacto" : "Contact" }</h1>
                 </div>
             </div>
-            <div className="container__contactos" id="contacto">
+            <div className="container__contactos">
+                <div className='invisible__top' id="contacto" />
                 <aside>
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712100491/alpha/images/contacto_aside_wkuz1g.svg" alt="aside1" />
                 </aside>
@@ -35,7 +36,8 @@ function MainContacto ({ idioma } : IdiomaProps) {
                     </div>
                 </div>
             </div>
-            <div className="container__trabaja" id="trabaja">
+            <div className="container__trabaja">
+                <div className='invisible__top' id="trabaja"/>
                 <div className="info__trabaja">
                     <h3>{ idioma == "es" ? "Trabaja con nosotros" : "Join us" }</h3>
                     <h1>{ idioma == "es" ? "¡Creemos en tu potencial, experiencia y habilidades blandas!" : "We believe in your potential, experience and soft skills!" }</h1>

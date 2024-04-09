@@ -469,6 +469,10 @@ h1.display {
     object-fit: cover;
 }
 
+.display__title {
+    position: relative;
+}
+
 .slogan__slogan h3, 
 .display__title h2 {
     padding: 1rem 5%;
@@ -574,6 +578,7 @@ h1.display {
 
 .container__contactos,
 .container__trabaja {
+    position: relative;
     display: flex;
     width: 100%;
     background-color: var(--white-color);
@@ -1091,6 +1096,7 @@ h1.display {
 /* Observatorio */
 /* Economía Peruana */
 .container__economia {
+    position: relative;
     display: flex;
     flex-direction: row;
     background: var(--white-color);
@@ -1101,6 +1107,7 @@ h1.display {
 }
 
 .container__indicador {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: var(--white-color);
@@ -1193,7 +1200,8 @@ h1.display {
 
 
 /* Formulario Contacto */
-.formulario-contacto {
+.formulario__contacto {
+    position: relative;
     display: grid;
     background-color: var(--light-gray);
     padding-top: 4em;
@@ -1864,6 +1872,17 @@ align-content: center;
     font-weight: 400;
     font-size: 1.1rem;
 }
+
+/* Invisible */
+.invisible__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -70px 0 0 0;
+    width: 100%;
+    display: flex;
+}
+
 
 /* Movil/Mobile */
 /* 1380px */
