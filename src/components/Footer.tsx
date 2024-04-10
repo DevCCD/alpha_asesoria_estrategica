@@ -399,7 +399,7 @@ function Footer({ idioma } : IdiomaProps) {
                             <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</Link>
+                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</Link>
                         </li>
                         <li>
                             <Link to="/observatorio#condiciones">{ idioma == "es" ? "Condiciones monetarias" : "Monetary conditions" }</Link>
