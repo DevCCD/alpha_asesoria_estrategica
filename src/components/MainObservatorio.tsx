@@ -27,11 +27,11 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
             <div className="container__economia gray-bg">
                 <div className='invisible__top' id='tipocambio' />
                 <div className="economia__left">
-                    <h1>{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</h1>
+                    <h1>{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</h1>
                     <p>{ idioma == "es" ? "El factor político desvió la explicación del comportamiento del Tipo de Cambio en sus fundamentos económicos como los términos de intercambio, diferenciales nacional e internacional de la productividad y la inflación, entre otros. Dicho desvío se ha disipado en los últimos trimestres, el comportamiento del Tipo de Cambio incorpora principalmente los fundamentos económicos" : "The political factor diverted the explanation of the behavior of the Exchange Rate from its economic foundations such as the terms of trade, national and international productivity differentials and inflation, among others. This deviation has dissipated in recent quarters, the behavior of the Exchange Rate mainly incorporates economic fundamentals" }</p>
                 </div>
                 <div className="economia__right">
-                    <h2>{ idioma == "es" ? "Tipo de Cambio con Fundamentos Económicos: Sin político interno" : "Exchange Rate with Economic Fundamentals: Without internal politics" }</h2>
+                    <h2>{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</h2>
                     <p>{ idioma == "es" ? "(S/ por US$)" : "(S/ per US$)" }</p>
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183983/alpha/images/grafico2_xiqbuk.png" />
                 </div>

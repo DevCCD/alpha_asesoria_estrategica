@@ -39,7 +39,7 @@ function MainExperiencia ({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712160420/alpha/images/experiencia4_bzgkw9.jpg"  />
                     <div>
                         <h1>{ idioma == "es" ? "Experiencia en entidades decisoras" : "Experience in decision-making entities" }</h1>
-                        <p>{ idioma == "es" ? "Equipo con experiencia en gestión pública local e internacional, con desempeño en importantes cargos en Ministerios y Bancos Centrales" : "Team with experience in local and international public management, with important positions in Ministries and Central Banks" }</p>
+                        <p>{ idioma == "es" ? "Equipo con experiencia en gestión pública y privada local e internacional y desempeño en importantes cargos corporativos, ministerios y bancos centrales" : "Team with experience in local and international public and private management and performance in important corporate positions, ministries and central banks" }</p>
                     </div>
                 </div>
                 <div className="grid__macro_2 grid__micro_2">
