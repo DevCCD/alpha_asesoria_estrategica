@@ -117,22 +117,28 @@ function Navbar() {
                                     </li>
                                 </ul>
                                 <ul className="content">
-                                    <li className="megamenu_item header__megamenu"><Link to="/capacidades/academia">{ idioma == "es" ? "Academia" : "Academy" }</Link></li>
+                                    <li className="megamenu_item header__megamenu">
+                                        <Link to="/capacidades/academia">{ idioma == "es" ? "Academia" : "Academy" }</Link>
+                                    </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/capacidades/academia">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
                                         </div>
+                                    </li>
+                                    <li>
                                         <div className="megamenu__link">
                                             <Link to="/capacidades/academia#publica">{ idioma == "es" ? "Gestion Inversión Pública" : "Public Investment Management" }</Link>
                                         </div>
+                                    </li>
+                                    <li>
                                         <div className="megamenu__link">
                                             <Link to="/capacidades/academia#aprendo">{ idioma == "es" ?  "Programa Aprendo Haciendo en Inversión Pública" : "Learn by Doing Program in Public Investment" }</Link>
                                         </div>
-                                        <li className="megamenu_item">
-                                            <div className="megamenu__link">
-                                                <Link to="/capacidades/academia">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>
-                                            </div>
-                                        </li>
+                                    </li>
+                                    <li className="megamenu_item">
+                                        <div className="megamenu__link">
+                                            <Link to="/capacidades/academia">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -140,7 +146,9 @@ function Navbar() {
                         <li className="nav__item dropdown"><Link to="/observatorio" className="nav__link dropdown__link">{idioma == "es" ? "Observatorio" : "Observatory"} <i className='arrow__link'><FaChevronDown /></i></Link>
                             <div className="megamenu">
                                 <ul className="content">
-                                    <li className="megamenu_item header__megamenu"><Link to="/observatorio">{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</Link></li>
+                                    <li className="megamenu_item header__megamenu">
+                                        <Link to="/observatorio">{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</Link>
+                                    </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
@@ -174,7 +182,9 @@ function Navbar() {
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
-                                    <li className="megamenu_item header__megamenu"><Link to="/nosotros">{ idioma == "es" ? "¿Quiénes somos?" : "About us" }</Link></li>
+                                    <li className="megamenu_item header__megamenu">
+                                        <Link to="/nosotros">{ idioma == "es" ? "Quiénes somos" : "Who we are" }</Link>
+                                    </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/nosotros">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>
@@ -182,7 +192,9 @@ function Navbar() {
                                     </li>
                                 </ul>
                                 <ul className="content"> 
-                                    <li className="megamenu_item header__megamenu"><Link to="/nosotros/experiencia" >{ idioma == "es" ? "Nuestra experiencia" : "Our experience" }</Link></li>
+                                    <li className="megamenu_item header__megamenu">
+                                        <Link to="/nosotros/experiencia" >{ idioma == "es" ? "Nuestra experiencia" : "Our experience" }</Link>
+                                    </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/nosotros/experiencia">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>
@@ -196,7 +208,9 @@ function Navbar() {
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
-                                    <li className="megamenu_item header__megamenu"><Link to="/contacto#contacto">{ idioma == "es" ? "Contacto" : "Contact" }</Link></li>
+                                    <li className="megamenu_item header__megamenu">
+                                        <Link to="/contacto#contacto">{ idioma == "es" ? "Contacto" : "Contact" }</Link>
+                                    </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/contacto#contacto">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>

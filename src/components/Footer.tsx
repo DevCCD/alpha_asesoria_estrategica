@@ -14,10 +14,9 @@ function Footer({ idioma } : IdiomaProps) {
                 <div className='invisible__top' id="contactar" />
                 <div className="informacion">
                     <h2>{idioma == "es" ? "Contáctanos" : "Contact us"}</h2>
-                    <p>{idioma == "es" ? "Si desea obtener más información sobre nuestros servicios, complete el formulario y cuéntenos un poco más sobre usted y lo que está buscando. Un miembro del equipo se pondrá en contacto contigo lo antes posible." : "If you would like more information about our services, please fill out the form and tell us a little more about yourself and what you are looking for. A member of the team will contact you as soon as possible."}
+                    <p>
+                        {idioma == "es" ? "Si desea obtener más información sobre nuestros servicios, complete el formulario y cuéntenos un poco más sobre usted y lo que está buscando. Un miembro del equipo se pondrá en contacto contigo lo antes posible. Nunca compartiremos tus datos con terceros y podrás darte de baja en cualquier momento." : "If you would like more information about our services, please fill out the form and tell us a little more about yourself and what you are looking for. A member of the team will contact you as soon as possible. We will never share your data with third parties and you can unsubscribe at any time."}
                     </p>
-                    <br />
-                    <p>{idioma == "es" ? "Al enviar este formulario, acepta que Alpha Asesoría Estratégica se comunique con usted sobre sus productos y servicios. Nunca compartiremos tus datos con terceros y podrás darte de baja en cualquier momento." : "By submitting this form, you agree that Alpha Asesoría Estratégica contacts you about its products and services. We will never share your data with third parties and you can unsubscribe at any time."}</p>
                 </div>
                 <form action="#">
                 <div className="campos">
@@ -329,22 +328,22 @@ function Footer({ idioma } : IdiomaProps) {
             {/* <!--Footer Enlaces --> */}
             <div className="container-footer">
                 <div className="Suscribete">
-                    <div className="texto">
-                    <h3>{ idioma == "es" ? "Suscríbete a nuestro newsletter para recibir las últimas noticias" : "Subscribe to our newsletter to receive the latest news" } </h3>
+                    {/* <div className="texto">
+                        <h3>{ idioma == "es" ? "Suscríbete a nuestro newsletter para recibir las últimas noticias" : "Subscribe to our newsletter to receive the latest news" } </h3>
                     </div>
                     <div className="correo">
-                    <form action="#">
-                        <input type="email" name="email" placeholder={idioma == "es" ? "Correo" : "Email"} />
-                        <button type="submit">{idioma == "es" ? "Enviar" : "Submit"}</button>
-                    </form>
-                    </div>
+                        <form action="#">
+                            <input type="email" name="email" placeholder={idioma == "es" ? "Correo" : "Email"} />
+                            <button type="submit">{idioma == "es" ? "Enviar" : "Submit"}</button>
+                        </form>
+                    </div> */}
                 </div>
                 <div className="enlaces">
                     <div className="columna Columna1">
                     <ul>
                         <li>
                             <Link to="/capacidades">
-                                <h3>{ idioma == "es" ? "Capacicades" : "Capabilities"}</h3>
+                                <h3>{ idioma == "es" ? "Servicio Alpha" : "Alpha Service"}</h3>
                             </Link>
                         </li>
                         <li>
@@ -353,53 +352,6 @@ function Footer({ idioma } : IdiomaProps) {
                         <li>
                             <Link to="/capacidades/servicio#asistencia">{ idioma == "es" ? "Asistencia Técnica Alpha" : "Alpha Technical Assistance" }</Link>
                         </li>
-                        <li>
-                            <Link to="/capacidades/academia">
-                                <h3>{ idioma == "es" ? "Academia" : "Academy" }</h3>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/capacidades/academia">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
-                        </li>
-                        <li>
-                            <Link to="/capacidades/academia#publica">{ idioma == "es" ? "Gestion Pública" : "Public Management" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/capacidades/academia#aprendo">{ idioma == "es" ? "Aprendo Haciendo" : "Learn by doing" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/blog">
-                                <h3>{ idioma == "es" ? "Blog Alpha" : "Alpha Blog" }</h3>
-                            </Link>
-                        </li>
-                    </ul>
-                    </div>
-                    <div className="columna Columna2">
-                    <ul>
-                        <li>
-                            <Link to="/observatorio">
-                                <h3>{ idioma == "es" ? "Observatorio" : "Obsevatory" }</h3>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio">{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio#condiciones">{ idioma == "es" ? "Condiciones monetarias" : "Monetary conditions" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio#indicador">{ idioma == "es" ? "Indicador de demanda" : "Demand indicator" }</Link>
-                        </li>
-                    </ul>
-                    </div>
-                    <div className="columna Columna3">
-                    <ul>
                         <li>
                             <Link to="/capacidades/consultoria">
                                 <h3>{ idioma == "es" ? "Consultoría" : "Consultancy" }</h3>
@@ -420,9 +372,44 @@ function Footer({ idioma } : IdiomaProps) {
                         <li>
                             <Link to="/capacidades/consultoria#peritajes">{ idioma == "es" ? "Peritajes" : "Expert reports" }</Link>
                         </li>
+                        <li>
+                            <Link to="/capacidades/academia">
+                                <h3>{ idioma == "es" ? "Academia" : "Academy" }</h3>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/capacidades/academia">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
+                        </li>
+                        <li>
+                            <Link to="/capacidades/academia#publica">{ idioma == "es" ? "Gestion Inversión Pública" : "Public Investment Management" }</Link>
+                        </li>
+                        <li>
+                            <Link to="/capacidades/academia#aprendo">{ idioma == "es" ?  "Programa Aprendo Haciendo en Inversión Pública" : "Learn by Doing Program in Public Investment" }</Link>
+                        </li>
                     </ul>
                     </div>
-                    <div className="columna Columna4">
+                    <div className="columna Columna2">
+                    <ul>
+                        <li>
+                            <Link to="/observatorio">
+                                <h3>{ idioma == "es" ? "Observatorio" : "Obsevatory" }</h3>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
+                        </li>
+                        <li>
+                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos y otros factores" : "Exchange Rate: Fundamentals and other factors" }</Link>
+                        </li>
+                        <li>
+                            <Link to="/observatorio#condiciones">{ idioma == "es" ? "Condiciones monetarias" : "Monetary conditions" }</Link>
+                        </li>
+                        <li>
+                            <Link to="/observatorio#indicador">{ idioma == "es" ? "Indicador de demanda" : "Demand indicator" }</Link>
+                        </li>
+                    </ul>
+                    </div>
+                    <div className="columna Columna3">
                     <ul>
                         <li>
                             <Link to="/nosotros">
@@ -430,15 +417,32 @@ function Footer({ idioma } : IdiomaProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/nosotros/experiencia">{ idioma == "es" ? "Experiencia" : "Experience" }</Link>
+                            <Link to="/nosotros">{ idioma == "es" ? "Quienes somos" : "Who we are" }</Link>
                         </li>
                         <li>
-                            <Link to="/nosotros">{ idioma == "es" ? "Nuestro Equipo" : "Our team" }</Link>
+                            <Link to="/nosotros/experiencia">{ idioma == "es" ? "Nuestra experiencia" : "Our experience" }</Link>
+                        </li>
+                    </ul>
+                    </div>
+                    <div className="columna Columna4">
+                    <ul>
+                        <li>
+                            <Link to="/blog">
+                                <h3>{ idioma == "es" ? "Blog Alpha" : "Alpha Blog" }</h3>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/repositorio">
+                                <h3>{ idioma == "es" ? "Repositorio" : "Repository" }</h3>
+                            </Link>
                         </li>
                         <li>
                             <Link to="/contacto">
                                 <h3>{ idioma == "es" ? "Contacto" : "Contact" }</h3>
                             </Link>
+                        </li>
+                        <li>
+                            <Link to="/contacto#contacto">{ idioma == "es" ? "Contáctanos" : "Contact us" }</Link>
                         </li>
                         <li>
                             <Link to="/contacto#trabaja">{ idioma == "es" ? "Trabaja con nosotros" : "Join us" }</Link>

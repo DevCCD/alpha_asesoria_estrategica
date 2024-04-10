@@ -13,7 +13,7 @@ import Academia from './Academia.tsx'
 import Perfil from './Perfil.tsx'
 import Servicio from './Servicio.tsx'
 import Blog from './Blog.tsx'
-import Repositorio from './Repositorio.tsx'
+import ModalLogin from './components/loginModal/ModalLogin.tsx'
 
 const router = createBrowserRouter([
   {
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/repositorio',
-    element: <Repositorio />
+    element: <ModalLogin />
   }
 ])
 

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
+import { FaTiktok, FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 
 const redes = [
@@ -31,6 +31,12 @@ const redes = [
         "nombre": "LinkedIn",
         "url": "https://www.linkedin.com/",
         "icono": FaLinkedinIn
+    },
+    {
+        "_id": 5,
+        "nombre": "TikTok",
+        "url": "https://www.tiktok.com/",
+        "icono": FaTiktok
     }
 ]
 

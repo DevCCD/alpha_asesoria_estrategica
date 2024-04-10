@@ -1,5 +1,5 @@
 import '../styles.css';
-import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaLinkedinIn, FaPhone, FaTiktok, FaXTwitter } from 'react-icons/fa6';
 import { IoLogoWhatsapp, IoMdMail } from 'react-icons/io';
 
 interface IdiomaProps {
@@ -28,11 +28,12 @@ function MainContacto ({ idioma } : IdiomaProps) {
                     </div>
                     <h1>{ idioma == "es" ? "Nuestras Redes" : "Our Networks" }</h1>
                     <div className="social__list">
-                        <a href=""><i><IoMdMail /></i>Email</a>
-                        <a href=""><i><FaXTwitter /></i>Twitter</a>
-                        <a href=""><i><FaFacebookF /></i>Facebook</a>
-                        <a href=""><i><FaLinkedinIn /></i>LinkedIn</a>
-                        <a href=""><i><IoLogoWhatsapp /></i>WhatsApp</a>
+                        <a href="mailto:admintracion@alphaasesoriaestrategica.com"><i><IoMdMail /></i>Email</a>
+                        <a href="https://twitter.com/"><i><FaXTwitter /></i>Twitter</a>
+                        <a href="https://www.facebook.com/"><i><FaFacebookF /></i>Facebook</a>
+                        <a href="https://www.linkedin.com/"><i><FaLinkedinIn /></i>LinkedIn</a>
+                        <a href="#"><i><IoLogoWhatsapp /></i>WhatsApp</a>
+                        <a href="https://www.tiktok.com/"><i><FaTiktok /></i>TikTok</a>
                     </div>
                 </div>
             </div>
