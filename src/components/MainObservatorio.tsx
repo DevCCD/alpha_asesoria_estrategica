@@ -55,13 +55,13 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <div className="condiciones__left">
                         <h2>{ idioma == "es" ? "Consumo Privado e Índice Big Data de Consumo" : "Private Consumption and Big Data Consumer Index" }</h2>
                         <p>{ idioma == "es" ? "(Var % interanual)" : "(Interannual % change)" }</p>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183989/alpha/images/grafico4_ji5mxl.png" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712784967/alpha/images/Graficos%20Observatorio/ConsumoPrivado.png" />
                         <p className='condicion__desc'>{ idioma == "es" ? "Mejora del Índice de Consumo en los dos primeros meses del 2024, en un contexto de descenso de la inflación y menores tasas de interés por recortes del BCRP. Se observa un avance del consumo familiar a raíz del aumento en la creación de empleo y la recuperación de los ingresos laborales, principalmente en Lima. Asimismo, se ha recuperado ligeramente la confianza del consumidor, aunque se mantiene en el tramo pesimista" : "Improvement in the Consumption Index in the first two months of 2024, in a context of declining inflation and lower interest rates due to BCRP cuts. An increase in family consumption is observed as a result of the increase in job creation and the recovery of labor income, mainly in Lima. Likewise, consumer confidence has recovered slightly, although it remains in the pessimistic range" }</p>
                     </div>
                     <div className="condiciones__right">
                         <h2>{ idioma == "es" ? "Inversión Bruta Fija e Índice Big Data de Inversión" : "Gross Fixed Investment and Big Data Investment Index" }</h2>
                         <p>{ idioma == "es" ? "(Var % interanual)" : "(Interannual % change)" }</p>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183999/alpha/images/grafico5_qzcj3i.png" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712785249/alpha/images/Graficos%20Observatorio/InversionBruta.png" />
                         <p className='condicion__desc'>{ idioma == "es" ? "El aumento del Índice de Inversión se debe en parte a un efecto base positivo, originado por un bajo nivel de comparación durante los primeros meses de 2023, marcados por la inestabilidad social que influyó en las decisiones de inversión. También se presenta un aumento en la inversión pública asociada a pagos que no se habrían realizado a fines del año 2023" : "The increase in the Investment Index is due in part to a positive base effect, caused by a low level of comparison during the first months of 2023, marked by social instability that influenced investment decisions. There is also an increase in public investment associated with payments that would not have been made at the end of 2023" }</p>
                     </div>
                 </div>

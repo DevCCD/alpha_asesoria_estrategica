@@ -1197,7 +1197,7 @@ h1.display {
 .container__condiciones {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 
