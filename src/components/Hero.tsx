@@ -34,7 +34,7 @@ const Hero = ({ idioma } : IdiomaProps) => {
                     <Link to={"/#contactar"}>
                         <button className="section-btn">{idioma == "es" ? "Escríbenos" : "Contact us" }</button>
                     </Link>
-                    <img src={idioma == "es" ? "https://res.cloudinary.com/ccdcloudy/image/upload/v1712761850/alpha/images/grafico_inicio.png" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1712761850/alpha/images/grafico_inicio.png"} />
+                    <img src={idioma == "es" ? "https://res.cloudinary.com/ccdcloudy/image/upload/v1712783131/alpha/images/Graficos%20Observatorio/TasaInteresReal.png" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1712783131/alpha/images/Graficos%20Observatorio/TasaInteresReal.png"} />
                 </div>
             </section>
         </>

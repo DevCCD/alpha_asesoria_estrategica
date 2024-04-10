@@ -21,7 +21,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                 <div className="economia__right">
                     <h2>{ idioma == "es" ? "Crecimiento PBI No Primario y Proyecciones" : "Non-Primary GDP Growth and Projections" }</h2>
                     <p>{ idioma == "es" ? "(Variación % real)" : "(Actual % variation)" }</p>
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183980/alpha/images/grafico1_ufb7of.png" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712783551/alpha/images/Graficos%20Observatorio/ActividadEconomica.png" />
                 </div>
             </div>
             <div className="container__economia gray-bg">
@@ -33,7 +33,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                 <div className="economia__right">
                     <h2>{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</h2>
                     <p>{ idioma == "es" ? "(S/ por US$)" : "(S/ per US$)" }</p>
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183983/alpha/images/grafico2_xiqbuk.png" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712784232/alpha/images/Graficos%20Observatorio/TipoDeCambio.png" />
                 </div>
             </div>
             <div className="container__economia">
@@ -45,7 +45,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                 <div className="economia__right">
                     <h2>{ idioma == "es" ? "Tasa de Interés Real" : "Real Interest Rate" }</h2>
                     <p>{ idioma == "es" ? "(Porcentaje)" : "(Percentage)" }</p>
-                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712183986/alpha/images/grafico3_nsw067.png" />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712783131/alpha/images/Graficos%20Observatorio/TasaInteresReal.png" />
                 </div>
             </div>
             <div className="container__indicador gray-bg">
