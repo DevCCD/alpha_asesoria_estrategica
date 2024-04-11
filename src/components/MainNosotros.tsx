@@ -19,17 +19,17 @@ function MainNosotros({ idioma } : IdiomaProps) {
                     <h2>{ idioma == "es" ? "Empresas" : "Companies" }</h2>
                     <div className="sub__container__empresas">
                         <div>
-                            <Link to={"https://competitividadccd.com"} target='_blank'>
+                            <Link to={"#"} target='_blank'>
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098337/alpha/images/logoccd_ublvsl.png" alt="CCD" />
                             </Link>
                         </div>
                         <div>
-                            <Link to={"https://www.aei-publicaffairs.com"} target='_blank'>
+                            <Link to={"#"} target='_blank'>
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098336/alpha/images/logoanalisis_economico_integral_cover_necqnm.png" alt="AEI" />
                             </Link>
                         </div>
                         <div>
-                            <Link to={"https://www.globalgradient.es"} target='_blank'>
+                            <Link to={"#"} target='_blank'>
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098340/alpha/images/logoglobalgradient_enjkcg.png" alt="Global Gradient" />
                             </Link>
                         </div>
