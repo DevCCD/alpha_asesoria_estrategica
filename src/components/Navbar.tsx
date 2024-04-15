@@ -66,7 +66,7 @@ function Navbar() {
                             </Link>
                             <div className="megamenu">
                                 <ul className="content">
-                                    <li className="megamenu_item header__megamenu"><Link to="/capacidades">{ idioma == "es" ?  "Servicio Alpha" : "Alpha Service" }</Link></li>
+                                    <li className="megamenu_item header__megamenu"><Link to="/capacidades/servicio">{ idioma == "es" ?  "Servicio Alpha" : "Alpha Service" }</Link></li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
                                             <Link to="/capacidades/servicio#premium">{ idioma == "es" ? "Servicio Premium Alpha" : "Alpha Premium Service" }</Link>
