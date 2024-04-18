@@ -1,16 +1,17 @@
+import { FaWhatsapp } from 'react-icons/fa';
 import { FaTiktok, FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 
 const redes = [
     {
         "_id": 0,
-        "nombre": "Phone",
-        "url": "tel:+51999999999",
+        "nombre": "+51 942 908 008",
+        "url": "tel:+51 942 908 008",
         "icono": FaPhone
     },
     {
         "_id": 1,
-        "nombre": "Mail",
+        "nombre": "Email",
         "url": "mailto:administracion@alphaasesoriaestrategica.com",
         "icono": IoMdMail
     },
@@ -37,6 +38,12 @@ const redes = [
         "nombre": "TikTok",
         "url": "https://www.tiktok.com/",
         "icono": FaTiktok
+    },
+    {
+        "_id": 5,
+        "nombre": "WhatsApp",
+        "url": "https://wa.me/51942908008",
+        "icono": FaWhatsapp
     }
 ]
 

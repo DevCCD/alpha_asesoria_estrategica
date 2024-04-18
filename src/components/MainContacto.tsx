@@ -1,6 +1,7 @@
 import '../styles.css';
-import { FaFacebookF, FaLinkedinIn, FaPhone, FaTiktok, FaXTwitter } from 'react-icons/fa6';
-import { IoLogoWhatsapp, IoMdMail } from 'react-icons/io';
+import redes from '../data/redes';
+import { Link } from 'react-router-dom';
+import { FaPhone } from 'react-icons/fa';
 
 interface IdiomaProps {
     idioma: string;
@@ -24,16 +25,17 @@ function MainContacto ({ idioma } : IdiomaProps) {
                     <h3>{ idioma == "es" ? "Si tiene consultas específicas o requiere más información, le invitamos a ponerse en contacto con nosotros a través de nuestras redes sociales. Estamos a su disposición para atender sus inquietudes y proporcionarle la asistencia que necesite. Será un placer atenderle y brindarle el apoyo necesario" : "If you have specific questions or require more information, we invite you to contact us through our social networks. We are at your disposal to address your concerns and provide you with the assistance you need. It will be a pleasure to assist you and provide you with the necessary support" }</h3>
                     <h1>{ idioma == "es" ? "Teléfono principal" : "Main phone" }</h1>
                     <div>
-                        <a href="tel:+51999999999"><i><FaPhone /></i>+51 999 999 999</a>
+                        <Link to={redes[0].url}>
+                            <i><FaPhone /></i>{redes[0].nombre}
+                        </Link>
                     </div>
                     <h1>{ idioma == "es" ? "Nuestras Redes" : "Our Networks" }</h1>
                     <div className="social__list">
-                        <a href="mailto:admintracion@alphaasesoriaestrategica.com"><i><IoMdMail /></i>Email</a>
-                        <a href="https://twitter.com/"><i><FaXTwitter /></i>Twitter</a>
-                        <a href="https://www.facebook.com/"><i><FaFacebookF /></i>Facebook</a>
-                        <a href="https://www.linkedin.com/"><i><FaLinkedinIn /></i>LinkedIn</a>
-                        <a href="#"><i><IoLogoWhatsapp /></i>WhatsApp</a>
-                        <a href="https://www.tiktok.com/"><i><FaTiktok /></i>TikTok</a>
+                        {redes.slice(1).map((red) => (
+                            <Link key={red._id} to={red.url}>
+                                <i><red.icono /></i>{red.nombre}
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
