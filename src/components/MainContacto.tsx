@@ -2,12 +2,18 @@ import '../styles.css';
 import redes from '../data/redes';
 import { Link } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa';
+import { useEffect } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
 function MainContacto ({ idioma } : IdiomaProps) {
+
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Contacto" : "Alpha | Contact"
+    }, [])
+
     return (
         <main>
             <div className="banner__container">

@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import '../styles.css';
 import equipo from '../data/equipo';
+import { useEffect } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
 function MainNosotros({ idioma } : IdiomaProps) {
+    
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Nosotros" : "Alpha | About Us"
+    }, [])
+
     return ( 
         <main>
             <div className="banner__container">

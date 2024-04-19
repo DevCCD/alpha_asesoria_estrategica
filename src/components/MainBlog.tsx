@@ -1,5 +1,6 @@
 import '../styles.css';
 import blog from '../data/blog.tsx'
+import { useEffect } from 'react';
 /* import { useState } from 'react'; */
 
 interface IdiomaProps {
@@ -21,6 +22,11 @@ function MainBlog({ idioma } : IdiomaProps) {
     fetch('https://alpha-project-backend.vercel.app/api/v1/blog')
         .then(function(response) { return response.json(); })
         .then(function(res) { setData(res); }); */
+
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Blog Alpha" : "Alpha | Alpha Blog"
+    }, [])
+
 
     return (
         <>

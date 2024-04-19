@@ -1,12 +1,18 @@
 import { IoMdClose } from 'react-icons/io';
 import './index.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
 function Modal({ idioma } : IdiomaProps) {
+
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Inicio de sesión" : "Alpha | Login"
+    }, [])
+
     function triggerLogin() {
         idioma == "es" ? alert("Usuario no registrado") : alert("Unregistered user");
     }

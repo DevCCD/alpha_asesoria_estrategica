@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../styles.css';
 
 interface IdiomaProps {
@@ -5,6 +6,10 @@ interface IdiomaProps {
 }
 
 function MainObservatorio ({ idioma } : IdiomaProps) {
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Observatorio" : "Alpha | Observatory"
+    }, [])
+
     return (
         <main>
             <div className="banner__container">

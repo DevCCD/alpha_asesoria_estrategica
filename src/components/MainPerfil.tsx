@@ -2,16 +2,22 @@ import { IoMdMail } from 'react-icons/io';
 import { Link, useParams } from 'react-router-dom';
 
 import equipo, { Perfil } from '../data/equipo';
+import { useEffect } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
 function MainPerfil({ idioma } : IdiomaProps) {
+
     const params = useParams<{ _id: string }>();
     const idPerfil = params._id;
-
+    
     const perfil: Perfil | undefined = equipo.find(item => item._id === idPerfil);
+    
+    useEffect(() => {
+        document.title = "Alpha | "+perfil?.nombre
+    }, [])
 
     if (!perfil) {
         return <Link to="/">No se encontró el perfil, volver al inicio</Link>;

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../styles.css';
 
 interface IdiomaProps {
@@ -5,6 +6,11 @@ interface IdiomaProps {
 }
 
 function MainServicio ({ idioma } : IdiomaProps) {
+
+    useEffect(() => {
+        document.title = idioma == "es" ? "Alpha | Servicio Alpha" : "Alpha | Alpha Service"
+    }, [])
+
     return (
         <>
             <main>
