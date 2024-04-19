@@ -40,7 +40,7 @@ const redes = [
         "icono": FaTiktok
     },
     {
-        "_id": 5,
+        "_id": 6,
         "nombre": "WhatsApp",
         "url": "https://wa.me/51942908008",
         "icono": FaWhatsapp

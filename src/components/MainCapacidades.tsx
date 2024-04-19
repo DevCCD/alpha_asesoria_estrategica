@@ -13,7 +13,7 @@ function MainCapacidades({ idioma } : IdiomaProps) {
                         <h1>{ idioma == "es" ? "Capacidades" : "Capabilities" }</h1>
                     </div>
                     <div className="banner_right">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/capacidades" loading="lazy" alt="Imagen Capacidades" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/capacidades" />
                     </div>
                 </div>
                 <div className="slogan__slogan">
@@ -28,10 +28,10 @@ function MainCapacidades({ idioma } : IdiomaProps) {
                             <h3>{ idioma == "es" ? "El talento como ventaja competitiva" : "Talent as a competitive advantage" }</h3>
                             <p>{ idioma == "es" ? "Fortalecemos el perfil técnico/intelectual de los colaboradores claves de la compañía hacia el exterior a través de la creación de herramientas exclusivas de generación de contenidos y reuniones internas" : "We strengthen the technical/intellectual profile of the company's key collaborators externally through the creation of exclusive content generation tools and internal meetings" }</p>
                         </div>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/talento" alt="Talento" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/talento" />
                     </div>
                     <div className="grid__capacidades_2">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/riesgos" alt="Riesgos" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/riesgos" />
                         <div>
                             <h3>{ idioma == "es" ? "Identificación de riesgos y oportunidades" : "Identification of risks and opportunities" }</h3>
                             <p>{ idioma == "es" ? "Fortalecemos el conocimiento de la alta dirección del contexto global, económico, social y político del país. De esta manera se podrá plantear mejores estrategias tanto ofensivas como defensivas, tomando en consideración la interacción con otros stakeholders" : "We strengthen senior management's knowledge of the country's global, economic, social and political context. In this way, better offensive and defensive strategies can be proposed, taking into consideration the interaction with other stakeholders" }</p>
@@ -42,7 +42,7 @@ function MainCapacidades({ idioma } : IdiomaProps) {
                             <h3>{ idioma == "es" ? "Contactos globales" : "Global contacts" }</h3>
                             <p>{ idioma == "es" ? "Ponemos a disposición de la empresa los contactos de Alpha, lo que permitirá un acceso más directo a los tomares de decisiones a nivel global" : "We make Alpha contacts available to the company, which will allow more direct access to global decision makers" }</p>
                         </div>
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/contactos" alt="Contactos" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/capacidades/contactos" />
                     </div>
                 </div>
             </main>
