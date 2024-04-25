@@ -273,7 +273,7 @@ function MainAcademia({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/pgtdnoqhfm1ttwsiouns" />
                 </div>
             </div>
-            <div className="display__title">
+            {/* <div className="display__title">
                 <h2>{ idioma == "es" ? "Profesores" : "Teachers" }</h2>
             </div>
             <div className="container_personas">
@@ -332,7 +332,7 @@ function MainAcademia({ idioma } : IdiomaProps) {
                 <div className="Foto">
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712265919/alpha/images/MariannaBattaglia_n7lrls.jpg" />
                 </div>
-            </div>
+            </div> */}
         </main>
     )
 }

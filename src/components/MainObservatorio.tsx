@@ -29,7 +29,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712783551/alpha/images/Graficos%20Observatorio/ActividadEconomica.png" />
                 </div>
             </div>
-            <div className="container__economia gray-bg">
+            {/* <div className="container__economia gray-bg">
                 <div className='invisible__top' id='tipocambio' />
                 <div className="economia__left">
                     <h1>{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</h1>
@@ -70,7 +70,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                         <p className='condicion__desc'>{ idioma == "es" ? "El aumento del Índice de Inversión se debe en parte a un efecto base positivo, originado por un bajo nivel de comparación durante los primeros meses de 2023, marcados por la inestabilidad social que influyó en las decisiones de inversión. También se presenta un aumento en la inversión pública asociada a pagos que no se habrían realizado a fines del año 2023" : "The increase in the Investment Index is due in part to a positive base effect, caused by a low level of comparison during the first months of 2023, marked by social instability that influenced investment decisions. There is also an increase in public investment associated with payments that would not have been made at the end of 2023" }</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </main>
     )
 }
