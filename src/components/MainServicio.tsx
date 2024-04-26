@@ -39,12 +39,13 @@ function MainServicio ({ idioma } : IdiomaProps) {
                 <div className="container__servicio">
                     <div className="servicio__left">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/servicio/Servicio3" />
-                        <p><b>{ idioma == "es" ? "1 reunión" : "1 meeting" }</b>{ idioma == "es" ? " con clientes de la empresa para presentar la coyuntura macroeconómica, política y social del país" : " with company clients to present the macroeconomic, political and social situation of the country" }</p>
                     </div>
                     <div className="servicio__right">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/servicio/Servicio4" />
-                        <p><b>{ idioma == "es" ? "4 reuniones anuales " : "4 annual meetings " }</b>{ idioma == "es" ? " presenciales con la empresa para presentación de los temas relevantes o discutir algún punto de interés para la dirección" : "in person with the company to present relevant topics or discuss any point of interest for management" }</p>
                     </div>
+                </div>
+                <div className="container__servicio__center">
+                    <p><b>{ idioma == "es" ? "1 reunión" : "1 meeting" }</b>{ idioma == "es" ? " con clientes de la empresa para presentar la coyuntura macroeconómica, política y social del país" : " with company clients to present the macroeconomic, political and social situation of the country" }</p>
                 </div>
                 <div className="display__title">
                 <div className='invisible__top' id='asistencia' />

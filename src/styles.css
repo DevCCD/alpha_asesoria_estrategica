@@ -1738,6 +1738,17 @@ margin-right: 10px;
     width: 100%;
 }
 
+.container__servicio__center {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    background: var(--light-gray);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .servicio__left,
 .servicio__right {
     font-family: 'Poppins', sans-serif;
@@ -1747,7 +1758,8 @@ margin-right: 10px;
 }
 
 .servicio__left p,
-.servicio__right p {
+.servicio__right p,
+.container__servicio__center p {
     padding: 2rem;
 }
 
