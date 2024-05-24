@@ -101,6 +101,39 @@ body.light .banner__info h3 {
     color: var(--black-color);
 }
 
+/* Footer Light */
+
+body.light .container-footer {
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+body.light .columna a {
+    color: var(--black-color);
+}
+
+body.light .columna a:hover {
+    color: var(--primary-color);
+}
+
+body.light .logofooter svg {
+    fill: var(--primary-color);
+}
+
+body.light .Suscribete {
+    background-color: var(--primary-color);
+}
+
+body.light .logos-redes i {
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+.container-footer {
+    background: var(--gradient--dark);
+    color: var(--white-color);
+}
+
 /* Navbar */
 
 .navcontainer {
@@ -1438,7 +1471,7 @@ margin-right: 10px;
 }
 
 .Suscribete {
-    background-color: var(--primary-color);
+    background-color: var(--gradient--dark);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1557,12 +1590,13 @@ margin-right: 10px;
 }
 
 .columna a {
-    color: var(--black-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
 .columna a:hover {
-    color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
 }
 
 .Columna1 {
@@ -1589,8 +1623,8 @@ margin-right: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
-    background: var(--black-color);
+    color: var(--black-color);
+    background: var(--white-color);
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -1630,7 +1664,7 @@ margin-right: 10px;
 }
 
 .logofooter svg {
-    fill: var(--primary-color);
+    fill: var(--white-color);
     grid-area: logo;
     height: auto;
 }
