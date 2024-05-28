@@ -396,16 +396,16 @@ function Footer({ idioma } : IdiomaProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#actividad">{ idioma == "es" ? "Actividad Económica" : "Economic activity" }</Link>
+                            <Link to="/observatorio#observatorio1">{ idioma == "es" ? "Indicador de Actividad Económica (IAE)" : "Economic Activity Indicator (EAI)" }</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#tipocambio">{ idioma == "es" ? "Tipo de Cambio: Fundamentos Económicos y otros factores" : "Exchange Rate: Economic Fundamentals and Other Factors" }</Link>
+                            <Link to="/observatorio#observatorio2">{ idioma == "es" ? "Indicador de Condiciones Externas (ICE)" : "External Conditions Indicator (ECI)" }</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#condiciones">{ idioma == "es" ? "Condiciones monetarias" : "Monetary conditions" }</Link>
+                            <Link to="/observatorio#observatorio3">{ idioma == "es" ? "Indicador de Condiciones Monetarias (ICM)" : "Monetary Conditions Indicator (MCI)" }</Link>
                         </li>
                         <li>
-                            <Link to="/observatorio#indicador">{ idioma == "es" ? "Indicador de demanda" : "Demand indicator" }</Link>
+                            <Link to="/observatorio#observatorio4">{ idioma == "es" ? "Indicador de Condiciones Crediticias (ICC)" : "Credit Conditions Indicator (CCI)" }</Link>
                         </li>
                     </ul>
                     </div>
