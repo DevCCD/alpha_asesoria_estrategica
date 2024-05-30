@@ -122,6 +122,11 @@ function Navbar() {
                                     </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
+                                            <Link to="#">{ idioma == "es" ? "Acceso" : "Access"}</Link>
+                                        </div>
+                                    </li>
+                                    <li className="megamenu_item">
+                                        <div className="megamenu__link">
                                             <Link to="/capacidades/academia">{ idioma == "es" ? "Formación Carrera de Economía" : "Economics Career Training"}</Link>
                                         </div>
                                     </li>
