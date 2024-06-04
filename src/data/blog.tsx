@@ -54,7 +54,14 @@ const blog = [
         "description" : "“Un factor adicional que contribuye a complicar la situación de las empresas es el alto costo financiero y las mayores restricciones para el acceso al crédito, retroalimentándose, además, con el aumento de la morosidad”.",
         "url" : "https://peru21.pe/opinion/opinion-luis-carranza-politica-macroeconomica-en-recesion-noticia/",
         "urlImage" : "https://peru21.pe/resizer/vut1xNrgHRxV-qruzgEkwoIeEQo=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/CBJFJRDDHNC53FBJ7SLLONVRDE.jpg",
-    }
+    },
+    {
+        "_idBlog" :"8",
+        "title" : "“¡Es la economía, estúpido!”",
+        "description" : "“Si hacemos las cosas bien durante 10 años, apostando por la minería y la agroexportación, podemos crecer al 7% promedio anual, lo que nos llevaría a duplicar nuestro producto y lograr una pobreza por debajo del 5%”.",
+        "url" : "https://peru21.pe/opinion/es-la-economia-estupido-noticia-2/",
+        "urlImage" : "https://peru21.pe/resizer/bvnvtgLuZeACAyUu6jqm1ztnx_0=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B3ZBDA6YBFHG3IIV6KJA5IRFDA.jpg",
+    },
 ]
 
 export default blog
