@@ -11,18 +11,23 @@ function MainCurso({ idioma } : IdiomaProps) {
     const params = useParams<{ _id: string }>();
     const idCurso = params._id;
 
-    const curso: Curso = cursos.find(item => item._id === idCurso);
+    const defaultCurso: Curso = {
+        _id: '',
+        nombre: '',
+        imagen: '',
+        modulos: []
+    };
+    
+    const curso: Curso = cursos.find(item => item._id === idCurso) || defaultCurso;
+    
 
     useEffect(() => {
-        document.title = idioma == "es" ? "Alpha | Curso" : "Alpha | Course"
-    }, [])
+        document.title = idioma == "es"? "Alpha | Curso" : "Alpha | Course"
+    }, [idioma])
     
     if (!curso) {
         return <div>Curso no encontrado</div>;
     }
-
-    const cur = cursos[parseInt(curso._id)];
-
     
     return (
         <main>
@@ -32,7 +37,7 @@ function MainCurso({ idioma } : IdiomaProps) {
                 </div>
             </div>
             <div className="container__modulos">
-                {cur.modulos.map((modu)=> (
+                {curso.modulos.map((modu)=> (
                     <div key={modu._id}>
                         <h3>{modu.nombre}</h3>
                         {modu.materiales.map((ma)=> (

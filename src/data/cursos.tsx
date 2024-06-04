@@ -1,4 +1,4 @@
-export interface Modulo {
+interface Modulo {
     _id: string;
     nombre: string;
     materiales: Material[];
@@ -6,19 +6,19 @@ export interface Modulo {
     ejercicios: Ejercicio[];
 }
 
-export interface Material {
+interface Material {
     _id: string;
     nombre: string;
     url: string;
 }
 
-export interface Video {
+interface Video {
     _id: string;
     nombre: string;
     url: string;
 }
 
-export interface Ejercicio {
+interface Ejercicio {
     _id: string;
     nombre: string;
     url: string;
@@ -79,40 +79,40 @@ const cursos = [
                 ]
             },
             {
-                "_id": 1,
+                "_id": "1",
                 "nombre": "Modulo 2",
                 "materiales": [
                     {
-                        "_id": 0,
+                        "_id": "0",
                         "nombre": "Material 1",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     },
                     {
-                        "_id": 1,
+                        "_id": "1",
                         "nombre": "Material 2",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     }
                 ],
                 "videos": [
                     {
-                        "_id": 0,
+                        "_id": "0",
                         "nombre": "Video 1",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     },
                     {
-                        "_id": 1,
+                        "_id": "1",
                         "nombre": "Video 2",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     }
                 ],
                 "ejercicios": [
                     {
-                        "_id": 0,
+                        "_id": "0",
                         "nombre": "Ejercicio 1",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     },
                     {
-                        "_id": 1,
+                        "_id": "1",
                         "nombre": "Ejercicio 2",
                         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                     }

@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './components/Navbar';
 import MainTablero from './components/MainTablero';
 import Footer from './components/Footer';

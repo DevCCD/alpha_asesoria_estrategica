@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { IoIosMore } from 'react-icons/io';
 import cursos from '../data/cursos';
 
