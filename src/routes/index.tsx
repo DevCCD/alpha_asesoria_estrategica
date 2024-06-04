@@ -11,6 +11,8 @@ import Servicio from '../Servicio.tsx'
 import Blog from '../Blog.tsx'
 import ModalLogin from '../components/loginModal/ModalLogin.tsx'
 import { Link, createBrowserRouter } from 'react-router-dom'
+import Tablero from '../Tablero.tsx'
+import Curso from '../Curso.tsx'
 
 const router = createBrowserRouter([
     {
@@ -62,7 +64,15 @@ const router = createBrowserRouter([
     {
         path: '/repositorio',
         element: <ModalLogin />
+    },
+    {
+        path: '/board',
+        element: <Tablero />
+    },
+    {
+        path: '/board/curso/:_id', //id
+        element: <Curso />
     }
 ]);
 
-export default router
+export default router;
