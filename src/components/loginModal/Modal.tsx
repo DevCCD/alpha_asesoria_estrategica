@@ -11,11 +11,7 @@ function Modal({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Inicio de sesión" : "Alpha | Login"
-    }, [])
-
-    function triggerLogin() {
-        idioma == "es" ? alert("Usuario no registrado") : alert("Unregistered user");
-    }
+    }, [idioma])
 
     return (
         <>
@@ -26,18 +22,20 @@ function Modal({ idioma } : IdiomaProps) {
                             <IoMdClose id='close__modal' />
                         </Link>
                     </div>
-                    <div className="modal__body">
-                        <h2>{ idioma == "es" ? "Inicio de sesión" : "Login"}</h2>
-                        <label htmlFor="correo">{ idioma == "es" ? "Correo" : "Email" }</label>
-                        <input type="email" placeholder={ idioma == "es" ? "Correo" : "Email" } />
-                        <label htmlFor="contrasena">{ idioma == "es" ? "Contraseña" : "Password"}</label>
-                        <input type="password" placeholder={ idioma == "es" ? "Contraseña" : "Password"} />
-                    </div>
-                    <div className="modal__footer">
-                        <button className="btn__login" onClick={triggerLogin}>
-                        { idioma == "es" ? "Continuar" : "Continue"}
-                        </button>
-                    </div>
+                    <form action="/repositorio">
+                        <div className="modal__body">
+                            <h2>{ idioma == "es" ? "Inicio de sesión" : "Login"}</h2>
+                            <label htmlFor="correo">{ idioma == "es" ? "Correo" : "Email" }</label>
+                            <input type="email" placeholder={ idioma == "es" ? "Correo" : "Email" } />
+                            <label htmlFor="contrasena">{ idioma == "es" ? "Contraseña" : "Password"}</label>
+                            <input type="password" placeholder={ idioma == "es" ? "Contraseña" : "Password"} />
+                        </div>
+                        <div className="modal__footer">
+                            <button className="btn__login">
+                            { idioma == "es" ? "Continuar" : "Continue"}
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </>

@@ -52,7 +52,11 @@ const Hero = ({ idioma } : IdiomaProps) => {
                     <Link to={"/#contactar"}>
                         <button className="section-btn">{idioma == "es" ? "Escríbenos" : "Contact us" }</button>
                     </Link>
-                    <img src={idioma == "es" ? "https://res.cloudinary.com/ccdcloudy/image/upload/v1712783131/alpha/images/Graficos%20Observatorio/TasaInteresReal.png" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1712783131/alpha/images/Graficos%20Observatorio/TasaInteresReal.png"} />
+                    <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/tasainteres" />
+                    <div className='fuente__observatorio'>
+                        <sub className='nota__fuente'>Nota: Tasa de Interés Real = Tasa de Referencia – Inflación Esperada. En marzo del 2023 el BCRP mantuvo su tasa de referencia en 6.25%.</sub>
+                        <sub>Fuente: BCRP</sub>
+                    </div>
                 </div>
             </section>
         </>

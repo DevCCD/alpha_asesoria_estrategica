@@ -1,5 +1,5 @@
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaTiktok, FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
+import { FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 
 const redes = [
@@ -35,15 +35,15 @@ const redes = [
     },
     {
         "_id": 5,
-        "nombre": "TikTok",
-        "url": "https://www.tiktok.com/",
-        "icono": FaTiktok
-    },
-    {
-        "_id": 6,
         "nombre": "WhatsApp",
         "url": "https://wa.me/51942908008",
         "icono": FaWhatsapp
+    },
+    {
+        "_id": 6,
+        "nombre": "Youtube",
+        "url": "https://www.youtube.com",
+        "icono": FaYoutube
     }
 ]
 

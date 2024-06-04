@@ -812,6 +812,10 @@ h1.display {
     background: #EBEBEB !important;
 }
 
+.reverse {
+    flex-direction: row-reverse !important
+}
+
 .white-bg {
     background: var(--white-color) !important;
 }
@@ -1232,7 +1236,7 @@ h1.display {
 }
 
 .economia__right {
-    width: 800px;
+    width: 950px;
 }
 
 .economia__right img {
@@ -1244,8 +1248,7 @@ h1.display {
 .condiciones__left {
     display: flex;
     flex-direction: column;
-    text-align: center;   
-    gap: 1rem; 
+    text-align: center;
 }
 
 .condiciones__left h2,
@@ -1996,6 +1999,7 @@ margin-right: 10px;
 .container__tablero {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background: var(--white-color);
     padding: 0 10rem 2rem; 
     width: 100%;

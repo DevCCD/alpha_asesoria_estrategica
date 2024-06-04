@@ -236,7 +236,7 @@ function Navbar() {
                             <Link to="/blog" className="nav__link">{idioma == "es" ? "Blog Alpha" : "Alpha Blog"}</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/repositorio" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
+                            <Link to="/loginrepo" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
                         </li>
                         {/* <!-- Options --> */}
                         <li className="nav__item option__idioma">

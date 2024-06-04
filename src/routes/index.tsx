@@ -13,6 +13,7 @@ import ModalLogin from '../components/loginModal/ModalLogin.tsx'
 import { Link, createBrowserRouter } from 'react-router-dom'
 import Tablero from '../Tablero.tsx'
 import Curso from '../Curso.tsx'
+import Repositorio from '../Repositorio.tsx'
 
 const router = createBrowserRouter([
     {
@@ -39,8 +40,7 @@ const router = createBrowserRouter([
     {
         path: '/observatorio',
         element: <Observatorio />
-    }
-    ,
+    },
     {
         path: '/nosotros',
         element: <Nosotros />
@@ -62,8 +62,12 @@ const router = createBrowserRouter([
         element: <Blog />
     },
     {
-        path: '/repositorio',
+        path: '/loginrepo',
         element: <ModalLogin />
+    },
+    {
+        path: '/repositorio',
+        element: <Repositorio />
     },
     {
         path: '/board',

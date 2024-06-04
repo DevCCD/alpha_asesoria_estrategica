@@ -1,7 +1,7 @@
 import '../styles.css';
 import redes from '../data/redes';
 import { Link } from 'react-router-dom';
-import { FaPhone } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa6';
 import { useEffect } from 'react';
 
 interface IdiomaProps {
