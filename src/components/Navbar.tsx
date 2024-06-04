@@ -122,7 +122,7 @@ function Navbar() {
                                     </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
-                                            <Link to="#">{ idioma == "es" ? "Acceso" : "Access"}</Link>
+                                            <Link to="/board">{ idioma == "es" ? "Campus Virtual" : "Virtual Campus"}</Link>
                                         </div>
                                     </li>
                                     <li className="megamenu_item">
