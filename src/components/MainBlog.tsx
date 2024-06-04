@@ -7,25 +7,11 @@ interface IdiomaProps {
     idioma: string;
 }
 
-/* interface Blog {
-    id: string;
-    titulo: string;
-    descripcioncorta: string;
-    updatedAt: string;
-    // Agrega otras propiedades según sea necesario
-} */
-
 function MainBlog({ idioma } : IdiomaProps) {
-
-    /* const [data, setData] = useState();
-
-    fetch('https://alpha-project-backend.vercel.app/api/v1/blog')
-        .then(function(response) { return response.json(); })
-        .then(function(res) { setData(res); }); */
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Blog Alpha" : "Alpha | Alpha Blog"
-    }, [])
+    }, [idioma])
 
 
     return (

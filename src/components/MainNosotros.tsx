@@ -11,7 +11,7 @@ function MainNosotros({ idioma } : IdiomaProps) {
     
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Nosotros" : "Alpha | About Us"
-    }, [])
+    }, [idioma])
 
     return ( 
         <main>

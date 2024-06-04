@@ -11,7 +11,7 @@ function MainTablero({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Tablero" : "Alpha | Board"
-    }, [])
+    }, [idioma])
     
     return (
         <main>

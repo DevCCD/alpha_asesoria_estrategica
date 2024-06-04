@@ -9,7 +9,7 @@ function MainServicio ({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Servicio Alpha" : "Alpha | Alpha Service"
-    }, [])
+    }, [idioma])
 
     return (
         <>

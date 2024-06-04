@@ -9,7 +9,7 @@ function MainAcademia({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Academia" : "Alpha | Academy"
-    }, [])
+    }, [idioma])
 
     return (
         <main>

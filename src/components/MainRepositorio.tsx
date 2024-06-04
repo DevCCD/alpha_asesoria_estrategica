@@ -9,7 +9,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Repositorio" : "Alpha | Repository"
-    }, [])
+    }, [idioma])
 
     return (
         <>

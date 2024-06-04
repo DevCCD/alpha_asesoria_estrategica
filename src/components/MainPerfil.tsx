@@ -17,7 +17,7 @@ function MainPerfil({ idioma } : IdiomaProps) {
     
     useEffect(() => {
         document.title = "Alpha | "+perfil?.nombre
-    }, [])
+    }, [perfil?.nombre])
 
     if (!perfil) {
         return <Link to="/">No se encontró el perfil, volver al inicio</Link>;

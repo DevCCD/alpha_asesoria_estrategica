@@ -9,7 +9,7 @@ function MainCapacidades({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Capacidades" : "Alpha | Capabilities"
-    }, [])
+    }, [idioma])
 
     return (
         <>

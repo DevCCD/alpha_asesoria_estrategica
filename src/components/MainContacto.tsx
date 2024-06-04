@@ -12,7 +12,7 @@ function MainContacto ({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Contacto" : "Alpha | Contact"
-    }, [])
+    }, [idioma])
 
     return (
         <main>

@@ -9,7 +9,7 @@ interface IdiomaProps {
 function MainObservatorio ({ idioma } : IdiomaProps) {
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Observatorio" : "Alpha | Observatory"
-    }, [])
+    }, [idioma])
 
     return (
         <main>

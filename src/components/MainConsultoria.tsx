@@ -9,7 +9,7 @@ function MainConsultoria({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Consultoría" : "Alpha | Consultancy"
-    }, [])
+    }, [idioma])
     
     return(
         <>

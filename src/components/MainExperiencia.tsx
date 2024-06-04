@@ -9,7 +9,7 @@ function MainExperiencia ({ idioma } : IdiomaProps) {
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Nuestra Experiencia" : "Alpha | Our Experience"
-    }, [])
+    }, [idioma])
 
     return (
         <main>
