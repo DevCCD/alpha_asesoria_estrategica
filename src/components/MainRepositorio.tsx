@@ -3,8 +3,8 @@ import '../styles.css';
 import '../styles/carousel.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-import '../js/carousel__mensuales.js';
-import '../js/carousel__analiticos.js';
+/* import '../js/carousel__mensuales.js';
+import '../js/carousel__analiticos.js'; */
 
 interface IdiomaProps {
     idioma: string;
