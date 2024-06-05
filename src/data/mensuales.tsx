@@ -4,6 +4,12 @@ const mensuales = [
         "nombre": "Informe Alpha Mayo 2024",
         "image": "https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg",
         "url": "#"
+    },
+    {
+        "_id": "1",
+        "nombre": "Informe Alpha Abril 2024",
+        "image": "https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg",
+        "url": "#"
     }
 ]
 
