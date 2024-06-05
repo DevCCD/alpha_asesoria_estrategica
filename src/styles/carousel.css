@@ -150,3 +150,8 @@
 .slider-container {
     padding-bottom: 3rem; 
 }
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000000 !important;
+}
