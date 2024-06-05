@@ -1,9 +1,10 @@
-const prev = document.querySelector("#prev");
-const next = document.querySelector("#next");
+const prev = document.querySelector("#prev2");
+const next = document.querySelector("#next2");
 
-let carouselVp = document.querySelector("#carousel-vp");
+let carouselVp = document.querySelector("#carousel-vp2");
 
-let cCarouselInner = document.querySelector("#cCarousel-inner");
+let cCarouselInner = document.querySelector("#cCarousel-inner2");
+
 let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
 
 let leftValue = 0;

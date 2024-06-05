@@ -2,7 +2,9 @@ import { useEffect } from 'react';
 import '../styles.css';
 import '../styles/carousel.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-/* import '../js/carousel__informes.js'; */
+
+import '../js/carousel__mensuales.js';
+import '../js/carousel__analiticos.js';
 
 interface IdiomaProps {
     idioma: string;
@@ -29,7 +31,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     </div>
                 </div>
                 <section className='section__carousel'>
-                    <h2>Informes Mensuales</h2>
+                    <h2>{idioma == "es" ? "Informes Mensuales" : "Monthly Reports"}</h2>
                     <div id="cCarousel">
 
                         <div className="arrow" id="prev"><FaChevronLeft/></div>
@@ -91,14 +93,14 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     </div>
                 </section>
                 <section className='section__carousel'>
-                    <h2>Informes Analíticos</h2>
-                    <div id="cCarousel">
+                    <h2>{idioma == "es" ? "Informes Analíticos" : "Analytical Reports" }</h2>
+                    <div id="cCarousel2">
 
-                        <div className="arrow" id="prev"><FaChevronLeft/></div>
-                        <div className="arrow" id="next"><FaChevronRight/></div>
+                        <div className="arrow" id="prev2"><FaChevronLeft/></div>
+                        <div className="arrow" id="next2"><FaChevronRight/></div>
 
-                        <div id="carousel-vp">
-                            <div id="cCarousel-inner">
+                        <div id="carousel-vp2">
+                            <div id="cCarousel-inner2">
 
                                 <article className="cCarousel-item">
                                     <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
@@ -153,7 +155,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     </div>
                 </section>
                 <section className='section__carousel'>
-                    <h2>Reuniones Anuales</h2>
+                    <h2>{idioma == "es" ? "Reuniones Anuales" : "Annual Meetings"}</h2>
                     <div className='reunion__anual'>
 
                         <div className="card__reunion">
@@ -187,7 +189,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     </div>
                 </section>
                 <section className='section__carousel'>
-                    <h2>Reunión con Clientes</h2>
+                    <h2>{idioma == "es" ? "Reunión con Clientes" : "Meeting with Clients"}</h2>
                     <div className='reunion__anual'>
 
                         <div className="card__reunion">
