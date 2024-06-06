@@ -1,36 +1,3 @@
-interface Modulo {
-    _id: string;
-    nombre: string;
-    materiales: Material[];
-    videos: Video[];
-    ejercicios: Ejercicio[];
-}
-
-interface Material {
-    _id: string;
-    nombre: string;
-    url: string;
-}
-
-interface Video {
-    _id: string;
-    nombre: string;
-    url: string;
-}
-
-interface Ejercicio {
-    _id: string;
-    nombre: string;
-    url: string;
-}
-
-export interface Curso {
-    _id: string;
-    nombre: string;
-    imagen: string;
-    modulos: Modulo[];
-}
-
 const cursos = [
     {
         "_id": "0",
@@ -41,258 +8,85 @@ const cursos = [
             {
                 "_id": "0",
                 "nombre": "Modulo 1",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
+                "material": [
+                    "#",
+                    "#", 
+                    "#"
                 ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             },
             {
                 "_id": "1",
                 "nombre": "Modulo 2",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
+            },
+            {
+                "_id": "2",
+                "nombre": "Modulo 3",
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             }
         ]
     },
     {
         "_id": "1",
-        "nombre": "Microeconomía I",
+        "nombre": "Microeconomía  I",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "imagen": "https://www.muycomputer.com/wp-content/uploads/2021/06/Monterey-1.jpg",
+        "imagen": "https://c4.wallpaperflare.com/wallpaper/414/160/33/mac-os-x-os-x-big-sur-hd-wallpaper-preview.jpg",
         "modulos": [
             {
                 "_id": "0",
                 "nombre": "Modulo 1",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             },
             {
                 "_id": "1",
                 "nombre": "Modulo 2",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
+            },
+            {
+                "_id": "2",
+                "nombre": "Modulo 3",
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             }
         ]
     },
     {
         "_id": "2",
-        "nombre": "Matemáticas I",
+        "nombre": "Matemáticas   I",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "imagen": "https://4kwallpapers.com/images/wallpapers/macos-ventura-macos-13-macos-2022-stock-dark-mode-5k-retina-3840x2160-8133.jpg",
+        "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/11573.jpg",
         "modulos": [
             {
                 "_id": "0",
                 "nombre": "Modulo 1",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             },
             {
                 "_id": "1",
                 "nombre": "Modulo 2",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
+            },
+            {
+                "_id": "2",
+                "nombre": "Modulo 3",
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             }
         ]
     },
@@ -300,87 +94,28 @@ const cursos = [
         "_id": "3",
         "nombre": "Econometría I",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "imagen": "https://www.10wallpaper.com/wallpaper/medium/2306/Graphic_MacOS_Sonoma_Curve_Ripple_5K_Background_medium.jpg",
+        "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/8133.jpg",
         "modulos": [
             {
                 "_id": "0",
                 "nombre": "Modulo 1",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             },
             {
                 "_id": "1",
                 "nombre": "Modulo 2",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
+            },
+            {
+                "_id": "2",
+                "nombre": "Modulo 3",
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             }
         ]
     },
@@ -388,90 +123,31 @@ const cursos = [
         "_id": "4",
         "nombre": "Finanzas I",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "imagen": "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwbWFjJTIwb3N8ZW58MHx8MHx8fDA%3D",
+        "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d5bb42d-caec-42a9-818e-dcc4b24bb273/df6zupw-8d7110bb-8667-4275-8a35-7aac54847ffa.jpg/v1/fill/w_1280,h_800,q_75,strp/mac_os_wallpaper_by_egeyoruk_df6zupw-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNGQ1YmI0MmQtY2FlYy00MmE5LTgxOGUtZGNjNGIyNGJiMjczXC9kZjZ6dXB3LThkNzExMGJiLTg2NjctNDI3NS04YTM1LTdhYWM1NDg0N2ZmYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IUqqlRFw-5xs-w5L1rzhjhR3o2KMVxb6ybpp53xSzCk",
         "modulos": [
             {
                 "_id": "0",
                 "nombre": "Modulo 1",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             },
             {
                 "_id": "1",
                 "nombre": "Modulo 2",
-                "materiales": [
-                    {
-                        "_id": "0",
-                        "nombre": "Material 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Material 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "videos": [
-                    {
-                        "_id": "0",
-                        "nombre": "Video 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Video 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ],
-                "ejercicios": [
-                    {
-                        "_id": "0",
-                        "nombre": "Ejercicio 1",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    },
-                    {
-                        "_id": "1",
-                        "nombre": "Ejercicio 2",
-                        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                ]
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
+            },
+            {
+                "_id": "2",
+                "nombre": "Modulo 3",
+                "material": ["#", "#", "#"],
+                "ejercicios": ["#", "#", "#"],
+                "videos": ["#", "#", "#"],
             }
         ]
-    }
+    },
 ]
 
 export default cursos;

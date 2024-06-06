@@ -15,7 +15,11 @@
     width: 100%;
     min-height: 200px;
     object-fit: cover;
-    color: white;
+    background: linear-gradient(90deg, rgb(211, 222, 233) 0%, rgb(151, 187, 224) 50%, rgb(159, 164, 168) 100%);
+}
+
+.cCarousel-item img .img__analitico {
+    background: linear-gradient(90deg, rgba(0, 52, 105, 1) 0%, rgba(49, 89, 130, 1) 50%, rgba(0, 52, 105, 1) 100%) !important;
 }
 
 .cCarousel-item .infos {
@@ -26,6 +30,7 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: white;
     color: black;
 }

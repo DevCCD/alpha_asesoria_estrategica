@@ -5,6 +5,10 @@ import '../styles/carousel.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import mensuales from '../data/mensuales';
+import analicos from '../data/analiticos';
+import annual from '../data/annual';
+import meettings from '../data/meetings';
 
 interface IdiomaProps {
     idioma: string;
@@ -34,7 +38,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         nextArrow: <Arrow />,
         prevArrow: <Arrow />,
         initialSlide: 0,
@@ -93,78 +97,17 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Informes Mensuales" : "Monthly Reports"}</h2>
                     <div className="slider-container">
                         <Slider {...settings}>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
+                            {mensuales.map((mes)=> (
+                                <div key={mes._id}>
+                                    <article className="cCarousel-item">
+                                        <img className='img__analitico'/>
+                                        <div className="infos">
+                                            <h3>{mes.nombre}</h3>
+                                            <a href={mes.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            ))}
                         </Slider>
                     </div>
                 </section>
@@ -172,78 +115,17 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Informes Analíticos" : "Analytical Reports" }</h2>
                     <div className="slider-container">
                         <Slider {...settings}>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div>
-                                <article className="cCarousel-item">
-                                    <img src="https://img.freepik.com/vector-gratis/fondo-vector-degradado-azul-claro-invierno_53876-128352.jpg" alt="Moon" />
-                                    <div className="infos">
-                                        <h3>Informe Alpha Mayo 2024</h3>
-                                        <a href='#'>Descargar</a>
-                                    </div>
-                                </article>
-                            </div>
+                            { analicos.map((an)=> (
+                                <div key={an._id}>
+                                    <article  className="cCarousel-item">
+                                        <img/>
+                                        <div className="infos">
+                                            <h3>{an.nombre}</h3>
+                                            <a href={an.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            ))}
                         </Slider>
                     </div>
                 </section>
@@ -251,33 +133,22 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Reuniones Anuales" : "Annual Meetings"}</h2>
                     <div className='reunion__anual'>
 
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
+                        { annual.map((ann) => (
+                            <div key={ann._id} className="card__reunion">
+                                <div className="card__calendar">
+                                    <div className="top__calendar"></div>
+                                    <div className="card__calendar__date">
+                                        <p>{ 
+                                            new Date(ann.fecha).toLocaleDateString('es-ES', { year: 'numeric', month:'short' }).replace(/^\w/, c => c.toUpperCase())
+                                            }</p>
+                                    </div>
+                                </div>
+                                <div className="card__info__reunion">
+                                    <p>{ann.descripcion}</p>
+                                    <a href={ann.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
                                 </div>
                             </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
-
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
-                                </div>
-                            </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
+                        ))}
 
                     </div>
                 </section>
@@ -285,61 +156,22 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Reunión con Clientes" : "Meeting with Clients"}</h2>
                     <div className='reunion__anual'>
 
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
+                        { meettings.map((meet) => (
+                            <div key={meet._id} className="card__reunion">
+                                <div className="card__calendar">
+                                    <div className="top__calendar"></div>
+                                    <div className="card__calendar__date">
+                                        <p>{ 
+                                            new Date(meet.fecha).toLocaleDateString('es-ES', { year: 'numeric', month:'short' }).replace(/^\w/, c => c.toUpperCase())
+                                            }</p>
+                                    </div>
+                                </div>
+                                <div className="card__info__reunion">
+                                    <p>{meet.descripcion}</p>
+                                    <a href={meet.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
                                 </div>
                             </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
-
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
-                                </div>
-                            </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
-
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
-                                </div>
-                            </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
-
-                        <div className="card__reunion">
-                            <div className="card__calendar">
-                                <div className="top__calendar"></div>
-                                <div className="card__calendar__date">
-                                    <p>Feb</p>
-                                    <p>2024</p>
-                                </div>
-                            </div>
-                            <div className="card__info__reunion">
-                                <p>Reunión Anual (15 de feb del 2024)</p>
-                                <a href="">Ver reunión</a>
-                            </div>
-                        </div>
+                        ))}
 
                     </div>
                 </section>
