@@ -31,7 +31,7 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                         <p>{ idioma == "es" ? ob.subtitutloGraficoES : ob.subtitutloGraficoEN }</p>
                         <img src={ob.grafico} />
                         <div className='fuente__observatorio'>
-                            <sub className='nota__fuente'>{ idioma == "es" ? ob.noteES : ob.noteEN }</sub>
+                            <sub className='nota__fuente'></sub>
                             <sub>{idioma == "es" ? ob.sourceES : ob.sourceEN }</sub>
                         </div>
                     </div>

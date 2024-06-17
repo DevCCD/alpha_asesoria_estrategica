@@ -8,6 +8,10 @@ interface IdiomaProps {
 }
 
 const Hero = ({ idioma } : IdiomaProps) => {
+
+    const fecha = new Date(); 
+    fecha.setMonth(fecha.getMonth() - 1); 
+
     return (
         <>
             <main>
@@ -40,7 +44,7 @@ const Hero = ({ idioma } : IdiomaProps) => {
                         <h2>
                             {idioma == "es" ? "Crecimiento económico: global moderado y local bajo" : "Economic growth: moderate global and low local"}
                         </h2>
-                        <p>Informe Abril 2023</p>
+                        <p>{ idioma == "es" ? "Informe "+ fecha.toLocaleDateString('es-ES',{ month: 'long', year: 'numeric'}) : "Report "+ fecha.toLocaleDateString('en-EN',{ month: 'long', year: 'numeric'}) }</p>
                     </div>
                     <div className="right__portada">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/hero/earth" alt="Earth" />

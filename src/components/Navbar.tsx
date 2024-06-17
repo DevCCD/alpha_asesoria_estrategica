@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { Link, ScrollRestoration } from 'react-router-dom';
 import { idiomaAtom } from '../atom/idiomaAtom';
 import { useAtom } from "jotai";
-import SelectIdioma from './selectIdioma';
+/* import SelectIdioma from './selectIdioma'; */
 
 function Navbar() {
 
@@ -238,13 +238,12 @@ function Navbar() {
                         <li className="nav__item">
                             <Link to="/loginrepo" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
                         </li>
-                        {/* <!-- Options --> */}
+                        {/* <!-- Options idioma 
                         <li className="nav__item option__idioma">
                             <a className="nav__link">
-                                {/* <!-- Idioma --> */}
                                 <SelectIdioma />
                             </a>
-                        </li>
+                        </li>--> */}
                         {/* <!-- Tema --> */}
                         <li className="nav__item option">
                             <a onClick={changeTheme} className="nav__link">
