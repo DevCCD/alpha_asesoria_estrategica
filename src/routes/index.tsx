@@ -14,6 +14,7 @@ import { Link, createBrowserRouter } from 'react-router-dom'
 import Tablero from '../Tablero.tsx'
 import Curso from '../Curso.tsx'
 import Repositorio from '../Repositorio.tsx'
+import ModalLoginCampus from '../components/loginModal/ModalLoginCampus.tsx'
 
 const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
     {
         path: '/repositorio',
         element: <Repositorio />
+    },
+    {
+        path: '/loginboard',
+        element: <ModalLoginCampus />
     },
     {
         path: '/board',
