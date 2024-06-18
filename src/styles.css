@@ -427,6 +427,11 @@ h1.display {
     margin: 0 4rem;
 }
 
+.container__graph {
+    display: flex;
+    flex-direction: column;
+}
+
 .container__portada {
     flex-direction: row;
     justify-content: space-around;

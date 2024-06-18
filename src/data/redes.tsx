@@ -18,19 +18,19 @@ const redes = [
     {
         "_id": 2,
         "nombre": "Twitter",
-        "url": "https://twitter.com/",
+        "url": "https://x.com/AlphaAsesoria",
         "icono": FaXTwitter
     },
     {
         "_id": 3,
         "nombre": "Facebook",
-        "url": "https://www.facebook.com/",
+        "url": "https://www.facebook.com/profile.php?id=61560304402655",
         "icono": FaFacebookF
     },
     {
         "_id": 4,
         "nombre": "LinkedIn",
-        "url": "https://www.linkedin.com/",
+        "url": "https://www.linkedin.com/company/alpha-asesoria-estrategica",
         "icono": FaLinkedinIn
     },
     {
@@ -42,7 +42,7 @@ const redes = [
     {
         "_id": 6,
         "nombre": "Youtube",
-        "url": "https://www.youtube.com",
+        "url": "https://www.youtube.com/channel/UCZVGBA2XIv4x7MnRDb1BNuA",
         "icono": FaYoutube
     }
 ]
