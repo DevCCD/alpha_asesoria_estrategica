@@ -1,12 +1,48 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles.css';
-import observatorio from '../data/observatorio';
+/* import observatorio from '../data/observatorio'; */
 
 interface IdiomaProps {
     idioma: string;
 }
 
+interface Observatorio {
+    _id: string;
+    tituloES: string;
+    tituloEN: string;
+    descripcionES: string;
+    descripcionEN: string;
+    grafico: string;
+    titutloGraficoES: string;
+    titutloGraficoEN: string;
+    subtitutloGraficoES: string;
+    subtitutloGraficoEN: string;
+    sourceES: string;
+    sourceEN: string;
+    etiqueta: string;
+    bg: string;
+}
+
 function MainObservatorio ({ idioma } : IdiomaProps) {
+
+    const [observatorio, setObserv] = useState<Observatorio[]>([]);
+
+    useEffect(() => {
+        // Define la función asincrónica para obtener los datos de la API
+        const fetchObserv = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/observatorio');
+                const data: Observatorio[] = await response.json();
+                setObserv(data);
+            } catch (error) {
+                console.error('Error fetching blogs:', error);
+            }
+        };
+
+        // Llama a la función fetchBlogs
+        fetchObserv();
+    }, []);
+
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Observatorio" : "Alpha | Observatory"
     }, [idioma])
@@ -18,7 +54,6 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <h1>{ idioma == "es" ? "Economía Peruana" : "Peruvian Economy" }</h1>
                 </div>
             </div>
-            {/* db */}
             {observatorio.map((ob) => (
                 <div className={`container__economia ${ob.bg}`} key={ob._id}>
                     <div className='invisible__top' id={ob.etiqueta} />

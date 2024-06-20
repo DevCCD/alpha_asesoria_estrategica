@@ -1,18 +1,42 @@
 import '../styles.css';
-import blog from '../data/blog.tsx'
-import { useEffect } from 'react';
-/* import { useState } from 'react'; */
+/* import blog from '../data/blog.tsx' */
+import { useEffect, useState } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
+interface Blog {
+    _idBlog: string;
+    url: string;
+    urlImage: string;
+    title: string;
+    description: string;
+}
+
 function MainBlog({ idioma } : IdiomaProps) {
+
+    const [blogs, setBlogs] = useState<Blog[]>([]);
+
+    useEffect(() => {
+        // Define la función asincrónica para obtener los datos de la API
+        const fetchBlogs = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/blogs');
+                const data: Blog[] = await response.json();
+                setBlogs(data);
+            } catch (error) {
+                console.error('Error fetching blogs:', error);
+            }
+        };
+
+        // Llama a la función fetchBlogs
+        fetchBlogs();
+    }, []);
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Blog Alpha" : "Alpha | Alpha Blog"
     }, [idioma])
-
 
     return (
         <>
@@ -35,7 +59,7 @@ function MainBlog({ idioma } : IdiomaProps) {
                     <div className="subrayado__blog"></div>
                 </div>
                 <div className="contenedor-cards">
-                    {blog.map((bl) => (
+                    {blogs.map((bl) => (
                     <div key={bl._idBlog} className="card__blog">
                         <a target="_blank" href={bl.url}>
                         <img src={bl.urlImage} alt="Imagen del artículo 1" />
@@ -44,16 +68,6 @@ function MainBlog({ idioma } : IdiomaProps) {
                         </a>
                     </div>
                     ))}
-                    {/* { JSON.stringify(data) } */}
-                    {/* <ul>
-                        {data && data.map((blog: Blog) => (
-                            <li key={blog.id}>
-                            <h2>{blog.titulo}</h2>
-                            <p>{blog.descripcioncorta}</p>
-                            <p>Actualizado: {blog.updatedAt}</p>
-                            </li>
-                        ))}
-                    </ul> */}
                 </div>
             </main>
         </>

@@ -1,0 +1,493 @@
+{
+    "blogs": [
+        {
+            "_idBlog" :"0",
+            "title" : "[OPINIÓN] Luis Carranza: “Génesis 1, 27″",
+            "description" : "“Las sociedades que prosperan son aquellas que logran, dada la naturaleza humana, un contrato social donde se logra un balance entre los incentivos y la sensación de justicia”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-genesis-1-27-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/DLiQ-mW61OcltBZQT5t-G5NoHWg=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/RLE6LZYGQJGLBMUXY2HKOKOVZE.jpg"
+        },
+        {
+            "_idBlog" :"1",
+            "title" : "[OPINIÓN] Luis Carranza: “El mito de Sísifo”",
+            "description" : "“Gobiernos responsables trabajaban en recuperar el crecimiento y la estabilidad, y cuando lo lograban, regresaban los populistas de siempre a despilfarrar los ahorros e imponer políticas confiscatorias que volvían a destruir los incentivos a invertir”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-el-mitio-de-sisifo-economia-america-latina-pbi-inflacion-desempleo-populismo-peru-argentina-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/4mNuwdChXJU7Ojp_Y_6V8dCSrHg=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/QFJCVV2DHFAADOYYA2HFRBTXBE.jpeg"
+        },
+        {
+            "_idBlog" :"2",
+            "title" : "[OPINIÓN] Luis Carranza: “Ese no va a la reelección”",
+            "description" : "“Nunca habíamos estado por debajo de América Latina, ni siquiera en el periodo de alta turbulencia del 2016 - 2019, pero ahora estamos dos puntos porcentuales por debajo”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-ese-no-va-a-la-reeleccion-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/bPUf1L57vq1OseaPyJBTIp7depk=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/EBEAIDJ4XRBCRNZG6FRLFGOX7Q.jpg"
+        },
+        {
+            "_idBlog" :"3",
+            "title" : "[OPINIÓN] Luis Carranza: “Un cuento de Navidad”",
+            "description" : "“Con aprensión le pregunta al fantasma: ¿Cuál es el futuro de nuestro país? El fantasma con sonrisa enigmática le dice: ‘Depende de ustedes decidir qué puerta quieren escoger. Las sociedades como la naturaleza están gobernadas por leyes inviolables que determinan si las sociedades progresan o se estancan”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-un-cuento-de-navidad-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/6uEecFDSgCMdSJ3RvM7aZhFt_sw=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/EOHXXU6GZ5A4PIXTW26JZFMJJI.jpeg"
+        },
+        {
+            "_idBlog" :"4",
+            "title" : "[OPINIÓN] Luis Carranza: “Jörmundgander”",
+            "description" : "“Por eso, más allá de las necesarias políticas de estímulo de corto plazo, se necesitan verdaderas reformas que faciliten la inversión pública y privada y aumenten la productividad. Basta de hablar de destrabe cuando lo que tenemos que hacer es simplificar y optimizar al máximo las normas”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-jormundgander-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/SIpwBucgzLkkA5KzItXFbKerDFM=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/MYJZTYPFBFFJ7NVWS4YGPZPVHQ.jpg"
+        },
+        {
+            "_idBlog" :"5",
+            "title" : "[OPINIÓN] Luis Carranza: “El juego del ultimátum”",
+            "description" : "“Existe un mecanismo de reparto del canon que implica que el distrito productor recibe el 10% y luego hay porcentajes para los distritos, las provincias, la región y las instituciones educativas. Esto es condición necesaria pero no suficiente para calmar los conflictos”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-el-juego-del-ultimatum-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/MxM_UgiHfxHntxK3usHFRylmf00=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/CSCCBW7EFVEJ3E3S3DWFSDKYLU.jpg"
+        },
+        {
+            "_idBlog" :"6",
+            "title" : "[OPINIÓN] Luis Carranza: “Atando a Ulises”",
+            "description" : "“Petroperú está quebrada. Todos los peruanos (¡para eso sí somos dueños!) le hemos inyectado 2,250 millones de dólares entre capital, préstamos y garantías, y ahora está exigiendo 2,635 millones de dólares adicionales (entre capitalización y préstamos)”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-atando-a-ulises-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/0mIvSpKVyLrVIVVKsW2lvO5qa8U=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7P6U45XDZ5G4JN772AOI22HL7A.jpg"
+        },
+        {
+            "_idBlog" :"7",
+            "title" : "[OPINIÓN] Luis Carranza: “Política macroeconómica en recesión”",
+            "description" : "“Un factor adicional que contribuye a complicar la situación de las empresas es el alto costo financiero y las mayores restricciones para el acceso al crédito, retroalimentándose, además, con el aumento de la morosidad”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-politica-macroeconomica-en-recesion-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/vut1xNrgHRxV-qruzgEkwoIeEQo=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/CBJFJRDDHNC53FBJ7SLLONVRDE.jpg"
+        },
+        {
+            "_idBlog" :"8",
+            "title" : "[OPINIÓN] Luis Carranza: “Tique, la diosa de la prosperidad”",
+            "description" : "“Gracias a la Constitución de 1993 logramos importantes crecimientos económicos y mejoras sociales sustanciales, pero hemos sido incapaces de sostener las cosas buenas y hemos caído en la trampa del populismo”.",
+            "url" : "https://peru21.pe/opinion/opinion-luis-carranza-tique-la-diosa-de-la-prosperidad-noticia/",
+            "urlImage" : "https://peru21.pe/resizer/KcHTjXp7PQcbFuh9_-MFBncYelw=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5AUD77UQRVENRDTZCLBT56CDUU.png"
+        },
+        {
+            "_idBlog" :"9",
+            "title" : "“¡Es la economía, estúpido!”",
+            "description" : "“Si hacemos las cosas bien durante 10 años, apostando por la minería y la agroexportación, podemos crecer al 7% promedio anual, lo que nos llevaría a duplicar nuestro producto y lograr una pobreza por debajo del 5%”.",
+            "url" : "https://peru21.pe/opinion/es-la-economia-estupido-noticia-2/",
+            "urlImage" : "https://peru21.pe/resizer/bvnvtgLuZeACAyUu6jqm1ztnx_0=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B3ZBDA6YBFHG3IIV6KJA5IRFDA.jpg"
+        }
+    ],
+    "profile": [
+        {
+            "_id": "0",
+            "nombre": "Luis Carranza",
+            "cargo": "Director",
+            "descripcion": "Doctor en Economía por la Universidad de Minnesota, Estados Unidos. Luis Carranza es director de Alpha Asesoría Estratégica y del Instituto de Gobierno y Gestión Pública de la Universidad de San Martín de Porres. Ha sido presidente ejecutivo de CAF, Ministro de Economía y Finanzas del Perú en dos oportunidades, viceministro de Hacienda y director del Banco Central de Reserva del Perú, jefe para América Latina y Mercados Emergentes del BBVA, consultor del BID, economista del FMI y asistente de investigación en la Reserva Federal de Minneapolis.",
+            "descripcionLarga": "Luis Carranza es director de Alpha Asesoría Estratégica y se desempeña como Director del Instituto de Gobierno y Gestión Pública de la Universidad de San Martín de Porres. Entre los años 2017 y 2021 fue presidente ejecutivo del Banco de Desarrollo de América Latina (CAF), e impulsó la integración regional y el cierre de brechas en infraestructura. En el ámbito público, ha sido ministro de Economía y Finanzas del Perú en los periodos Julio 2006 – Julio 2008 y Enero – Diciembre 2009. También ha sido viceministro de Hacienda y director del Banco Central de Reserva del Perú. Asimismo, ha sido economista jefe para América Latina y Mercados Emergentes del Banco Bilbao Vizcaya Argentaria (BBVA) y consultor del Banco Interamericano de Desarrollo (BID) en temas de tributación, gasto público, reglas fiscales y crecimiento económico, trabajando para países como Guatemala, Panamá, Costa Rica, Honduras, El Salvador y Jamaica, República Dominicana, entre otros. Fue economista del Fondo Monetario Internacional (FMI) y asistente de investigación en la Reserva Federal de Minneapolis. En el ámbito de la infraestructura privada, creó el primer fondo de infraestructura de Perú, del cual fue presidente ejecutivo hasta 2017. Actualmente, el fondo se encuentra en período de desinversión. En el ámbito académico, ha sido profesor en la Universidad de Navarra de España y la Universidad San Martín de Porres del Perú. Es autor de publicaciones y trabajos de investigación sobre reglas fiscales, crecimiento, presupuesto público, mercados de créditos y política monetaria en economías dolarizadas. Doctor en Economía en la Universidad de Minnesota y economista de la Pontificia Universidad Católica del Perú.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1711922064/alpha/images/luis-carranza-profile_gxfus2.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "1",
+            "nombre": "Rudy Laguna",
+            "cargo": "Consultor Externo",
+            "descripcion": "Máster en tributación y política fiscal por la Universidad Autónoma de Madrid de España y la Universidad de Lima. Rudy Laguna es Director del Centro para la Competitividad y el Desarrollo. Ha sido director de Electro Sur Este, presidente del Comité Pro Conectividad de Proinversión, consultor del Ministerio de Economía y Finanzas y co-líder en proyectos de investigación en tributación y política fiscal para países de América Latina por el BID. Creador del Sistema de Administración del Desarrollo (SAD) y experiencia en la creación e implementación de mecanismos innovadores para la política fiscal.",
+            "descripcionLarga":"Rudy Laguna es Director del Centro para la Competitividad y el Desarrollo (CCD). Ha sido director de Electro Sur Este y presidente del Comité Pro Conectividad (energía y telecomunicaciones) de Proinversión. Experiencia de 9 años en el Ministerio de Economía y Finanzas, en la Dirección de Asuntos Económicos y Sociales. Ha sido co-líder en proyectos de investigación en tributación y política fiscal para países de América Latina por el Banco Interamericano de Desarrollo (BID). Con más de 12 años de experiencia en competitividad y desarrollo de ámbitos nacional, regional, local y comunal, y de sectores económicos. Creador del Sistema de Administración del Desarrollo (SAD) y experiencia en la creación e implementación de mecanismos innovadores para la política fiscal. Es autor de publicaciones y trabajos de investigación sobre política fiscal, infraestructura, corredores económicos territoriales, competitividad y desarrollo del sector mineronergetico, entre otros. Docente en los cursos Economía Pública y Recursos Naturales en la Universidad de San Martín de Porres del Perú, y ha sido docente de Mercado y Regulación de Petróleo de la Maestría en Regulación en la Universidad Peruana de Ciencias Aplicadas (UPC) y Econometría I, II y Series de Tiempo en la Universidad Nacional de Ingeniería (UNI). Máster en  tributación y política fiscal por la Universidad Autónoma de Madrid y la Universidad de Lima. Ingeniero economista por la UNI.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712284537/alpha/images/RUDY-LAGUNA_d61sn5.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "2",
+            "nombre": "Piero Calderón",
+            "cargo": "Director de Inversiones",
+            "descripcion": "Máster en trading y gestión de carteras por el Instituto IBT de España. Máster en Dirección de Negocios por la Escuela de Organización Industrial (EOI) de España. Diplomas en finanzas corporativas, en trading, dirección de empresas por universidades peruanas y españolas. Ingeniero Mecánico de la Pontificia Universidad Católica del Perú. Actualmente se desempeña como Gerente General de empresa de trading de contratos de futuros realizando operaciones de trading en futuros de commodities y de índices bursátiles. Anteriormente ocupó varias jefaturas en áreas comerciales y técnicas de Ferreyros.",
+            "descripcionLarga": "Máster en trading y gestión de carteras por el Instituto IBT de España. Máster en Dirección de Negocios por la Escuela de Organización Industrial  (EOI) de España. Diplomas en finanzas corporativas, en trading, dirección de empresas por universidades peruanas y españolas. Ingeniero Mecánico de la Pontificia Universidad Católica del Perú. Actualmente se desempeña como Gerente General de empresa de trading de contratos de futuros realizando operaciones de trading en futuros de commodities y de índices bursátiles. Anteriormente ocupó varias jefaturas en áreas comerciales y técnicas de Ferreyros.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712273692/alpha/images/piero_c_ixgloe.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "3",
+            "nombre": "Miguel Marín",
+            "cargo": "Corporativo Global",
+            "descripcion": "Posgrado en economía avanzada y administración de empresas por el IESE Business School, University of Navarra, España. Miguel Marín es socio fundador y CEO de Análisis Económico Integral (AEI), consultoría estratégica con sede en Madrid (España) especializada en asuntos públicos y análisis económico, con más de 20 años en el ámbito público y privado europeo. Marín ha sido asesor en la Comisión Económica y de Asuntos Monetarios del Parlamento Europeo, tiene experiencia como asesor de grandes empresas del IBEX 35 y colaborador con principales think tanks y centros de estudios europeo, como el Instituto de Estudios Económicos, el Martens Centre y The European House Ambrosetti, entre otros.",
+            "descripcionLarga":"Miguel Marín es socio fundador y CEO de Análisis Económico Integral (AEI), consultoría estratégica con sede en Madrid (España) especializada en asuntos públicos y análisis económico, con más de 20 años en el ámbito público y privado europeo. En el ámbito europeo ha sido asesor en la Comisión Económica y de Asuntos Monetarios del Parlamento Europeo, vocal asesor del Departamento de Economía del Gabinete del Presidente del Gobierno de España y director de la Asesoría Técnico-Jurídica del Grupo Parlamentario Popular en el Congreso de los Diputados. Ha sido socio director y consultor senior de ENEAS Sector Público, empresa dedicada al asesoramiento económico y financiero a instituciones públicas. Acreditada experiencia como asesor de grandes empresas del IBEX 35 y colaborador con principales think tanks y casas de estudios a nivel nacional europeo, como el Instituto de Estudios Económicos, el Martens Centre y The European House Ambrosetti, entre otros. En la Fundación para el Análisis y los Estudios Sociales (FAES) ha sido director de Economía y Políticas Públicas. En el ámbito de medios de comunicación, ha sido miembro del Consejo Editorial del periódico El Economista (2017-2019) y analista económico en el Programa 24h de RNE (2019- 2020). Posgrado en economía avanzada y administración de empresas por el IESE Business School, University of Navarra, España. Harvard Environmental Economics Program y Executive Program “Building Competitive Advantage in the Global Market” en Harvard. Licenciatura en Economía por la Universidad CEU San Pablo de Madrid.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712273430/alpha/images/Miguel-Marin-Cd_mrwuyj.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "5",
+            "nombre": "José Suarez-Lledó",
+            "cargo": "Corporativo Global",
+            "descripcion": "Doctorado en Economía por la Universidad de Pennsylvania. Maestría en Ciencias Económicas por la Universidad de Pennsylvania. Diplomas en Machine Learning para especialización en trading, gestión de inversiones con python y especialización en aprendizaje automático, curso de trading algorítmico y en ciencia de datos. Licenciado en Economía por la Universidad de Navarra. Actualmente se desempeña como cofundador de Bquant que es un programa único en formación en métodos cuantitativos para el análisis de mercado y el desarrollo de estrategias de inversión, utilizados en fondos y entidades financieras de primer nivel. Anteriormente fue director de Moody's Analiticsdel equipo de análisis económico y de crédito al consumo.",
+            "descripcionLarga": "José Suarez-Lledó es cofundador de Bquant que es un programa único en formación en métodos cuantitativos para el análisis de mercado y el desarrollo de estrategias de inversión, utilizados en fondos y entidades financieras de primer nivel. En el ámbito financiero es asesor de fondos en Gestion Boutique VIII Global Gradient FI, que brinda asesoramiento del fondo de inversión Gestion Boutique VIII Global Gradient (AndBank Wealth Management y Myinvestor). En el ámbito académico es profesor adjunto de ESADE (Universidad privada en Barcelona) y de Universitat Pompeu Fabra - Barcelona impartiendo clases de gestión de activos y de riesgos en bancos, así como tendencias de inversión y estrategias cuantitativas gestión de carteras. Acreditada experiencia como consultor financiero independiente siendo socio fundador de Geometría Quant, que asesora fondos de inversión y otras instituciones financieras, especializándose en análisis cuantitativo y estrategias de inversión para mercados financieros. Ha sido gerente de CaixaBank, así como director de Moody's Analitics del equipo de análisis económico y de crédito al consumo. Doctorado en Economía por la Universidad de Pennsylvania. Maestría en Ciencias Económicas por la Universidad de Pennsylvania. Diplomas en Machine Learning para especialización en trading, gestión de inversiones con python y especialización en aprendizaje automático, curso de trading algorítmico y en ciencia de datos. Licenciado en Economía por la Universidad de Navarra.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712273789/alpha/images/jose_suarez_oyqg4n.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "6",
+            "nombre": "José Enrique Galdón",
+            "cargo": "Corporativo Global",
+            "descripcion": "José Enrique Galdón es Doctor en Economía Aplicada por la Universidad de Minnesota (Minneapolis, USA, 1995). Fue estudiante de posdoctorado en la London School of Economics and Political Science. Además, cuenta con un Master en Economía por la Universidad de Minnesota (1993) y un MBA por la Universidad de St. Thomas (Minneapolis, USA, 1995). Ha sido miembro visitante en la Universidad de Princeton, el Centro para el Desempeño Económico (LSE), UC Santa Cruz, la Escuela de Negocios Johns Hopkins Carey y el Departamento de Investigación del Banco de la Reserva Federal de Minneapolis, entre otros. Actualmente es profesor de Economía en la Universidad Pública de Navarra (Pamplona, ​​España) desde 2007, investigador de IZA (Instituto de Economía del Trabajo) desde 2003 e investigador de la Organización Mundial del Trabajo desde 2017.",
+            "descripcionLarga": "José E. Galdón-Sánchez es profesor de Economía en la Universidad Pública de Navarra (Pamplona, ​​España) desde 2007, investigador de IZA desde 2003 e investigador de la Organización Mundial del Trabajo desde 2017. El profesor Galdón recibió un doctorado en Economía Aplicada de la Universidad de Minnesota y fue estudiante de posdoctorado en la London School of Economics and Political Science. Ha sido miembro visitante en la Universidad de Princeton, el Centro para el Desempeño Económico (LSE), UC Santa Cruz, la Escuela de Negocios Johns Hopkins Carey y el Departamento de Investigación del Banco de la Reserva Federal de Minneapolis, entre otros. Sus intereses de investigación se centran en la macroeconomía teórica y empírica, la organización industrial y la economía laboral. Ha realizado investigaciones sobre el impacto de la flexibilidad del mercado laboral en el empleo y los flujos de trabajo, y en la intermediación financiera y el desarrollo económico. Sus investigaciones han sido publicadas en revistas como American Economic Review, Journal of the European Economic Association, Journal of Development Economics o European Economic Review.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712273869/alpha/images/jose_galdon_tcgbj4.png",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "_id": "7",
+            "nombre": "Jorge Velarde",
+            "cargo": "Consultor Externo",
+            "descripcion": "Máster en leyes por Georgetown University Law Center, Estados Unidos. Jorge Velarde es un alto ejecutivo bancario y asesor legal con amplia experiencia en estructuración y gestión de activos en mercados latinoamericanos. Director de fondos e inversiones de impacto de CAF. Ha sido miembro de la junta de CAF-Asset Management Corporation (CAF-AM), encargada de manejar fondos de capital que coinvierten con CAF en transacciones de financiamiento de proyectos de infraestructura. Ha sido asesor legal y oficial de cumplimiento en Standard Chartered Bank y en el Banco Financiero del Perú.",
+            "descripcionLarga": "Jorge Velarde es un alto ejecutivo bancario y asesor legal con amplia experiencia en la estructuración y gestión de diversas clases de activos en los mercados latinoamericanos. Cuenta con sólida experiencia en financiamiento corporativo y de proyectos transfronterizos, inversiones de capital privado, gestión estratégica, asesoría corporativa, ha liderado equipos orientados al desempeño y ha formado parte activamente de juntas directivas y comités gerenciales. Experiencia en promover desarrollo sostenible, integrar estándares Environmental, Social and Governance (ESG), movilizar capital privado y optimizar las operaciones comerciales. Jorge es director de fondos e inversiones de impacto del Banco de Desarrollo de América Latina (CAF). Ha sido miembro de la junta de CAF-Asset Management Corporation (CAF-AM), entidad gestora de fondos de CAF encargada de manejar fondos de capital de terceros que coinvierten con CAF en transacciones de financiamiento de proyectos de infraestructura, principalmente privada. Ha sido asociado en Chadbourne & Parke LLP y en Thacher Proffitt & Wood LLP. En el año 2004 y  2006 fue Asesor legal y oficial de cumplimiento en Standard Chartered Bank. Asimismo, ha sido asesor legal de Banco Financiero del Perú en el año 2003. Máster en leyes por Georgetown University Law Center. Máster en Administración de Empresas por la Universidad del Pacífico. Doctorado en leyes y licenciado en estudios generales en humanidades y artes por la Pontificia Universidad Católica del Perú.",
+            "imageUrl": "https://res.cloudinary.com/ccdcloudy/image/upload/v1712279820/alpha/images/jorge-velarde-profile_jgo3so.png",
+            "url": "https://www.linkedin.com/"
+        }
+    ],
+    "observatorio": [
+        {
+            "_id": "0",
+            "bg":"",
+            "etiqueta": "observatorio1",
+            "tituloES": "Indicador de Actividad Económica",
+            "tituloEN": "Economic Activity Indicator",
+            "descripcionES": "El indicador líder de la Actividad Económica No Primaria prevé un ligero efecto rebote en los 2 primeros meses del año 2024, principalmente por la baja base de comparación por los conflictos sociales de los primeros meses del año pasado. Para los siguientes meses dicho rebote se irá diluyendo, y el indicador líder se encontrará alrededor de cero.",
+            "descripcionEN": "The leading indicator of Non-Primary Economic Activity foresees a slight rebound effect in the first 2 months of 2024, mainly due to the low comparison base due to the social conflicts of the first months of last year. For the following months, this rebound will be diluted, and the leading indicator will be around zero.",
+            "titutloGraficoES":"Crecimiento PBI No Primario y Proyecciones",
+            "titutloGraficoEN":"Non-Primary GDP Growth and Projections",
+            "subtitutloGraficoES":"(Variación % real)",
+            "subtitutloGraficoEN":"(Actual % variation)",
+            "grafico": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/observatorio1",
+            "sourceES": "Fuentes: BCRP, Alpha",
+            "sourceEN": "Sources: BCRP, Alpha"
+        },
+        {
+            "_id": "1",
+            "bg":"gray-bg reverse",
+            "etiqueta": "observatorio2",
+            "tituloES": "Indicador de Condiciones Externas",
+            "tituloEN": "External Conditions Indicator",
+            "descripcionES": "En Marzo 2024, el Indicador de Condiciones Externas (ICE) entró al tramo favorable después de 3 meses en posición desfavorable. Esta mejora se debió principalmente al aumento de los términos de intercambio por los mayores precios del cobre en el plano internacional y a la disminución del tipo de cambio en el ámbito local.",
+            "descripcionEN": "In March 2024, the External Conditions Indicator (ECI) entered the favorable section after 3 months in an unfavorable position. This improvement was mainly due to the increase in the terms of trade due to higher copper prices internationally and the decrease in the exchange rate locally.",
+            "titutloGraficoES":"Indicador de Condiciones Externas: ICE",
+            "titutloGraficoEN":"External Conditions Indicator: ECI",
+            "subtitutloGraficoES":"(Diciembre 2023=50)",
+            "subtitutloGraficoEN":"(December 2023=50)",
+            "grafico": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/observatorio2",
+            "sourceES": "Fuentes: BCRP, Alpha",
+            "sourceEN": "Sources: BCRP, Alpha"
+        },
+        {
+            "_id": "2",
+            "bg":"",
+            "etiqueta": "observatorio3",
+            "tituloES": "Indicador de Condiciones Monetarias",
+            "tituloEN": "Monetary Conditions Indicator",
+            "descripcionES": "El Indicador de Condiciones Monetarias (ICM) se encuentra en el tramo desfavorable desde Agosto 2022, explicado principalmente por la alta tasa de referencia del BCRP para contraer la alta inflación. Desde Setiembre 2023 el ICM revertió la tendencia a la baja, principalmente por los recortes de la tasa de referencia ante la menor inflación.",
+            "descripcionEN": "The Monetary Conditions Indicator (MCI) has been in the unfavorable range since August 2022, mainly explained by the high reference rate of the BCRP to contract high inflation. Since September 2023, the ICM reversed the downward trend, mainly due to cuts in the reference rate due to lower inflation.",
+            "titutloGraficoES":"Indicador de Condiciones Monetarias: ICM",
+            "titutloGraficoEN":"Monetary Conditions Indicator: MCI",
+            "subtitutloGraficoES":"(Diciembre 2023=50)",
+            "subtitutloGraficoEN":"(December 2023=50)",
+            "grafico": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/observatorio3",
+            "sourceES": "Fuentes: BCRP, Alpha",
+            "sourceEN": "Sources: BCRP, Alpha"
+        },
+        {
+            "_id": "3",
+            "bg":"gray-bg reverse",
+            "etiqueta": "observatorio4",
+            "tituloES": "Indicador de Condiciones Crediticias",
+            "tituloEN": "Credit Conditions Indicator",
+            "descripcionES": "El Indicador de Condiciones Crediticias (ICC) se encuentra levemente en el tramo desfavorable, debido principalmente a la caída del crédito que viene con ese comportamiento desde Mayo del 2023. Otro factor importante también es la alta morosidad, que permanece sin señales de reducción en el corto plazo.",
+            "descripcionEN": "The Credit Conditions Indicator (CCI) is slightly in the unfavorable range, mainly due to the drop in credit that comes with this behavior since May 2023. Another important factor is also the high delinquency rate, which remains without signs of reduction in the short term.",
+            "titutloGraficoES":"Indicador de Condiciones Crediticias: ICC",
+            "titutloGraficoEN":"Credit Conditions Indicator: CCI",
+            "subtitutloGraficoES":"(Diciembre 2023=50)",
+            "subtitutloGraficoEN":"(December 2023=50)",
+            "grafico": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/observatorio4",
+            "sourceES": "Fuentes: BCRP, Alpha",
+            "sourceEN": "Sources: BCRP, Alpha"
+        }
+    ],
+    "mensuales": [
+        {
+            "_id": "0",
+            "nombre": "Informe Alpha Abril 2024",
+            "url": "https://drive.google.com/file/d/1MZfBgCsNA5bTouWSmMdw_yxM4fMqvs4E/view?usp=sharing"
+        },
+        {
+            "_id": "1",
+            "nombre": "Informe Alpha Mayo 2024",
+            "url": "https://drive.google.com/file/d/14DUhE6LiyFToSfFKT9PKG_1Nsc-iQKcQ/view?usp=sharing"
+        }
+    ],
+    "analiticos": [
+        {
+            "_id": "0",
+            "nombre": "Informe Analítico 1",
+            "url": "#"
+        },
+        {
+            "_id": "1",
+            "nombre": "Informe Analítico 2",
+            "url": "#"
+        },
+        {
+            "_id": "2",
+            "nombre": "Informe Analítico 3",
+            "url": "#"
+        }
+    ],
+    "annual": [
+        {
+            "_id": "0",
+            "descripcion": "Reunión Anual (15 de feb del 2024)",
+            "fecha": "02/15/2024",
+            "url": "#"
+        },
+        {
+            "_id": "1",
+            "descripcion": "Reunión Anual (15 de feb del 2025)",
+            "fecha": "02/15/2025",
+            "url": "#"
+        }
+    ],
+    "meetings": [
+        {
+            "_id": "0",
+            "descripcion": "Reunión Cliente (15 de jun del 2024)",
+            "fecha": "06/15/2024", 
+            "url": "#"
+        },
+        {
+            "_id": "1",
+            "descripcion": "Reunión Cliente (30 de jul del 2024)",
+            "fecha": "07/30/2024", 
+            "url": "#"
+        },
+        {
+            "_id": "2",
+            "descripcion": "Reunión Cliente (14 de ago del 2024)",
+            "fecha": "08/14/2024", 
+            "url": "#"
+        },
+        {
+            "_id": "3",
+            "descripcion": "Reunión Cliente (30 de sep del 2024)",
+            "fecha": "09/30/2024", 
+            "url": "#"
+        }
+    ],
+    "cursos": [
+        {
+            "_id": "0",
+            "nombre": "Macroeconomía I",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://512pixels.net/downloads/macos-wallpapers/10-3.png",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#","#","#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "1",
+            "nombre": "Microeconomía  I",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://c4.wallpaperflare.com/wallpaper/414/160/33/mac-os-x-os-x-big-sur-hd-wallpaper-preview.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "nombre": "Matemáticas   I",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/11573.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "nombre": "Econometría I",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/8133.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "nombre": "Finanzas I",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/1432.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "5",
+            "nombre": "Gestión de Inversión Publica",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/5898.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        },
+        {
+            "_id": "6",
+            "nombre": "Programa Aprendo Haciendo en Inversión Pública",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "imagen": "https://4kwallpapers.com/images/walls/thumbs_2t/5890.jpg",
+            "modulos": [
+                {
+                    "_id": "0",
+                    "nombre": "Modulo 1",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "1",
+                    "nombre": "Modulo 2",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "2",
+                    "nombre": "Modulo 3",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "3",
+                    "nombre": "Modulo 4",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                },
+                {
+                    "_id": "4",
+                    "nombre": "Modulo 5",
+                    "material": ["#", "#", "#"],
+                    "ejercicios": ["#", "#", "#"],
+                    "videos": ["#", "#", "#"]
+                }
+            ]
+        }
+    ]
+}

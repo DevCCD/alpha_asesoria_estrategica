@@ -1,14 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles.css';
 import '../styles/carousel.css';
 /* Slider */
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mensuales from '../data/mensuales';
-import analicos from '../data/analiticos';
+/* import mensuales from '../data/mensuales';
+import analiticos from '../data/analiticos';
 import annual from '../data/annual';
-import meettings from '../data/meetings';
+import meetings from '../data/meetings'; */
 
 interface IdiomaProps {
     idioma: string;
@@ -18,6 +18,32 @@ interface ArrowProps {
     className?: string;
     style?: React.CSSProperties;
     onClick?: () => void;
+}
+
+interface Mensual {
+    "_id": string;
+    "nombre": string;
+    "url": string;
+}
+
+interface Analitico {
+    "_id": string;
+    "nombre": string;
+    "url": string;
+}
+
+interface Annual {
+    "_id": string;
+    "descripcion": string;
+    "fecha": string;
+    "url": string;
+}
+
+interface Meet {
+    "_id": string;
+    "descripcion": string;
+    "fecha": string;
+    "url": string;
 }
 
 function Arrow(props: ArrowProps) {
@@ -32,6 +58,63 @@ function Arrow(props: ArrowProps) {
 }
 
 function MainRepositorio({ idioma } : IdiomaProps) {
+
+    const [mensuales, setMes] = useState<Mensual[]>([]);
+    const [analiticos, setAnal] = useState<Analitico[]>([]);
+    const [annual, setAnu] = useState<Annual[]>([]);
+    const [meetings, setMeet] = useState<Meet[]>([]);
+
+    useEffect(() => {
+        const fetchMes = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/mensuales');
+                const data: Mensual[] = await response.json();
+                setMes(data);
+            } catch (error) {
+                console.error('Error fetching:', error);
+            }
+        };
+        fetchMes();
+    }, []);
+
+    useEffect(() => {
+        const fetchAnal = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/analiticos');
+                const data: Analitico[] = await response.json();
+                setAnal(data);
+            } catch (error) {
+                console.error('Error fetching:', error);
+            }
+        };
+        fetchAnal();
+    }, []);
+
+    useEffect(() => {
+        const fetchAnu = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/annual');
+                const data: Annual[] = await response.json();
+                setAnu(data);
+            } catch (error) {
+                console.error('Error fetching:', error);
+            }
+        };
+        fetchAnu();
+    }, []);
+
+    useEffect(() => {
+        const fetchMeet = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/meetings');
+                const data: Meet[] = await response.json();
+                setMeet(data);
+            } catch (error) {
+                console.error('Error fetching:', error);
+            }
+        };
+        fetchMeet();
+    }, []);
 
     const settings = {
         dots: true,
@@ -115,7 +198,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Informes Analíticos" : "Analytical Reports" }</h2>
                     <div className="slider-container">
                         <Slider {...settings}>
-                            { analicos.map((an)=> (
+                            { analiticos.map((an)=> (
                                 <div key={an._id}>
                                     <article  className="cCarousel-item">
                                         <img/>
@@ -145,7 +228,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                                 </div>
                                 <div className="card__info__reunion">
                                     <p>{ann.descripcion}</p>
-                                    <a href={ann.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
+                                    <a href={ann.url}>{ idioma == "es" ? "Ver reunión" : "See details" }</a>
                                 </div>
                             </div>
                         ))}
@@ -156,7 +239,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                     <h2>{idioma == "es" ? "Reunión con Clientes" : "Meeting with Clients"}</h2>
                     <div className='reunion__anual'>
 
-                        { meettings.map((meet) => (
+                        { meetings.map((meet) => (
                             <div key={meet._id} className="card__reunion">
                                 <div className="card__calendar">
                                     <div className="top__calendar"></div>
@@ -168,7 +251,7 @@ function MainRepositorio({ idioma } : IdiomaProps) {
                                 </div>
                                 <div className="card__info__reunion">
                                     <p>{meet.descripcion}</p>
-                                    <a href={meet.url}>{ idioma == "es" ? "Descargar" : "Download" }</a>
+                                    <a href={meet.url}>{ idioma == "es" ? "Ver reunión" : "See details" }</a>
                                 </div>
                             </div>
                         ))}

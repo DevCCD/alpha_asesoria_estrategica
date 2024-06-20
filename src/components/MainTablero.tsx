@@ -1,17 +1,62 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { IoIosMore } from 'react-icons/io';
-import cursos from '../data/cursos';
-
+/* import cursos from '../data/cursos'; */
 
 interface IdiomaProps {
     idioma: string;
 }
 
+interface Video {
+    url: string;
+}
+
+interface Ejercicio {
+    url: string;
+}
+
+interface Material {
+    url: string;
+}
+
+interface Modulo {
+    _id: string;
+    nombre: string;
+    material: Material[];
+    ejercicios: Ejercicio[];
+    videos: Video[];
+}
+
+interface Curso {
+    _id: string;
+    nombre: string;
+    descripcion: string;
+    imagen: string;
+    modulos: Modulo[];
+}
+
 function MainTablero({ idioma } : IdiomaProps) {
+
+    const [cursos, setCur] = useState<Curso[]>([]);
+
+
+    useEffect(() => {
+        const fetchCur = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/cursos');
+                const data: Curso[] = await response.json();
+                setCur(data);
+            } catch (error) {
+                console.error('Error fetching:', error);
+            }
+        };
+        fetchCur();
+    }, []);
 
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Tablero" : "Alpha | Board"
     }, [idioma])
+
+
     
     return (
         <main>

@@ -1,14 +1,40 @@
 import { Link } from 'react-router-dom';
 import '../styles.css';
-import equipo from '../data/equipo';
-import { useEffect } from 'react';
+/* import equipo from '../data/equipo'; */
+import { useEffect, useState } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
+export interface Perfil {
+    _id: string;
+    nombre: string;
+    cargo: string;
+    descripcion: string;
+    descripcionLarga: string;
+    imageUrl: string;
+    url: string;
+}
+
 function MainNosotros({ idioma } : IdiomaProps) {
     
+    const [perfiles, setPerfil] = useState<Perfil[]>([]);
+
+    useEffect(() => {
+        const fetchPerfil = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/profile');
+                const data: Perfil[] = await response.json();
+                setPerfil(data);
+            } catch (error) {
+                console.error('Error fetching blogs:', error);
+            }
+        };
+
+        fetchPerfil();
+    }, []);
+
     useEffect(() => {
         document.title = idioma == "es" ? "Alpha | Nosotros" : "Alpha | About Us"
     }, [idioma])
@@ -46,7 +72,7 @@ function MainNosotros({ idioma } : IdiomaProps) {
                 <h2 className="gray-bg">{ idioma == "es" ? "Nuestro Equipo" : "Our team" }</h2>
             </div>
             <div className="nuestro__equipo">
-                {equipo.map((eq) => (
+                {perfiles.map((eq) => (
                 <div key={eq._id} className="card">
                     <img src={eq.imageUrl} className="card-img" />
                     <div className="card-content">
