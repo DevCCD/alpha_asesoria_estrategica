@@ -5,10 +5,6 @@ import '../styles/carousel.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-/* import mensuales from '../data/mensuales';
-import analiticos from '../data/analiticos';
-import annual from '../data/annual';
-import meetings from '../data/meetings'; */
 
 interface IdiomaProps {
     idioma: string;

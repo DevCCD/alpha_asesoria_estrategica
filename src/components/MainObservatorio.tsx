@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import '../styles.css';
-/* import observatorio from '../data/observatorio'; */
 
 interface IdiomaProps {
     idioma: string;
@@ -28,7 +27,6 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
     const [observatorio, setObserv] = useState<Observatorio[]>([]);
 
     useEffect(() => {
-        // Define la función asincrónica para obtener los datos de la API
         const fetchObserv = async () => {
             try {
                 const response = await fetch('http://localhost:3000/observatorio');
@@ -39,7 +37,6 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
             }
         };
 
-        // Llama a la función fetchBlogs
         fetchObserv();
     }, []);
 

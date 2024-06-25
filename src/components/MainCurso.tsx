@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
-import cursos from "../data/cursos";
-
 import '../styles/collapseModulo.css';
 import { FaChevronRight } from "react-icons/fa6";
 import { LuFileDown, LuFileEdit, LuMonitorPlay } from "react-icons/lu";
@@ -28,6 +25,11 @@ interface Curso {
 
 function MainCurso({ idioma } : IdiomaProps) {
 
+    const params = useParams<{ _id: string }>();
+    const idCurso = params._id;
+
+    const [curso, setOneCurso] = useState<Curso[]>([]);
+
     const [openModule, setModuleOpen] = useState<number | null>(null);
     const [openSubModules, setOpenSubModules] = useState([false, false, false]); // suponer dos submódulos inicialmente
 
@@ -43,21 +45,23 @@ function MainCurso({ idioma } : IdiomaProps) {
         });
     };
 
-    const params = useParams<{ _id: string }>();
-    const idCurso = params._id;
-
-    const defaultCurso: Curso = {
-        _id: '',
-        nombre: '',
-        imagen: '',
-        modulos: [],
-    };
-
-    const curso: Curso = cursos.find(item => item._id === idCurso) || defaultCurso;
-    
     useEffect(() => {
-        document.title = idioma == "es"? "Alpha | "+curso.nombre : "Alpha | Course"
-    }, [curso.nombre, idioma])
+        document.title = idioma == "es"? "Alpha | "+curso[0]?.nombre : "Alpha | Course"
+    }, [curso, idioma])
+
+    useEffect(() => {
+        const fetchOneCurso = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/cursos?_id='+idCurso);
+                const data: Curso[] = await response.json();
+                setOneCurso(data);
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        };
+
+        fetchOneCurso();
+    }, [idCurso]);
     
     if (!curso) {
         return <div>Curso no encontrado</div>;
@@ -67,11 +71,11 @@ function MainCurso({ idioma } : IdiomaProps) {
         <main>
             <div className="white-bg banner__blog">
                 <div className="banner__blog__title">
-                    <h1>{curso.nombre}</h1>
+                    <h1>{curso[0]?.nombre}</h1>
                 </div>
             </div>
             <div className="container__modulos">
-                {curso.modulos.map((modu, index)=> (
+                {curso[0]?.modulos.map((modu, index)=> (
                     <div key={modu._id} className="module">
                         <div className="module-header" onClick={() => toggleModule(index)}>
                             <span className={`arrow ${openModule == index ? 'open' : ''}`}><FaChevronRight/></span>

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../styles.css';
-/* import equipo from '../data/equipo'; */
 import { useEffect, useState } from 'react';
 
 interface IdiomaProps {

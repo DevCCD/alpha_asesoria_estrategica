@@ -1,5 +1,4 @@
 import '../styles.css';
-/* import blog from '../data/blog.tsx' */
 import { useEffect, useState } from 'react';
 
 interface IdiomaProps {
