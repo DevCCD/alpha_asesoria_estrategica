@@ -1,5 +1,5 @@
 import '../styles.css';
-import redes from '../data/redes';
+import redes from '../data/redes.tsx';
 import { Link } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa6';
 import { useEffect } from 'react';
@@ -65,7 +65,7 @@ function MainContacto ({ idioma } : IdiomaProps) {
                         </div>
                         <div className="input-full">
                             <label htmlFor="email">{ idioma == "es" ? "Correo" : "Email" }</label>
-                            <input type="email" id="email" name="email" placeholder={ idioma == "es" ? "Correo" : "Email" } required />
+                            <input id="email" name="email" placeholder={ idioma == "es" ? "Correo" : "Email" } required />
                         </div>
                         <button className="hero-btn" type="submit">{ idioma == "es" ? "Enviar" : "Submit" }</button>
                         </form>
