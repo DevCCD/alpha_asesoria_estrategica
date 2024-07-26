@@ -1243,7 +1243,7 @@ h1.display {
 .economia__right {
     width: 950px;
 }
-
+.economia__right iframe,
 .economia__right img {
     width: 100%;
 }
@@ -2175,6 +2175,16 @@ margin-right: 10px;
 .card__info__reunion a:hover {
     background: #1F497D;
     color: #fff;
+}
+
+.flourish__graph {
+    min-height: 500px;
+    height: 100%;
+    border: 0;
+}
+
+.fl-fonts-loaded {
+    background-color: red !important;
 }
 
 

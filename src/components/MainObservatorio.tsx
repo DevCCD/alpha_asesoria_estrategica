@@ -29,7 +29,8 @@ function MainObservatorio ({ idioma } : IdiomaProps) {
                     <div className="economia__right">
                         <h2>{ idioma == "es" ? ob.titutloGraficoES : ob.titutloGraficoEN }</h2>
                         <p>{ idioma == "es" ? ob.subtitutloGraficoES : ob.subtitutloGraficoEN }</p>
-                        <img src={ob.grafico} />
+                        <iframe className='flourish__graph' src={ob.grafico} title='Interactive or visual content' scrolling='no' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+                        </iframe>
                         <div className='fuente__observatorio'>
                             <sub className='nota__fuente'></sub>
                             <sub>{idioma == "es" ? ob.sourceES : ob.sourceEN }</sub>
