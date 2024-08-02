@@ -2187,6 +2187,16 @@ margin-right: 10px;
     background-color: red !important;
 }
 
+.iframe__container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.iframe__container iframe {
+    max-width: 1380px;
+    min-width: 900px;
+}
+
 
 /* Movil/Mobile */
 /* 1380px */
