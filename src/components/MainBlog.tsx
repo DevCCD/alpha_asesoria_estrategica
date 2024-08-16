@@ -1,63 +1,110 @@
 import '../styles.css';
-import blog from '../data/blog.tsx'
+import '../styles/tabs.scss';
+import { blog }from '../data/blog.tsx';
+import { libro } from '../data/blog.tsx';
+import { paper } from '../data/blog.tsx';
 import { useEffect } from 'react';
-/* import { useState } from 'react'; */
 
 interface IdiomaProps {
     idioma: string;
 }
 
-function MainBlog({ idioma } : IdiomaProps) {
+function MainBlog({ idioma }: IdiomaProps) {
 
     useEffect(() => {
-        document.title = idioma == "es" ? "Alpha | Blog Alpha" : "Alpha | Alpha Blog"
-    }, [idioma])
+        document.title = idioma === "es" ? "Alpha | Blog Alpha" : "Alpha | Alpha Blog";
+    }, [idioma]);
 
+    const openTab = (evt: React.MouseEvent<HTMLButtonElement>, cityName: string) => {
+        const tabcontent = document.getElementsByClassName("tabcontent");
+        const tablinks = document.getElementsByClassName("tablinks");
+        
+        if (tabcontent) {
+            for (let i = 0; i < tabcontent.length; i++) {
+                const element = tabcontent[i] as HTMLElement; // Type assertion
+                element.style.display = "none";
+            }
+        }
+
+        if (tablinks) {
+            for (let i = 0; i < tablinks.length; i++) {
+                const element = tablinks[i] as HTMLElement; // Type assertion
+                element.className = element.className.replace(" active", "");
+            }
+        }
+
+        const cityElement = document.getElementById(cityName);
+        if (cityElement) {
+            cityElement.style.display = "block";
+        }
+
+        if (evt.currentTarget) {
+            evt.currentTarget.className += " active";
+        }
+    };
 
     return (
         <>
             <main>
                 <div className="gray-bg banner__blog">
                     <div className="banner__blog__title">
-                        <h1>{ idioma == "es" ? "Blog Alpha" : "Alpha Blog" }</h1>
-                        <p>{ idioma == "es" ? "Publicaciones sobre nuestra gente, nuestras capacidades, nuestra investigación y el constante cambio de nuestra empresa" : "Posts about our people, our capabilities, our research and the ever-changing face of our company" }</p>
+                        <h1>{ idioma === "es" ? "Blog Alpha" : "Alpha Blog" }</h1>
+                        <p>{ idioma === "es" ? "Publicaciones sobre nuestra gente, nuestras capacidades, nuestra investigación y el constante cambio de nuestra empresa" : "Posts about our people, our capabilities, our research and the ever-changing face of our company" }</p>
                     </div>
                 </div>
                 <div className="container__publi">
-                    <div className='container__title__blog'>
-                        <div className="title__publi">
-                            <p>{ idioma == "es" ? "PUBLICACIONES" : "PUBLICATIONS" }</p>
-                        </div>
-                        <div className="title__tags">
-                            { idioma == "es" ? "Buscar por:" : "Browse by:" } <span>{ idioma == "es" ? "Tema | Fecha" : "Topic | Date" }</span>
-                        </div>
+                    <div className="tab">
+                        <button className="tablinks active" onClick={(e) => openTab(e, 'tab1')}>PUBLICACIONES</button>
+                        <button className="tablinks" onClick={(e) => openTab(e, 'tab2')}>LIBROS</button>
+                        <button className="tablinks" onClick={(e) => openTab(e, 'tab3')}>PAPERS Y OTROS</button>
                     </div>
-                    <div className="subrayado__blog"></div>
                 </div>
-                <div className="contenedor-cards">
-                    {blog.map((bl) => (
-                    <div key={bl._idBlog} className="card__blog">
-                        <a target="_blank" href={bl.url}>
-                        <img src={bl.urlImage} alt="Imagen del artículo 1" />
-                        <h3>{bl.title}</h3>
-                        <p>{bl.description}</p>
-                        </a>
-                    </div>
-                    ))}
-                    {/* { JSON.stringify(data) } */}
-                    {/* <ul>
-                        {data && data.map((blog: Blog) => (
-                            <li key={blog.id}>
-                            <h2>{blog.titulo}</h2>
-                            <p>{blog.descripcioncorta}</p>
-                            <p>Actualizado: {blog.updatedAt}</p>
-                            </li>
+
+                <div id="tab1" className="tabcontent" style={{ display: 'block' }}>
+                    <div className="contenedor-cards">
+                        {blog.map((bl) => (
+                        <div key={bl._idBlog} className="card__blog">
+                            <a target="_blank" href={bl.url}>
+                            <img src={bl.urlImage} alt="Imagen Publicacion" />
+                            <h3>{bl.title}</h3>
+                            <p>{bl.description}</p>
+                            </a>
+                        </div>
                         ))}
-                    </ul> */}
+                    </div>
                 </div>
+
+                <div id="tab2" className="tabcontent" style={{ display: 'none' }}>
+                    <div className="contenedor-cards">
+                        {libro.map((li) => (
+                        <div key={li._idLibro} className="card__blog">
+                            <a target="_blank" href={li.url}>
+                            <img src={li.urlImage} alt="Imagen Libro" />
+                            <h3>{li.title}</h3>
+                            <p>{li.description}</p>
+                            </a>
+                        </div>
+                        ))}
+                    </div> 
+                </div>
+
+                <div id="tab3" className="tabcontent" style={{ display: 'none' }}>
+                    <div className="contenedor-cards">
+                        {paper.map((pa) => (
+                        <div key={pa._idPaper} className="card__blog">
+                            <a target="_blank" href={pa.url}>
+                            <img src={pa.urlImage} alt="Imagen Papers" />
+                            <h3>{pa.title}</h3>
+                            <p>{pa.description}</p>
+                            </a>
+                        </div>
+                        ))}
+                    </div> 
+                </div>
+                
             </main>
         </>
-    )
+    );
 }
 
-export default MainBlog
+export default MainBlog;
