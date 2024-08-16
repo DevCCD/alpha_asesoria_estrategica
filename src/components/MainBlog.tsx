@@ -56,7 +56,7 @@ function MainBlog({ idioma }: IdiomaProps) {
                     <div className="tab">
                         <button className="tablinks active" onClick={(e) => openTab(e, 'tab1')}>PUBLICACIONES</button>
                         <button className="tablinks" onClick={(e) => openTab(e, 'tab2')}>LIBROS</button>
-                        <button className="tablinks" onClick={(e) => openTab(e, 'tab3')}>PAPERS Y OTROS</button>
+                        <button className="tablinks" onClick={(e) => openTab(e, 'tab3')}>OTROS</button>
                     </div>
                 </div>
 
