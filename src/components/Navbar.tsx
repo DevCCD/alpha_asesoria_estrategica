@@ -122,7 +122,7 @@ function Navbar() {
                                     </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
-                                            <Link to="/campus/moodle">{ idioma == "es" ? "Campus" : "Campus"}</Link>
+                                            <Link to="https://www.alphaasesoriaestrategica.com/campus/moodle/">{ idioma == "es" ? "Campus" : "Campus"}</Link>
                                         </div>
                                     </li>
                                     <li className="megamenu_item">
@@ -209,7 +209,7 @@ function Navbar() {
                             </div>
                         </li>
                         <li className="nav__item">
-                            <Link to="/campus/moodle" className="nav__link">{idioma == "es" ? "Campus" : "Campus"}</Link>
+                            <Link to="https://www.alphaasesoriaestrategica.com/campus/moodle/" className="nav__link">{idioma == "es" ? "Campus" : "Campus"}</Link>
                         </li>
                         <li className="nav__item dropdown">
                             <Link to="/contacto" className="nav__link dropdown__link">{idioma == "es" ? "Contacto" : "Contact"} <i className='arrow__link'><FaChevronDown /></i>
