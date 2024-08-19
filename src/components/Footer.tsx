@@ -31,6 +31,11 @@ function Footer({ idioma } : IdiomaProps) {
         window.location.href = mailtoLink;
     };
 
+    //Campus
+    const handleClick = () => {
+        window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/login/";
+    };
+
     return (
         <>
             {/* <!--Footer Contacto --> */}
@@ -240,6 +245,13 @@ function Footer({ idioma } : IdiomaProps) {
                         </li>
                         <li>
                             <Link to="/nosotros/experiencia">{ idioma == "es" ? "Nuestra experiencia" : "Our experience" }</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <Link to={"#"} onClick={handleClick}>
+                                <h3>Campus</h3>
+                            </Link>
                         </li>
                     </ul>
                     </div>

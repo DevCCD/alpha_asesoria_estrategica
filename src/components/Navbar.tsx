@@ -36,7 +36,7 @@ function Navbar() {
 
     //Campus
     const handleClick = () => {
-        window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/";
+        window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/login/";
     };
 
     return (
