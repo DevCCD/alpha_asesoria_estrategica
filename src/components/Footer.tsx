@@ -172,24 +172,24 @@ function Footer({ idioma } : IdiomaProps) {
                             <Link to="/capacidades/servicio#asistencia">{ idioma == "es" ? "Asistencia Técnica Alpha" : "Alpha Technical Assistance" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria">
-                                <h3>{ idioma == "es" ? "Consultoría" : "Consultancy" }</h3>
+                            <Link to="/capacidades/asesoria">
+                                <h3>{ idioma == "es" ? "Asesoría" : "Advice" }</h3>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#macro">{ idioma == "es" ? "Macro" : "Macro" }</Link>
+                            <Link to="/capacidades/asesoria#macro">{ idioma == "es" ? "Macro" : "Macro" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#micro">{ idioma == "es" ? "Micro" : "Micro" }</Link>
+                            <Link to="/capacidades/asesoria#micro">{ idioma == "es" ? "Micro" : "Micro" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#estructuracion">{ idioma == "es" ? "Estructuración y Financiamiento de Proyectos" : "Project Structuring and Financing" }</Link>
+                            <Link to="/capacidades/asesoria#estructuracion">{ idioma == "es" ? "Estructuración y Financiamiento de Proyectos" : "Project Structuring and Financing" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#ifd">{ idioma == "es" ? "IFD" : "DFI" }</Link>
+                            <Link to="/capacidades/asesoria#ifd">{ idioma == "es" ? "IFD" : "DFI" }</Link>
                         </li>
                         <li>
-                            <Link to="/capacidades/consultoria#peritajes">{ idioma == "es" ? "Peritajes" : "Expert reports" }</Link>
+                            <Link to="/capacidades/asesoria#peritajes">{ idioma == "es" ? "Peritajes" : "Expert reports" }</Link>
                         </li>
                         <li>
                             <Link to="/capacidades/academia">
