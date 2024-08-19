@@ -80,7 +80,7 @@ function MainBlog({ idioma }: IdiomaProps) {
                         <div key={li._idLibro} className="card__blog">
                             <a target="_blank" href={li.url}>
                             <img src={li.urlImage} alt="Imagen Libro" />
-                            <h3>{li.title}</h3>
+                            
                             <p>{li.description}</p>
                             </a>
                         </div>

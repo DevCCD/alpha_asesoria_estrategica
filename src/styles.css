@@ -1874,7 +1874,7 @@ margin-right: 10px;
 .contenedor-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 15rem;
     font-family: "Poppins", sans-serif;
     background: var(--light-gray);
