@@ -50,7 +50,7 @@ const Hero = ({ idioma } : IdiomaProps) => {
                 </Link>
                 <div className="container">
                     <div className="container__graph">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/tasainteres" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/tasainteres-" />
                     </div>
                 </div>
             </section>

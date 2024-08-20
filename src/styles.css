@@ -430,6 +430,8 @@ h1.display {
 .container__graph {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .container__portada {
@@ -497,7 +499,7 @@ h1.display {
 
 .container img {
     max-width: max-content;
-    width: 100%;
+    width: 90%;
 }
 
 /* Capacidades */
