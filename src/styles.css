@@ -496,7 +496,7 @@ h1.display {
 }
 
 .container img {
-    max-width: 1200px;
+    max-width: max-content;
     width: 100%;
 }
 
@@ -1889,15 +1889,29 @@ margin-right: 10px;
     transition: 0.3s;
 }
 
+.card__blog.libro {
+    max-width: 550px;
+    height: 500px;
+    flex: auto;
+}
+
+.card__blog.libro a {
+    display: flex;
+    height: 100%;
+}
+
+.card__blog.libro p {
+    margin: 10px;
+}
+
+.card__blog.libro img {
+    height: 100%;
+    max-height: max-content;
+}
+
 .card__blog:hover {
     box-shadow: 0px 16px 32px -1px rgba(5,28,44,.2), 0px 0px 1px 0px rgba(5,28,44,.15);
 }
-
-#tab3 .card__blog img,
-#tab2 .card__blog img {
-    object-fit: contain;
-}
-
 
 .card__blog img {
     width: 100%;

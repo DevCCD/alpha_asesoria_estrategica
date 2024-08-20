@@ -49,17 +49,8 @@ const Hero = ({ idioma } : IdiomaProps) => {
                     </div>
                 </Link>
                 <div className="container">
-                    <h1 className="display">{idioma=="es" ? "Tasa de Referencia Real" :  "Real Reference Rate" }</h1>
-                    <p>{idioma == "es" ? "¿Cómo impacta actualmente y en perspectiva a la empresa y a tus inversiones personales?" : "How does it currently and in perspective impact the company and your personal investments?"}</p>
-                    <Link to={"/#contactar"}>
-                        <button className="section-btn">{idioma == "es" ? "Escríbenos" : "Contact us" }</button>
-                    </Link>
                     <div className="container__graph">
                         <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/tasainteres" />
-                        <div className='fuente__observatorio'>
-                            <sub className='nota__fuente'></sub>
-                            <sub>Fuente: BCRP</sub>
-                        </div>
                     </div>
                 </div>
             </section>

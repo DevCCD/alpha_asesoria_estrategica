@@ -83,10 +83,9 @@ export const libro = [
         "_idLibro" :"0",
         "title" : "Infraestructura para el desarrollo regional: Enfoque de cierre de brechas y corredores económicos territoriales",
         "description" : "La infraestructura es fundamental en todo proceso de desarrollo global, nacional, regional, provincial, distrital y comunal. La infraestructura se define como el conjunto de estructuras de ingeniería y equipos cuya utilidad es por un largo plazo.",
-        "url" : "https://www.elvirrey.com/libro/infraestructura-para-el-desarrollo-regional_70137609",
-        "urlImage" : "https://www.elvirrey.com/imagenes/9786124/978612446050.GIF",
-    
-    }
+        "url" : "#",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/blog/libro_1",
+    },
 ]
 
 export const paper = [
@@ -94,15 +93,15 @@ export const paper = [
         "_idPaper" :"0",
         "title" : "Crecimiento y desigualdad: el rol de la economía política",
         "description" : "Existe un amplio debate en la literatura económica sobre la relación entre crecimiento y desigualdad. El objetivo del trabajo es mostrar como las decisiones de política afecta las interrelaciones entre ambas variables, pero poniendo énfasis en las preferencias de los agentes y no en la función de producción, como ha sido usualmente tratado en la literatura. Por lo tanto, en este trabajo presentamos un modelo que incluye externalidades en el lado del consumo, analizando el impacto de políticas económicas en crecimiento y desigualdad encontrando múltiples equilibrios con distintas dinámicas.",
-        "url" : "https://portalrevistas.aulavirtualusmp.pe/index.php/RevistaGobiernoyG/article/view/2729",
-        "urlImage" : "https://portalrevistas.aulavirtualusmp.pe/public/journals/50/submission_2729_4169_coverImage_es.jpg",
+        "url" : "/papers/CRECIMIENTO Y DESIGUALDAD_ EL ROL DE LA ECONOMÍA POLÍTICA.pdf",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/blog/crecimiento_",
     
     },
     {
         "_idPaper": "1",
         "title" : "Mining investment and a fiscal regime that promotes the investment: an inter-temporal model",
         "description" : "El objetivo del documento es mostrar cómo la compañía minera y el gobierno mejorarán financieramente tras la promoción de la reinversión de beneficios",
-        "url" : "https://repositorio.usmp.edu.pe/bitstream/handle/20.500.12727/8618/VOL%201%20-%20N1%20-%202%20-%20Rudy%20Laguna.pdf?sequence=1&isAllowed=y",
-        "urlImage" : "https://portalrevistas.aulavirtualusmp.pe/public/journals/41/cover_issue_229_es_ES.png",
+        "url" : "/papers/VOL 1 - N1 - 2 - Rudy Laguna.pdf",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/blog/camion_minero",
     }
 ]

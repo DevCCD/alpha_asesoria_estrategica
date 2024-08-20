@@ -176,11 +176,6 @@ function Navbar() {
                                     </li>
                                     <li className="megamenu_item">
                                         <div className="megamenu__link">
-                                            <Link to="/observatorio#observatorio4">{ idioma == "es" ? "Indicador de Condiciones Crediticias (ICC)" : "Credit Conditions Indicator (CCI)" }</Link>
-                                        </div>
-                                    </li>
-                                    <li className="megamenu_item">
-                                        <div className="megamenu__link">
                                             <Link to="/observatorio">{ idioma == "es" ? "Ver todo" : "See all" } <i><IoArrowForwardOutline /></i></Link>
                                         </div>
                                     </li>

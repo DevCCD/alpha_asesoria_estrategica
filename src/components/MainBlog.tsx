@@ -77,11 +77,10 @@ function MainBlog({ idioma }: IdiomaProps) {
                 <div id="tab2" className="tabcontent" style={{ display: 'none' }}>
                     <div className="contenedor-cards">
                         {libro.map((li) => (
-                        <div key={li._idLibro} className="card__blog">
+                        <div key={li._idLibro} className="card__blog libro">
                             <a target="_blank" href={li.url}>
-                            <img src={li.urlImage} alt="Imagen Libro" />
-                            
-                            <p>{li.description}</p>
+                                <img src={li.urlImage} alt="Imagen Libro" />
+                                <p>{li.description}</p>
                             </a>
                         </div>
                         ))}

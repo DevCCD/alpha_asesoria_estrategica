@@ -43,7 +43,7 @@ function Footer({ idioma } : IdiomaProps) {
                 <div className='invisible__top' id="contactar" />
                 <div className="informacion">
                     <h2>{idioma == "es" ? "Contáctanos" : "Contact us"}</h2>
-                    <p>{ idioma == "es" ? "Si desea obtener más información sobre Alpha asesoría estratégica, escríbanos, un representante de nuestra organización se pondrá en contacto lo antes posible." : "" }</p>
+                    <p>{ idioma == "es" ? "Escríbenos para obtener más información sobre Alpha asesoría estratégica. Un representante de nuestra organización se pondrá en contacto lo antes posible." : "" }</p>
                     <p>{ idioma == "es" ? "La información proporcionada se mantendrá en todo momento estrictamente confidencial." : "" }</p>
                 </div>
                 <form onSubmit={handleSubmit}>
@@ -227,9 +227,6 @@ function Footer({ idioma } : IdiomaProps) {
                         </li>
                         <li>
                             <Link to="/observatorio#observatorio3">{ idioma == "es" ? "Indicador de Condiciones Monetarias (ICM)" : "Monetary Conditions Indicator (MCI)" }</Link>
-                        </li>
-                        <li>
-                            <Link to="/observatorio#observatorio4">{ idioma == "es" ? "Indicador de Condiciones Crediticias (ICC)" : "Credit Conditions Indicator (CCI)" }</Link>
                         </li>
                     </ul>
                     </div>
