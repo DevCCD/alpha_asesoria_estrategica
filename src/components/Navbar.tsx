@@ -39,6 +39,10 @@ function Navbar() {
         window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/login/";
     };
 
+    const handleClickRepo = () => {
+        window.location.href = "https://repo.alphaasesoriaestrategica.com/login/";
+    };
+
     return (
     <>
         <ScrollRestoration />
@@ -239,7 +243,7 @@ function Navbar() {
                             <Link to="/blog" className="nav__link">{idioma == "es" ? "Blog Alpha" : "Alpha Blog"}</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/loginrepo" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
+                            <Link onClick={handleClickRepo} to="#" className="nav__link">{idioma == "es" ? "Repositorio" : "Repository"} <i className='bx bx-file-blank'></i></Link>
                         </li>
                         {/* <!-- Options idioma 
                         <li className="nav__item option__idioma">

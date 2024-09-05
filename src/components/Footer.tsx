@@ -36,6 +36,10 @@ function Footer({ idioma } : IdiomaProps) {
         window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/login/";
     };
 
+    const handleClickRepo = () => {
+        window.location.href = "https://repo.alphaasesoriaestrategica.com/login/";
+    };
+
     return (
         <>
             {/* <!--Footer Contacto --> */}
@@ -260,7 +264,7 @@ function Footer({ idioma } : IdiomaProps) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/repositorio">
+                            <Link to="#" onClick={handleClickRepo}>
                                 <h3>{ idioma == "es" ? "Repositorio" : "Repository" }</h3>
                             </Link>
                         </li>

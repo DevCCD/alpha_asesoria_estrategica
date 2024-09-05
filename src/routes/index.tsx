@@ -9,11 +9,9 @@ import Academia from '../Academia.tsx'
 import Perfil from '../Perfil.tsx'
 import Servicio from '../Servicio.tsx'
 import Blog from '../Blog.tsx'
-import ModalLogin from '../components/loginModal/ModalLogin.tsx'
 import { Link, createBrowserRouter } from 'react-router-dom'
 import Tablero from '../Tablero.tsx'
 import Curso from '../Curso.tsx'
-import Repositorio from '../Repositorio.tsx'
 
 const router = createBrowserRouter([
     {
@@ -60,14 +58,6 @@ const router = createBrowserRouter([
     {
         path: '/blog',
         element: <Blog />
-    },
-    {
-        path: '/loginrepo',
-        element: <ModalLogin />
-    },
-    {
-        path: '/repositorio',
-        element: <Repositorio />
     },
     {
         path: '/board',
