@@ -39,6 +39,11 @@ function MainNosotros({ idioma } : IdiomaProps) {
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098340/alpha/images/logoglobalgradient_enjkcg.png" alt="Global Gradient" />
                             </Link>
                         </div>
+                        <div>
+                            <Link to={"https://alphasignatureinvestment.com/"} target='_blank'>
+                                <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/Logo%20Asif" alt="Alpha Signature Investment Fund" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
