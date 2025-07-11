@@ -40,17 +40,17 @@ const Hero = ({ idioma } : IdiomaProps) => {
                             </h4>
                         </div>
                         <h2>
-                            {idioma == "es" ? "Crecimiento económico: global moderado y local bajo" : "Economic growth: moderate global and low local"}
+                            {idioma == "es" ? "Incertidumbre latente en Oriente Medio por conflicto Israel-Irán. La economía nacional se desacelera por efecto base de semana santa" : "Economic growth: moderate global and low local"}
                         </h2>
                         <p>{ idioma == "es" ? "Informe "+ fecha.toLocaleDateString('es-ES',{ month: 'long', year: 'numeric'}) : "Report "+ fecha.toLocaleDateString('en-EN',{ month: 'long', year: 'numeric'}) }</p>
                     </div>
                     <div className="right__portada">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/hero/earth" alt="Earth" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1752254511/alpha/Portada%20Informes/Junio%202025/Imagen_Junio_2025.png" alt="Earth" />
                     </div>
                 </Link>
                 <div className="container">
                     <div className="container__graph">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/observatorio/tasainteres-" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1752254516/alpha/Portada%20Informes/Junio%202025/Informe_Alpha_Junio_2025.svg" alt="Informe Alpha Junio 2025" />
                     </div>
                 </div>
             </section>

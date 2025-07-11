@@ -428,10 +428,16 @@ h1.display {
 }
 
 .container__graph {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+.container__graph img {
+    width: 100%; 
+    max-width: 1200px; 
+    height: auto;
 }
 
 .container__portada {
@@ -1337,14 +1343,11 @@ h1.display {
     display: grid;
     font-weight: 500;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nombre  nombre  apellido apellido"
-        "puesto puesto empresa empresa"
-        "celular celular correo correo"
-        "industria industria  pais pais"
-        "mensaje mensaje mensaje mensaje"
-        "aviso aviso aviso aviso"
-        "combo-correo   combo-whatsapp . . "
-        "enviar . . .";
+    grid-template-areas: "nombre  nombre  nombre nombre"
+        "apellido apellido  apellido apellido"
+        "celular celular   celular celular"
+        "correo correo  correo correo"
+        "enviar enviar . .";
 
     font-family: "Poppins";
     gap: .8rem;
@@ -1353,7 +1356,7 @@ h1.display {
 .campo {
     margin-bottom: 4px;
     display: grid;
-    padding: 4px 0;
+    padding: 2px 0;
     width: 100%;
 }
 
@@ -2516,16 +2519,8 @@ margin-right: 10px;
         grid-template-areas:
         "nombre"
         "apellido"
-        "puesto"
-        "empresa"
         "celular"
         "correo"
-        "industria"
-        "pais"
-        "mensaje"
-        "aviso"
-        "combo-correo"
-        "combo-whatsapp"
         "enviar "
         ;
     }

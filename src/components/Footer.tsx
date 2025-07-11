@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../styles.css';
 import  redes  from '../data/redes.tsx';
-import { useState } from 'react';
-import industrias from '../data/industria.tsx';
-import paises from '../data/pais.tsx';
+import { useState, useRef } from 'react';
+//import paises from '../data/pais.tsx';
+import emailjs from '@emailjs/browser';
 
 interface IdiomaProps {
     idioma: string;
@@ -11,7 +11,38 @@ interface IdiomaProps {
 
 function Footer({ idioma } : IdiomaProps) {
 
-    const [nombre, setNombre] = useState('');
+    const form = useRef<HTMLFormElement>(null);
+    
+    const [name, setName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+
+        const serviceID = 'service_aa46x6a';
+        const templateID = 'template_ptt0u4d';
+        const userID = 'X5WFQ1Oc46fpBK9_4';
+
+        if (form.current) {
+            emailjs.sendForm(serviceID, templateID, form.current, userID)
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                    alert('¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.');
+                    // Limpia el formulario
+                    setName('');
+                    setLastName('');
+                    setEmail('');
+                    setPhone('');
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                    alert('Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.');
+                });
+        }
+    };
+
+    /* const [nombre, setNombre] = useState('');
     const [apellido, setApellido] = useState('');
     const [puesto, setPuesto] = useState('');
     const [empresa, setEmpresa] = useState('');
@@ -21,15 +52,16 @@ function Footer({ idioma } : IdiomaProps) {
     const [pais, setPais] = useState('');
     const [consulta, setConsulta] = useState('');
 
-	const para = "alphaasesoriaestrategica@gmail.com";
 
-    const handleSubmit = (event: React.FormEvent) => {
+	const para = "alphaasesoriaestrategica@gmail.com"; */
+
+    /* const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
     
         const mailtoLink = `mailto:${para}?subject=Consulta web de ${nombre} ${apellido} &body=Nombre: ${nombre}%0D%0AApellido: ${apellido}%0D%0AEmpresa: ${empresa}%0D%0AIndustria: ${industria}%0D%0APaís: ${pais}%0D%0ACelular: ${celular}%0D%0ACorreo de contacto: ${correo}%0D%0AConsulta: ${consulta}`;
     
         window.location.href = mailtoLink;
-    };
+    }; */
 
     //Campus
     const handleClick = () => {
@@ -46,107 +78,61 @@ function Footer({ idioma } : IdiomaProps) {
             <div className="formulario__contacto">
                 <div className='invisible__top' id="contactar" />
                 <div className="informacion">
-                    <h2>{idioma == "es" ? "Contáctanos" : "Contact us"}</h2>
-                    <p>{ idioma == "es" ? "Escríbenos para obtener más información sobre Alpha asesoría estratégica. Un representante de nuestra organización se pondrá en contacto lo antes posible." : "" }</p>
-                    <p>{ idioma == "es" ? "La información proporcionada se mantendrá en todo momento estrictamente confidencial." : "" }</p>
+                    <h2>{idioma === "es" ? "Contáctanos" : "Contact us"}</h2>
+                    <p>{idioma === "es" ? "Escríbenos para obtener más información sobre Alpha asesoría estratégica. Un representante de nuestra organización se pondrá en contacto lo antes posible." : ""}</p>
+                    <p>{idioma === "es" ? "La información proporcionada se mantendrá en todo momento estrictamente confidencial." : ""}</p>
                 </div>
-                <form onSubmit={handleSubmit}>
+                
+                <form ref={form} onSubmit={handleSubmit}>
                     <div className="campos">
                         <div className="campo nombre">
-                            <label>{idioma == "es" ? "Nombre" : "First name"}</label>
-                            <input 
-                                type="text" 
-                                id="nombre" 
-                                name={"nombre"} 
-                                placeholder={idioma == "es" ? "Nombre" : "First name"}
-                                value={nombre}
-                                onChange={(e) => setNombre(e.target.value)}/>
+                            <label>{idioma === "es" ? "Nombre" : "First name"}</label>
+                            <input
+                                type="text"
+                                name="name" 
+                                placeholder={idioma === "es" ? "Nombre" : "First name"}
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
                         </div>
                         <div className="campo apellido">
-                            <label>{idioma == "es" ? "Apellido" : "Last name"}</label>
-                            <input 
-                                type="text"
-                                id="apellido"
-                                name={"apellido"}
-                                placeholder={idioma == "es" ? "Apellido" : "Last name"}
-                                value={apellido}
-                                onChange={(e) => setApellido(e.target.value)} />
-                        </div>
-                        <div className="campo puesto">
-                            <label>{idioma == "es" ? "Puesto" : "Employment"}</label>
+                            <label>{idioma === "es" ? "Apellido" : "Last name"}</label>
                             <input
                                 type="text"
-                                id="puesto"
-                                name={"puesto"}
-                                placeholder="Puesto"
-                                value={puesto}
-                                onChange={(e) => setPuesto(e.target.value)} />
+                                name="lastName" 
+                                placeholder={idioma === "es" ? "Apellido" : "Last name"}
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
+                                required
+                            />
                         </div>
-                        <div className="campo empresa">
-                            <label>{idioma == "es" ? "Empresa" : "Company"}</label>
-                            <input
-                                type="text"
-                                id="empresa"
-                                name={"empresa"}
-                                placeholder={idioma == "es" ? "Empresa" : "Company"}
-                                value={empresa}
-                                onChange={(e) => setEmpresa(e.target.value)} />
-                        </div>
+                       
                         <div className="campo celular">
-                            <label>{idioma == "es" ? "Celular" : "Phone number"}</label>
-                            <input 
-                                type="tel" 
-                                id="celular" 
-                                name={"celular"} 
-                                placeholder={idioma == "es" ? "Celular" : "Phone number"}
-                                value={celular}
-                                onChange={(e) => setCelular(e.target.value)} />
+                            <label>{idioma === "es" ? "Número de Teléfono" : "Phone Number"}</label>
+                            <input
+                                type="tel"
+                                name="phone" 
+                                placeholder={idioma === "es" ? "Número" : "Number"}
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                                required
+                            />
                         </div>
-                        <div className="campo email">
-                            <label>{idioma == "es" ? "Correo" : "Email"}</label>
-                            <input 
-                                id="email" 
-                                name={"email"} 
-                                placeholder={idioma == "es" ? "Correo" : "Email"}
-                                value={correo}
-                                onChange={(e) => setCorreo(e.target.value)} />
-                        </div>
-                        <div className="campo industria">
-                            <label>{idioma == "es" ? "Industria" : "Industry"}</label>
-                            <select 
-                                value={industria} 
-                                id="industria" 
-                                name={idioma == "es" ? "Industria" : "Industry"}
-                                onChange={(e) => setIndutria(e.target.value)} >
-                                    { industrias.map((i) => (
-                                        <option key={i.id} value={i.nombre}>{i.nombre}</option>
-                                    ))}
-                            </select>
-                        </div>
-                        <div className="campo pais">
-                            <label>{idioma == "es" ? "País" : "Country"}</label>
-                            <select
-                                id="pais"
-                                name={"pais"}
-                                value={pais}
-                                onChange={(e) => setPais(e.target.value)} >
-                                    { paises.map((p) => (
-                                        <option key={p.id} value={p.nombre}>{p.nombre}</option>
-                                    ))}
-                            </select>
-                        </div>
-                        <div className="campo mensaje">
-                            <label>{idioma == "es" ? "Consulta" : "Message"}</label>
-                            <textarea 
-                                id="mensaje"
-                                name={"consulta"}
-                                placeholder={idioma == "es" ? "Escríbenos tus consultas" : "Write us your questions"}
-                                value={consulta}
-                                onChange={(e) => setConsulta(e.target.value)}></textarea>
+                         <div className="campo email">
+                            <label>{idioma === "es" ? "Correo" : "Email"}</label>
+                            <input
+                                type="email"
+                                name="email" 
+                                placeholder={idioma === "es" ? "Correo" : "Email"}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
                         </div>
                         <div className="campo enviar">
-                            <button typeof='submit'>
-                                {idioma == "es" ? "Enviar" : "Submit"}
+                            <button type='submit'>
+                                {idioma === "es" ? "Enviar" : "Submit"}
                             </button>
                         </div>
                     </div>
@@ -304,7 +290,7 @@ function Footer({ idioma } : IdiomaProps) {
                                 d="M68.6738 19.7334C68.5957 19.9678 68.5273 20.1777 68.4688 20.3633C68.4102 20.5488 68.3516 20.7197 68.293 20.876C68.2344 21.0322 68.1758 21.1836 68.1172 21.3301C68.0586 21.4766 67.9951 21.6328 67.9268 21.7988L70.2705 21.6816V23H64.6602V22.0039C65.1094 22.0039 65.4756 21.916 65.7588 21.7402C66.042 21.5547 66.2812 21.2959 66.4766 20.9639C66.6719 20.6318 66.8477 20.2363 67.0039 19.7773C67.1699 19.3184 67.3555 18.8105 67.5605 18.2539L73.7422 1.42285H74.46L81.1543 18.5029C81.2422 18.708 81.3301 18.957 81.418 19.25C81.5156 19.5332 81.6035 19.8262 81.6816 20.1289C81.7695 20.4316 81.833 20.7295 81.8721 21.0225C81.9209 21.3154 81.9404 21.5742 81.9307 21.7988L83.9814 21.6816V23H77.1113V22.0039C77.668 21.9941 78.0781 21.8916 78.3418 21.6963C78.6055 21.501 78.7715 21.2617 78.8398 20.9785C78.9082 20.6953 78.9082 20.3926 78.8398 20.0703C78.7715 19.748 78.6836 19.4453 78.5762 19.1621L77.5215 16.3496L69.7139 16.5254C69.499 17.1406 69.3086 17.707 69.1426 18.2246C68.9766 18.7324 68.8203 19.2354 68.6738 19.7334ZM72.3066 9.20117C71.8477 10.4902 71.4424 11.6279 71.0908 12.6143C70.749 13.5908 70.4414 14.4648 70.168 15.2363H77.1113L74.9727 9.49414L73.625 5.80273H73.5664L72.3066 9.20117ZM89.958 19.543C89.958 20.0898 89.9482 20.5537 89.9287 20.9346C89.9189 21.3154 89.8945 21.6328 89.8555 21.8867L95.4658 21.7988C96.0908 21.7891 96.6426 21.6914 97.1211 21.5059C97.6094 21.3105 98.0146 21.0127 98.3369 20.6123C98.6592 20.2119 98.9033 19.6992 99.0693 19.0742C99.2354 18.4395 99.3184 17.6777 99.3184 16.7891H100.329L100.153 23H85.2705V22.0039C85.8369 21.9844 86.2617 21.8818 86.5449 21.6963C86.8281 21.5107 87.0283 21.2568 87.1455 20.9346C87.2627 20.6123 87.3213 20.2314 87.3213 19.792C87.3311 19.3428 87.3359 18.8545 87.3359 18.3271V5.36328C87.3359 4.95312 87.3408 4.56738 87.3506 4.20605C87.3701 3.83496 87.3994 3.49805 87.4385 3.19531L85.2705 3.32715V1.99414H92.0234V2.99023C91.457 3.00977 91.0322 3.11719 90.749 3.3125C90.4658 3.49805 90.2656 3.75195 90.1484 4.07422C90.0312 4.39648 89.9678 4.77734 89.958 5.2168C89.958 5.65625 89.958 6.14453 89.958 6.68164V19.543ZM108.371 15.1045C108.273 15.1045 108.117 15.1045 107.902 15.1045C107.697 15.1045 107.497 15.0996 107.302 15.0898V19.4258C107.302 19.9727 107.292 20.4414 107.272 20.832C107.263 21.2227 107.238 21.5449 107.199 21.7988L109.968 21.6523V23H102.614V22.0039C103.181 21.9844 103.605 21.8818 103.889 21.6963C104.172 21.5107 104.372 21.2568 104.489 20.9346C104.606 20.6123 104.665 20.2314 104.665 19.792C104.675 19.3428 104.68 18.8545 104.68 18.3271V5.36328C104.68 4.95312 104.685 4.56738 104.694 4.20605C104.714 3.83496 104.743 3.49805 104.782 3.19531L102.614 3.32715V1.99414C103.669 1.97461 104.753 1.96484 105.866 1.96484C106.979 1.95508 108.127 1.9502 109.309 1.9502C112.219 1.9502 114.431 2.43848 115.944 3.41504C117.565 4.47949 118.376 6.03711 118.376 8.08789C118.376 8.50781 118.327 8.97168 118.229 9.47949C118.142 9.9873 117.956 10.5146 117.673 11.0615C117.39 11.5986 116.999 12.1162 116.501 12.6143C116.013 13.1025 115.393 13.5322 114.641 13.9033C113.898 14.2646 113.01 14.5576 111.975 14.7822C110.939 14.9971 109.738 15.1045 108.371 15.1045ZM107.302 13.8447C107.673 13.8936 107.995 13.9229 108.269 13.9326C108.552 13.9424 108.879 13.9473 109.25 13.9473C110.1 13.9473 110.9 13.8203 111.652 13.5664C112.414 13.3125 113.073 12.9463 113.63 12.4678C114.196 11.9795 114.641 11.3887 114.963 10.6953C115.295 10.002 115.461 9.21582 115.461 8.33691C115.461 7.38965 115.31 6.58398 115.007 5.91992C114.704 5.25586 114.279 4.71875 113.732 4.30859C113.186 3.88867 112.531 3.58594 111.77 3.40039C111.008 3.21484 110.168 3.12207 109.25 3.12207C108.713 3.12207 108.308 3.20996 108.034 3.38574C107.771 3.55176 107.58 3.79102 107.463 4.10352C107.355 4.41602 107.302 4.79199 107.302 5.23145C107.302 5.66113 107.302 6.14453 107.302 6.68164V13.8447ZM136.057 12.8486L125.319 12.9805V19.4258C125.319 19.9727 125.31 20.4414 125.29 20.832C125.28 21.2227 125.256 21.5449 125.217 21.7988L127.385 21.6816V23H120.632V22.0039C121.198 21.9844 121.623 21.8818 121.906 21.6963C122.189 21.5107 122.39 21.2568 122.507 20.9346C122.624 20.6123 122.683 20.2314 122.683 19.792C122.692 19.3428 122.697 18.8545 122.697 18.3271V5.36328C122.697 4.95312 122.702 4.56738 122.712 4.20605C122.731 3.83496 122.761 3.49805 122.8 3.19531L120.632 3.32715V1.99414H127.385V2.99023C126.818 3.00977 126.394 3.11719 126.11 3.3125C125.827 3.49805 125.627 3.75195 125.51 4.07422C125.393 4.39648 125.329 4.77734 125.319 5.2168C125.319 5.65625 125.319 6.14453 125.319 6.68164V11.6621H136.057V5.36328C136.057 4.52344 136.086 3.80078 136.145 3.19531L133.977 3.32715V1.99414H140.729V2.99023C140.173 3.00977 139.748 3.11719 139.455 3.3125C139.172 3.49805 138.972 3.75195 138.854 4.07422C138.737 4.39648 138.674 4.77734 138.664 5.2168C138.664 5.65625 138.664 6.14453 138.664 6.68164V19.4258C138.664 20.5 138.635 21.291 138.576 21.7988L140.729 21.6816V23H133.977V22.0039C134.543 21.9844 134.968 21.8818 135.251 21.6963C135.544 21.5107 135.749 21.2568 135.866 20.9346C135.983 20.6123 136.042 20.2314 136.042 19.792C136.052 19.3428 136.057 18.8545 136.057 18.3271V12.8486ZM146.223 19.7334C146.145 19.9678 146.076 20.1777 146.018 20.3633C145.959 20.5488 145.9 20.7197 145.842 20.876C145.783 21.0322 145.725 21.1836 145.666 21.3301C145.607 21.4766 145.544 21.6328 145.476 21.7988L147.819 21.6816V23H142.209V22.0039C142.658 22.0039 143.024 21.916 143.308 21.7402C143.591 21.5547 143.83 21.2959 144.025 20.9639C144.221 20.6318 144.396 20.2363 144.553 19.7773C144.719 19.3184 144.904 18.8105 145.109 18.2539L151.291 1.42285H152.009L158.703 18.5029C158.791 18.708 158.879 18.957 158.967 19.25C159.064 19.5332 159.152 19.8262 159.23 20.1289C159.318 20.4316 159.382 20.7295 159.421 21.0225C159.47 21.3154 159.489 21.5742 159.479 21.7988L161.53 21.6816V23H154.66V22.0039C155.217 21.9941 155.627 21.8916 155.891 21.6963C156.154 21.501 156.32 21.2617 156.389 20.9785C156.457 20.6953 156.457 20.3926 156.389 20.0703C156.32 19.748 156.232 19.4453 156.125 19.1621L155.07 16.3496L147.263 16.5254C147.048 17.1406 146.857 17.707 146.691 18.2246C146.525 18.7324 146.369 19.2354 146.223 19.7334ZM149.855 9.20117C149.396 10.4902 148.991 11.6279 148.64 12.6143C148.298 13.5908 147.99 14.4648 147.717 15.2363H154.66L152.521 9.49414L151.174 5.80273H151.115L149.855 9.20117Z" />
                             </svg>
                         </Link>
-                        <p> &copy; 2024 { idioma == "es" ? "Alpha Asesoría Estratégica." : "Alpha Strategic Consulting."}</p>
+                        <p> &copy; 2025 { idioma == "es" ? "Alpha Asesoría Estratégica." : "Alpha Strategic Consulting."}</p>
                     </div>
                 </div>
             </div>

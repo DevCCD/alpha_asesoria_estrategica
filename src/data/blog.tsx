@@ -1,4 +1,76 @@
 export const blog = [
+     {
+        "_idBlog" :"26",
+        "title" : "Buscando nuestro Mississippi",
+        "description" : "¿Podemos hacer a un lado nuestras diferencias, reconocernos como compatriotas y trabajar en un objetivo común de desarrollo y bienestar?",
+        "url" : "https://peru21.pe/opinion/buscando-nuestro-mississippi-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752260012/alpha/images/blog/26_buscando.jpg",
+    },
+    {
+        "_idBlog" :"25",
+        "title" : "Una visión del desarrollo regional",
+        "description" : "Los datos muestran un nivel de pobreza en 2024 similar al de 2011, es decir, 13 años perdidos en mejorar las condiciones de vida de la población",
+        "url" : "https://peru21.pe/opinion/una-vision-del-desarrollo-regional-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259885/alpha/images/blog/25_vision.jpg",
+    },
+    {
+        "_idBlog" :"24",
+        "title" : "¡Dos chelas más y nos vamos!",
+        "description" : "Pero lo que se está viendo es un descontrol del déficit fiscal y la implementación de políticas que no tendrán ningún impacto real en la mejora de las condiciones de vida de la población, pero que sí favorecen a una agenda populista",
+        "url" : "https://peru21.pe/opinion/dos-chelas-mas-y-nos-vamos-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259820/alpha/images/blog/24_dos_chelas.jpg",
+    },
+    {
+        "_idBlog" :"23",
+        "title" : "El crecimiento en el corto y largo plazo",
+        "description" : "En el escenario de riesgo, el PBI crecería solamente 2.4%, y podríamos estar expuestos a menor crecimiento si el impacto sobre China y los términos de intercambio se acentúan",
+        "url" : "https://peru21.pe/opinion/el-crecimiento-en-el-corto-y-largo-plazo-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259735/alpha/images/blog/23_crecimiento.jpg",
+    },
+    {
+        "_idBlog" :"22",
+        "title" : "¿Mi billetera?",
+        "description" : "El tráfico en nuestras ciudades revela que los peruanos no respetamos las leyes ni las instituciones, pero que, además, no tenemos consideración por las otras personas. La manera como manejamos refleja la falta de cohesión social entre los peruanos",
+        "url" : "https://peru21.pe/opinion/mi-billetera-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259589/alpha/images/blog/22_billetera.jpg",
+    },
+    {
+        "_idBlog" :"21",
+        "title" : "El ABC de las ZEE",
+        "description" : "Los países crecen y se desarrollan por sus propias políticas y condiciones, y no por tener más o menos ZEE. De hecho, lo que se encuentra es que al inicio puede existir un impacto positivo, pero después la actividad económica de las ZEE declina y a lo mucho crece al mismo ritmo del país",
+        "url" : "https://peru21.pe/opinion/luis-carranza-el-abc-de-las-zee/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259517/alpha/images/blog/21_abc.png",
+    },
+    {
+        "_idBlog" :"20",
+        "title" : "Drill, baby, drill",
+        "description" : "Más allá de afectar a su país, el actual gobierno de Trump ha alborotado a todo el mundo. En la medida en que sigan estas políticas inconsistentes, se afectará el crecimiento mundial",
+        "url" : "https://peru21.pe/opinion/drill-baby-drill-por-luis-carranza",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259397/alpha/images/blog/20_drill.jpg",
+    },
+    {
+        "_idBlog" :"19",
+        "title" : "La sostenibilidad fiscal en el largo plazo",
+        "description" : "En el caso de Perú, tenemos una sólida situación fiscal, pero en los últimos años hemos ido perdiendo la disciplina",
+        "url" : "https://peru21.pe/opinion/la-sostenibilidad-fiscal-en-el-largo-plazo-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259245/alpha/images/blog/19_sostenibilidad.png",
+    },
+    {
+        "_idBlog" :"18",
+        "title" : "Valores culturales del progreso",
+        "description" : "Desde el Congreso siempre hay interés por aumentar el gasto social y promover proyectos en las regiones, pero cuando se ponían en riesgo las metas fiscales había sentido de responsabilidad en la gran mayoría de congresistas. Esa responsabilidad ya no existe hoy en día",
+        "url" : "https://peru21.pe/opinion/valores-culturales-del-progreso-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259117/alpha/images/blog/18_valores_culturales.jpg",
+    },
+    {
+        "_idBlog" :"17",
+        "title" : "La relación entre pobreza y crecimiento en el Perú",
+        "description" : "Si queremos disminuir la pobreza y mejorar la calidad de vida de los peruanos, debemos apostar por facilitar la inversión privada, la cual generará empleo",
+        "url" : "https://peru21.pe/opinion/la-relacion-entre-pobreza-y-crecimiento-en-el-peru-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752258959/alpha/images/blog/17larelacion.png",
+    },
+    
+    
     {
         "_idBlog" :"16",
         "title" : "Puinahua es el Perú",
