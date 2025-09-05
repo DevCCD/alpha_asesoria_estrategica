@@ -1,4 +1,25 @@
 export const blog = [
+    {
+        "_idBlog" :"29",
+        "title" : "¿Tiramos los dados?",
+        "description" : "Un buen sistema de control y fiscalización es la mejor protección para los funcionarios.",
+        "url" : "https://peru21.pe/opinion/tiramos-los-dados-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1757088367/alpha/images/blog/tiramosdados.jpg",
+    },
+    {
+        "_idBlog" :"28",
+        "title" : "¡20 mil millones!",
+        "description" : "El gasto público alcanza niveles récord, pero la salud, la educación y la lucha contra la pobreza siguen estancadas. Corrupción y desigualdad marcan el destino de miles de millones del Estado, destacó el economista Luis Carranza.",
+        "url" : "https://peru21.pe/opinion/luis-carranza-20-mil-millones/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1757088359/alpha/images/blog/20_mil_millones.png",
+    },
+    {
+        "_idBlog" :"27",
+        "title" : "Superexternalidad",
+        "description" : "En el caso de la actividad de agroexportación existen condiciones excepcionales que ameritan no solo un tratamiento tributario preferencial, sino también la priorización de acciones públicas colaterales para incentivar una mayor inversión privada.",
+        "url" : "https://peru21.pe/opinion/superexternalidad-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1757088362/alpha/images/blog/Superexternalidad.jpg",
+    },
      {
         "_idBlog" :"26",
         "title" : "Buscando nuestro Mississippi",
@@ -9,28 +30,28 @@ export const blog = [
     {
         "_idBlog" :"25",
         "title" : "Una visión del desarrollo regional",
-        "description" : "Los datos muestran un nivel de pobreza en 2024 similar al de 2011, es decir, 13 años perdidos en mejorar las condiciones de vida de la población",
+        "description" : "Los datos muestran un nivel de pobreza en 2024 similar al de 2011, es decir, 13 años perdidos en mejorar las condiciones de vida de la población.",
         "url" : "https://peru21.pe/opinion/una-vision-del-desarrollo-regional-por-luis-carranza/",
         "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259885/alpha/images/blog/25_vision.jpg",
     },
     {
         "_idBlog" :"24",
         "title" : "¡Dos chelas más y nos vamos!",
-        "description" : "Pero lo que se está viendo es un descontrol del déficit fiscal y la implementación de políticas que no tendrán ningún impacto real en la mejora de las condiciones de vida de la población, pero que sí favorecen a una agenda populista",
+        "description" : "Pero lo que se está viendo es un descontrol del déficit fiscal y la implementación de políticas que no tendrán ningún impacto real en la mejora de las condiciones de vida de la población, pero que sí favorecen a una agenda populista.",
         "url" : "https://peru21.pe/opinion/dos-chelas-mas-y-nos-vamos-por-luis-carranza/",
         "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259820/alpha/images/blog/24_dos_chelas.jpg",
     },
     {
         "_idBlog" :"23",
         "title" : "El crecimiento en el corto y largo plazo",
-        "description" : "En el escenario de riesgo, el PBI crecería solamente 2.4%, y podríamos estar expuestos a menor crecimiento si el impacto sobre China y los términos de intercambio se acentúan",
+        "description" : "En el escenario de riesgo, el PBI crecería solamente 2.4%, y podríamos estar expuestos a menor crecimiento si el impacto sobre China y los términos de intercambio se acentúan.",
         "url" : "https://peru21.pe/opinion/el-crecimiento-en-el-corto-y-largo-plazo-por-luis-carranza/",
         "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259735/alpha/images/blog/23_crecimiento.jpg",
     },
     {
         "_idBlog" :"22",
         "title" : "¿Mi billetera?",
-        "description" : "El tráfico en nuestras ciudades revela que los peruanos no respetamos las leyes ni las instituciones, pero que, además, no tenemos consideración por las otras personas. La manera como manejamos refleja la falta de cohesión social entre los peruanos",
+        "description" : "El tráfico en nuestras ciudades revela que los peruanos no respetamos las leyes ni las instituciones, pero que, además, no tenemos consideración por las otras personas. La manera como manejamos refleja la falta de cohesión social entre los peruanos.",
         "url" : "https://peru21.pe/opinion/mi-billetera-por-luis-carranza/",
         "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1752259589/alpha/images/blog/22_billetera.jpg",
     },
