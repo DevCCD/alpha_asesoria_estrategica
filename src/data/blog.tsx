@@ -1,5 +1,26 @@
 export const blog = [
     {
+        "_idBlog" :"32",
+        "title" : "¡Abróchense los cinturones!",
+        "description" : "Los problemas más serios los vemos en el altímetro (altura) de la seguridad.",
+        "url" : "https://peru21.pe/opinion/abrochense-los-cinturones-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1761108067/alpha/images/blog/cinturones_o7om1w.jpg",
+    },
+    {
+        "_idBlog" :"31",
+        "title" : "La Segunda Ley de la Termodinámica",
+        "description" : "Podemos ver claramente en nuestro país cómo la falta de Estado está llevando a un aumento significativo de la inseguridad ciudadana.",
+        "url" : "https://peru21.pe/opinion/la-segunda-ley-de-la-termodinamica-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1761108144/alpha/images/blog/termodinamica_n3zmcq.jpg",
+    },
+    {
+        "_idBlog" :"30",
+        "title" : "La primera ley de la dinámica en economía",
+        "description" : "En un país en que el Gobierno aplica medidas populistas, la productividad puede no crecer y los salarios aumentan porque se decreta por ley.",
+        "url" : "https://peru21.pe/opinion/luis-carranza-la-primera-ley-de-la-dinamica-en-economia/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1761108143/alpha/images/blog/sueldo_wwz6md.jpg"
+    },
+    {   
         "_idBlog" :"29",
         "title" : "¿Tiramos los dados?",
         "description" : "Un buen sistema de control y fiscalización es la mejor protección para los funcionarios.",
