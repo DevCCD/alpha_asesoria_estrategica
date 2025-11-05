@@ -40,12 +40,12 @@ const Hero = ({ idioma } : IdiomaProps) => {
                             </h4>
                         </div>
                         <h2>
-                            {idioma == "es" ? "Las Megatendencias Globales" : "Global"}
+                            {idioma == "es" ? "Menor incertidumbre global y escenario electoral local: proyecciones al 2026" : "Global"}
                         </h2>
                         <p>{ idioma == "es" ? "Informe "+ fecha.toLocaleDateString('es-ES',{ month: 'long', year: 'numeric'}) : "Report "+ fecha.toLocaleDateString('en-EN',{ month: 'long', year: 'numeric'}) }</p>
                     </div>
                     <div className="right__portada">
-                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1757089278/alpha/Portada%20Informes/ciruclo_agosto.png" alt="Earth" />
+                        <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1761151130/alpha/Portada%20Informes/Setiembre%202025/Portada_Septiembre_yqvtv7.png" alt="Earth" />
                     </div>
                 </Link>
                 <div className="container">

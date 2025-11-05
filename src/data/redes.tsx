@@ -5,17 +5,17 @@ import { IoMdMail } from 'react-icons/io';
 const redes = [
     {
         "_id": 0,
-        "nombre": "+51 942 908 008",
-        "url": "tel:+51 942 908 008",
+        "nombre": "+51 936 466 780",
+        "url": "tel:+51 936 466 780",
         "icono": FaPhone
     },
     {
         "_id": 1,
         "nombre": "Email",
-        "url": "mailto:administracion@alphaasesoriaestrategica.com",
+        "url": "mailto:alphaasesoriaestrategica@gmail.com",
         "icono": IoMdMail
     },
-    {
+   /*  {
         "_id": 2,
         "nombre": "Twitter",
         "url": "https://x.com/AlphaAsesoria",
@@ -32,19 +32,19 @@ const redes = [
         "nombre": "LinkedIn",
         "url": "https://www.linkedin.com/company/alpha-asesoria-estrategica",
         "icono": FaLinkedinIn
-    },
+    }, */
     {
         "_id": 5,
         "nombre": "WhatsApp",
-        "url": "https://api.whatsapp.com/send?phone=51942908008",
+        "url": "https://api.whatsapp.com/send?phone=51936466780",
         "icono": FaWhatsapp
     },
-    {
+   /*  {
         "_id": 6,
         "nombre": "Youtube",
         "url": "https://www.youtube.com/channel/UCZVGBA2XIv4x7MnRDb1BNuA",
         "icono": FaYoutube
-    }
+    } */
 ]
 
 export default redes

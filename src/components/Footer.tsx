@@ -281,7 +281,7 @@ function Footer({ idioma } : IdiomaProps) {
                 <div className="LogoCopy">
                     <div className="logofooter">
                         <Link to={"/"}>
-                            <svg width="164" height="43" viewBox="0 0 164 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="164" height="43" viewBox="0 0 164 43" fill="none" xmlns="https://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd"
                                 d="M46.8092 0L46.8115 0.00128791L31.3304 25.8121C29.5079 29.1247 25.8901 31.3814 21.7248 31.3814C15.7258 31.3814 10.8625 26.7002 10.8625 20.9256C10.8625 15.2654 15.5351 10.6556 21.3698 10.4753L21.3621 10.4624L31.2523 10.4624L37.5275 0H21.7248L21.7329 0.0134471L21.7245 0.0134456C9.72641 0.0134456 0 9.37591 0 20.9251C0 32.4743 9.72641 41.8367 21.7245 41.8367C30.0114 41.8367 37.2145 37.3705 40.8778 30.8023L59.3528 0H46.8092Z" />
                                 <path
