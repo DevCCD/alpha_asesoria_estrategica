@@ -1,5 +1,7 @@
-import { FaWhatsapp, FaYoutube } from 'react-icons/fa';
-import { FaFacebookF, FaLinkedinIn, FaPhone, FaXTwitter } from 'react-icons/fa6';
+import { FaWhatsapp } from 'react-icons/fa';
+//import { FaYoutube } from 'react-icons/fa';
+//import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
+import { FaPhone } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 
 const redes = [
