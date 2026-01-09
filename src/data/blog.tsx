@@ -1,5 +1,47 @@
 export const blog = [
     {
+        "_idBlog" :"38",
+        "title" : "Un regalo de Navidad",
+        "description" : "El Perú no saldrá adelante hasta que los peruanos no entiendan que son ustedes mismos los que tienen que tomar las riendas de su destino, que no tienen que esperar a que llegue un gran líder que los lleve al progreso.",
+        "url" : "https://peru21.pe/opinion/un-regalo-de-navidad-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/navidad_tslnz8.jpg",
+    },
+    {
+        "_idBlog" :"37",
+        "title" : "Balance y Perspectivas de la Economía Global",
+        "description" : "Perú debería estar creciendo en torno a un 3%, muy similar al crecimiento de este año, por las buenas perspectivas para nuestras exportaciones.",
+        "url" : "https://peru21.pe/opinion/balance-y-perspectivas-de-la-economia-global-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/balance_xorwsd.jpg",
+    },
+    {
+        "_idBlog" :"36",
+        "title" : "El traje del emperador",
+        "description" : "En cada sector que veamos, tenemos este estancamiento o deterioro de la calidad o cobertura del servicio.",
+        "url" : "https://peru21.pe/opinion/el-traje-del-emperador-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/emperador_g4a1tp.jpg",
+    },
+    {
+        "_idBlog" :"35",
+        "title" : "Terminando la montaña rusa de 2025",
+        "description" : "Mientras que para el mundo la montaña rusa de 2025 ya está terminando y se vislumbra un 2026 con más tranquilidad, para nosotros recién empieza.",
+        "url" : "https://peru21.pe/opinion/luis-carranza-terminando-la-montana-rusa-de-2025/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/monta%C3%B1a_ejwgo2.jpg",
+    },
+    {
+        "_idBlog" :"34",
+        "title" : "Érase una vez",
+        "description" : "En este país de la confusión, ya el sector público y el sector privado no se sientan a conversar sobre lo que le conviene al país.",
+        "url" : "https://peru21.pe/opinion/erase-una-vez-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/erase_wi85nw.jpg",
+    },
+    {
+        "_idBlog" :"33",
+        "title" : "¿Errores de proyección o errores de gestión?",
+        "description" : "Nuestro Estado es incapaz de sacar adelante los buenos proyectos, pero, por el contrario, tiene una gran capacidad para entorpecer los proyectos privados.",
+        "url" : "https://peru21.pe/opinion/errores-de-proyeccion-o-errores-de-gestion-por-luis-carranza/",
+        "urlImage" : "https://res.cloudinary.com/ccdcloudy/image/upload/v1767850651/alpha/images/blog/errores_sorysr.jpg",
+    },
+    {
         "_idBlog" :"32",
         "title" : "¡Abróchense los cinturones!",
         "description" : "Los problemas más serios los vemos en el altímetro (altura) de la seguridad.",
