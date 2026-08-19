@@ -1,30 +1,20 @@
 import { IoMdClose } from 'react-icons/io';
 import './index.css';
-import { Link, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 interface IdiomaProps {
     idioma: string;
 }
 
 function Modal({ idioma }: IdiomaProps) {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const navigate = useNavigate();
-
     useEffect(() => {
         document.title = idioma === "es" ? "Alpha | Inicio de sesión" : "Alpha | Login";
     }, [idioma]);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-
-        // Verificación simple de credenciales
-        if (email === 'repositorio@alphaasesoriaestrategica.com' && password === 'Alpha2024') {
-            navigate('/repositorio');
-        } else {
-            alert(idioma === "es" ? "Credenciales incorrectas" : "Incorrect credentials");
-        }
+        window.location.href = 'https://repo.alphaasesoriaestrategica.com/login/';
     };
 
     return (
@@ -38,26 +28,11 @@ function Modal({ idioma }: IdiomaProps) {
                 <form onSubmit={handleSubmit}>
                     <div className="modal__body">
                         <h2>{idioma === "es" ? "Inicio de sesión - Repositorio" : "Repository - Login"}</h2>
-                        <label htmlFor="correo">{idioma === "es" ? "Correo / Usuario" : "User / Email"}</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder={idioma === "es" ? "Correo" : "Email"}
-                            required
-                        />
-                        <label htmlFor="contrasena">{idioma === "es" ? "Contraseña" : "Password"}</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder={idioma === "es" ? "Contraseña" : "Password"}
-                            required
-                        />
+                        <p>{idioma === "es" ? "Serás redirigido a la plataforma oficial del repositorio." : "You will be redirected to the official repository platform."}</p>
                     </div>
                     <div className="modal__footer">
                         <button type="submit" className="btn__login">
-                            {idioma === "es" ? "Continuar" : "Continue"}
+                            {idioma === "es" ? "Ir al repositorio" : "Go to repository"}
                         </button>
                     </div>
                 </form>

@@ -64,7 +64,7 @@ function MainBlog({ idioma }: IdiomaProps) {
                     <div className="contenedor-cards">
                         {blog.map((bl) => (
                         <div key={bl._idBlog} className="card__blog">
-                            <a target="_blank" href={bl.url}>
+                            <a target="_blank" rel="noopener noreferrer" href={bl.url}>
                             <img src={bl.urlImage} alt="Imagen Publicacion" />
                             <h3>{bl.title}</h3>
                             <p>{bl.description}</p>
@@ -78,7 +78,7 @@ function MainBlog({ idioma }: IdiomaProps) {
                     <div className="contenedor-cards">
                         {libro.map((li) => (
                         <div key={li._idLibro} className="card__blog libro">
-                            <a target="_blank" href={li.url}>
+                            <a target="_blank" rel="noopener noreferrer" href={li.url}>
                                 <img src={li.urlImage} alt="Imagen Libro" />
                                 <p>{li.description}</p>
                             </a>
@@ -91,7 +91,7 @@ function MainBlog({ idioma }: IdiomaProps) {
                     <div className="contenedor-cards">
                         {paper.map((pa) => (
                         <div key={pa._idPaper} className="card__blog">
-                            <a target="_blank" href={pa.url}>
+                            <a target="_blank" rel="noopener noreferrer" href={pa.url}>
                             <img src={pa.urlImage} alt="Imagen Papers" />
                             <h3>{pa.title}</h3>
                             <p>{pa.description}</p>

@@ -36,11 +36,11 @@ function Navbar() {
 
     //Campus
     const handleClick = () => {
-        window.location.href = "https://www.alphaasesoriaestrategica.com/campus/moodle/login/";
+        window.open("https://www.alphaasesoriaestrategica.com/campus/moodle/login/", "_blank", "noopener,noreferrer");
     };
 
     const handleClickRepo = () => {
-        window.location.href = "https://repo.alphaasesoriaestrategica.com/login/";
+        window.open("https://repo.alphaasesoriaestrategica.com/login/", "_blank", "noopener,noreferrer");
     };
 
     return (

@@ -25,24 +25,24 @@ function MainNosotros({ idioma } : IdiomaProps) {
                     <h2>{ idioma == "es" ? "Empresas" : "Companies" }</h2>
                     <div className="sub__container__empresas">
                         <div>
-                            <Link to={"#"} target='_blank'>
+                            <a href="https://www.alphaasesoriaestrategica.com/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098337/alpha/images/logoccd_ublvsl.png" alt="CCD" />
-                            </Link>
+                            </a>
                         </div>
                         <div>
-                            <Link to={"#"} target='_blank'>
+                            <a href="https://www.alphaasesoriaestrategica.com/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098336/alpha/images/logoanalisis_economico_integral_cover_necqnm.png" alt="AEI" />
-                            </Link>
+                            </a>
                         </div>
                         <div>
-                            <Link to={"#"} target='_blank'>
+                            <a href="https://www.alphaasesoriaestrategica.com/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/v1712098340/alpha/images/logoglobalgradient_enjkcg.png" alt="Global Gradient" />
-                            </Link>
+                            </a>
                         </div>
                         <div>
-                            <Link to={"https://alphasignatureinvestment.com/"} target='_blank'>
+                            <a href="https://alphasignatureinvestment.com/" target="_blank" rel="noopener noreferrer">
                                 <img src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1/alpha/images/Logo%20Asif" alt="Alpha Signature Investment Fund" />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
