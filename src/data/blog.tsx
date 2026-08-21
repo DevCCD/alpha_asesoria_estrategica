@@ -1,5 +1,33 @@
 export const blog = [
     {
+        "_idBlog": "48",
+        "title": "¿2,000 soles o un sol?",
+        "description": "\"Miremos ahora nuestro enorme potencial y, para muestra, un botón. Tenemos en Arequipa el proyecto Majes Siguas que involucra alrededor de 38,500 ha”.",
+        "url": "https://peru21.pe/opinion/2000-soles-o-un-sol-por-luis-carranza/",
+        "urlImage": "https://res.cloudinary.com/ccdcloudy/image/upload/v1787326898/alpha/images/blog/2_000_soles_o_un_sol_vmxg2t.jpg"
+    },
+    {
+        "_idBlog": "47",
+        "title": "¿Crecimiento económico o desarrollo humano?",
+        "description": "\"No hay un país con un IDH bajo y PBI per cápita alto; de otro lado, tampoco tenemos un país con IDH alto y PBI per cápita bajo\".",
+        "url": "https://peru21.pe/opinion/crecimiento-economico-o-desarrollo-humano-por-luis-carranza/",
+        "urlImage": "https://res.cloudinary.com/ccdcloudy/image/upload/v1787326601/alpha/images/blog/Crecimiento_econ%C3%B3mico_o_desarrollo_humano_ozdwsf.jpg"
+    },
+    {
+        "_idBlog": "46",
+        "title": "La ruta directa al infierno",
+        "description": "\"Este plan, bajo un falso paraguas de equidad y solidaridad, intenta enfrentarnos a peruanos contra peruanos, pobres contra ricos, empresarios contra trabajadores, limeños contra provincianos\".",
+        "url": "https://peru21.pe/opinion/la-ruta-directa-al-infierno-por-luis-carranza/",
+        "urlImage": "https://res.cloudinary.com/ccdcloudy/image/upload/v1787326415/alpha/images/blog/La_ruta_directa_al_infierno_vwsdfo.jpg"
+    },
+    {
+        "_idBlog": "45",
+        "title": "¡Contigo, Perú!",
+        "description": "\"Nuestro Perú se encuentra muy golpeado. Estas elecciones no son simplemente un cambio de mando, sino la oportunidad de redefinir el contrato social que el Perú necesita\".",
+        "url": "https://peru21.pe/opinion/contigo-peru-por-luis-carranza/",
+        "urlImage": "https://res.cloudinary.com/ccdcloudy/image/upload/v1787326212/alpha/images/blog/Contigo_Per%C3%BA_fh31na.jpg"
+    },
+    {
         "_idBlog": "44",
         "title": "El Estado es ancho y ajeno",
         "description": "Este Congreso viene aprobando leyes que incrementan desproporcionalmente el gasto público, lo que va claramente en contra de nuestra Constitución.",
