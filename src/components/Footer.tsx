@@ -69,7 +69,7 @@ function Footer({ idioma } : IdiomaProps) {
     };
 
     const handleClickRepo = () => {
-        window.open("https://repo.alphaasesoriaestrategica.com/login/", "_blank", "noopener,noreferrer");
+        window.open("https://repositorio.alphaasesoriaestrategica.com/", "_blank", "noopener,noreferrer");
     };
 
     return (

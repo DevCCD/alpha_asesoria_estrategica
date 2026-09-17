@@ -40,7 +40,7 @@ function Navbar() {
     };
 
     const handleClickRepo = () => {
-        window.open("https://repositorio.alphaasesoriaestrategica.com/wp-login.php", "_blank", "noopener,noreferrer");
+        window.open("https://repositorio.alphaasesoriaestrategica.com/", "_blank", "noopener,noreferrer");
     };
 
     return (

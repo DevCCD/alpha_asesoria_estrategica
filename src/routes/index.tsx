@@ -10,8 +10,6 @@ import Perfil from '../Perfil.tsx'
 import Servicio from '../Servicio.tsx'
 import Blog from '../Blog.tsx'
 import { Link, createBrowserRouter } from 'react-router-dom'
-import Tablero from '../Tablero.tsx'
-import Curso from '../Curso.tsx'
 
 const router = createBrowserRouter([
     {
@@ -58,14 +56,6 @@ const router = createBrowserRouter([
     {
         path: '/blog',
         element: <Blog />
-    },
-    {
-        path: '/board',
-        element: <Tablero />
-    },
-    {
-        path: '/board/curso/:_id', //id
-        element: <Curso />
     }
 ]);
 
