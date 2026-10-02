@@ -1,0 +1,110 @@
+:root {
+    --topbar-height: 38px;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--topbar-height);
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    background: var(--light-primary-color);
+    color: #0b2a4a;
+    font-family: 'Poppins', sans-serif;
+    font-size: .85rem;
+}
+
+.topbar__link {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: 0 3rem;
+    color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.topbar__link > span:not(.topbar__cta) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topbar__icon {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.topbar__cta {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.topbar__link:hover .topbar__cta {
+    color: var(--primary-color);
+}
+
+.topbar__close {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.topbar__close:hover {
+    background: rgba(11, 42, 74, .12);
+}
+
+/* Desplaza navbar y contenido cuando la barra está visible */
+body.has-topbar header {
+    top: var(--topbar-height);
+}
+
+body.has-topbar .navcontainer {
+    top: var(--topbar-height);
+}
+
+body.has-topbar main {
+    padding-top: var(--topbar-height);
+}
+
+@media screen and (max-width: 700px) {
+    .topbar {
+        font-size: .78rem;
+    }
+
+    .topbar__link {
+        padding: 0 2.5rem 0 .75rem;
+        justify-content: flex-start;
+    }
+
+    .topbar__extra {
+        display: none;
+    }
+}
+
+body.has-topbar .invisible__top {
+    margin-top: calc(-70px - var(--topbar-height));
+}

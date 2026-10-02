@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { CAMPUS_LOGIN_URL } from '../data/campus';
 import '../styles.css';
 import  redes  from '../data/redes.tsx';
 import { useState, useRef } from 'react';
@@ -65,7 +66,7 @@ function Footer({ idioma } : IdiomaProps) {
 
     //Campus
     const handleClick = () => {
-        window.open("https://www.alphaasesoriaestrategica.com/campus/moodle/login/", "_blank", "noopener,noreferrer");
+        window.open(CAMPUS_LOGIN_URL, "_blank", "noopener,noreferrer");
     };
 
     const handleClickRepo = () => {

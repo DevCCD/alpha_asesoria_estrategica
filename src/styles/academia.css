@@ -1,0 +1,605 @@
+/* Sección Academia */
+.acad {
+    --acad-navy: #0b3c6b;
+    background: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+    color: #1d2a3a;
+}
+
+.acad section[id] {
+    scroll-margin-top: calc(70px + var(--topbar-height, 0px));
+}
+
+.acad h1,
+.acad h2,
+.acad h3,
+.acad h4 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+.acad-eyebrow {
+    display: block;
+    margin-bottom: .75rem;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    color: var(--light-primary-color);
+}
+
+.acad-eyebrow--dark {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.acad-btn {
+    display: inline-block;
+    padding: .9rem 1.8rem;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: .95rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .15s, color .15s, border-color .15s;
+}
+
+.acad-btn--light {
+    background: var(--white-color);
+    color: var(--acad-navy);
+}
+
+.acad-btn--light:hover {
+    background: transparent;
+    border-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.acad-btn--outline {
+    background: transparent;
+    border-color: rgba(255, 255, 255, .6);
+    color: var(--white-color);
+}
+
+.acad-btn--outline:hover {
+    background: var(--white-color);
+    color: var(--acad-navy);
+}
+
+.acad-btn--primary {
+    background: var(--acad-navy);
+    color: var(--white-color);
+}
+
+.acad-btn--primary:hover {
+    background: #082c4f;
+}
+
+.acad-btn--ghost {
+    background: transparent;
+    border-color: var(--acad-navy);
+    color: var(--acad-navy);
+}
+
+.acad-btn--ghost:hover {
+    background: var(--acad-navy);
+    color: var(--white-color);
+}
+
+/* Hero */
+.acad-hero {
+    display: flex;
+    min-height: 560px;
+    padding-top: 70px;
+    background: var(--gradient--dark);
+    color: var(--white-color);
+}
+
+.acad-hero__text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 4rem 3rem max(4rem, calc((100vw - 1400px) / 2 + 4rem));
+}
+
+.acad-hero__text h1 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+}
+
+.acad-hero__text p {
+    max-width: 30rem;
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.acad-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.acad-hero__img {
+    flex: 1 1 50%;
+}
+
+.acad-hero__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tres pasos */
+.acad-steps {
+    display: flex;
+    justify-content: center;
+    background: var(--white-color);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.acad-steps__item {
+    flex: 1 1 0;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.acad-steps__item + .acad-steps__item {
+    border-left: 1px solid var(--light-gray);
+}
+
+.acad-steps__num {
+    font-family: 'Lora', serif;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.acad-steps__item strong {
+    font-size: .95rem;
+}
+
+.acad-steps__item p {
+    font-size: .8rem;
+    color: var(--gray-color);
+}
+
+/* Secciones */
+.acad-section {
+    padding: 4rem max(1.5rem, calc((100vw - 1300px) / 2));
+}
+
+.acad-section > h2,
+.acad-cierre h2,
+.acad-faq h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.acad-section--tint {
+    background: #f1f4f8;
+}
+
+.acad-section--dark {
+    background: var(--gradient--dark);
+}
+
+.acad-section--dark > h2 {
+    color: var(--white-color);
+}
+
+.acad-lead {
+    max-width: 52rem;
+    margin: -.5rem auto 2.5rem;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--gray-color);
+}
+
+/* Objetivos */
+.acad-objetivos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.acad-objetivo {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+}
+
+.acad-objetivo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 30, 60, .1) 0%, rgba(0, 30, 60, .85) 100%);
+}
+
+.acad-objetivo div {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.acad-objetivo h3 {
+    margin-bottom: .75rem;
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.acad-objetivo p {
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+/* Beneficios */
+.acad-beneficios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.acad-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white-color);
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 1.25rem;
+}
+
+.acad-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.acad-card h3 {
+    padding: 0 1rem;
+    margin-bottom: .6rem;
+    font-size: 1.2rem;
+}
+
+.acad-card p {
+    padding: 0 1rem;
+    font-size: .85rem;
+    line-height: 1.6;
+    color: var(--gray-color);
+}
+
+/* Cursos actuales */
+.acad-actuales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+    background: #1f5b92;
+    color: var(--white-color);
+}
+
+.acad-actuales img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.acad-actuales__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.5rem;
+}
+
+.acad-actuales__body h3 {
+    margin-bottom: .75rem;
+    font-size: 2.4rem;
+}
+
+.acad-actuales__body p {
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.acad-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.75rem;
+}
+
+.acad-chips li {
+    padding: .3rem .75rem;
+    border: 1px solid rgba(255, 255, 255, .6);
+    font-size: .8rem;
+}
+
+.acad-actuales__body .acad-btn {
+    align-self: stretch;
+}
+
+/* Cursos en preparación */
+.acad-preparacion__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.acad-preparacion__head h3 {
+    font-size: 2rem;
+}
+
+.acad-preparacion__head p {
+    font-size: .9rem;
+    color: var(--gray-color);
+}
+
+.acad-preparacion {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.acad-curso {
+    padding: 1.25rem;
+    border: 1px solid var(--light-gray);
+}
+
+.acad-curso h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.acad-curso li {
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    position: relative;
+    font-size: .85rem;
+    line-height: 1.4;
+    color: var(--gray-color);
+}
+
+.acad-curso li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+/* Programas */
+.acad-programas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.acad-programa {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: var(--white-color);
+}
+
+.acad-programa img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.acad-programa .acad-programa__img--contain {
+    object-fit: contain;
+}
+
+.acad-programa > div:not(.invisible__top) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.75rem;
+}
+
+.acad-programa h3 {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.acad-programa li {
+    margin-bottom: .4rem;
+    padding-left: 1rem;
+    position: relative;
+    font-size: .85rem;
+    color: var(--gray-color);
+}
+
+.acad-programa li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.acad-programa .acad-btn {
+    margin-top: 1.25rem;
+}
+
+/* Directores */
+.acad-directores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.acad-director {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    border: 1px solid var(--light-gray);
+}
+
+.acad-director img {
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+}
+
+.acad-director div {
+    padding: 1.5rem;
+}
+
+.acad-director h3 {
+    margin-bottom: .6rem;
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.acad-director strong {
+    display: block;
+    margin-bottom: .75rem;
+    font-size: .8rem;
+    color: var(--primary-color);
+}
+
+.acad-director p {
+    font-size: .85rem;
+    line-height: 1.6;
+    color: var(--gray-color);
+}
+
+/* Cierre y FAQ */
+.acad-cierre {
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+    background: #e9eef4;
+}
+
+.acad-cierre h2 {
+    margin-bottom: 1rem;
+}
+
+.acad-cierre p {
+    max-width: 44rem;
+    margin: 0 auto 1.75rem;
+    line-height: 1.7;
+    color: var(--gray-color);
+}
+
+.acad-cierre__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.acad-faq {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+}
+
+.acad-faq__item {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.acad-faq__item h3 {
+    margin-bottom: .4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.acad-faq__item p {
+    font-size: .9rem;
+    line-height: 1.6;
+    color: var(--gray-color);
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .acad-beneficios,
+    .acad-preparacion {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .acad-objetivos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .acad-programas,
+    .acad-directores {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .acad-hero {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .acad-hero__text {
+        padding: 3rem 1.5rem;
+    }
+
+    .acad-hero__img {
+        height: 320px;
+    }
+
+    .acad-steps {
+        flex-direction: column;
+    }
+
+    .acad-steps__item {
+        max-width: none;
+        padding: 1rem 1.5rem;
+    }
+
+    .acad-steps__item + .acad-steps__item {
+        border-left: none;
+        border-top: 1px solid var(--light-gray);
+    }
+
+    .acad-actuales {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .acad-beneficios,
+    .acad-preparacion,
+    .acad-objetivos {
+        grid-template-columns: 1fr;
+    }
+
+    .acad-objetivo {
+        min-height: 300px;
+    }
+
+    .acad-programa,
+    .acad-director {
+        grid-template-columns: 1fr;
+    }
+
+    .acad-programa img,
+    .acad-director img {
+        min-height: 200px;
+        max-height: 260px;
+    }
+
+    .acad-hero__actions .acad-btn {
+        flex: 1 1 100%;
+    }
+}

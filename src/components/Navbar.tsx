@@ -9,6 +9,8 @@ import { useState } from 'react';
 import { Link, ScrollRestoration } from 'react-router-dom';
 import { idiomaAtom } from '../atom/idiomaAtom';
 import { useAtom } from "jotai";
+import TopBar from './TopBar';
+import { CAMPUS_LOGIN_URL } from '../data/campus';
 /* import SelectIdioma from './selectIdioma'; */
 
 function Navbar() {
@@ -36,7 +38,7 @@ function Navbar() {
 
     //Campus
     const handleClick = () => {
-        window.open("https://www.alphaasesoriaestrategica.com/campus/moodle/login/", "_blank", "noopener,noreferrer");
+        window.open(CAMPUS_LOGIN_URL, "_blank", "noopener,noreferrer");
     };
 
     const handleClickRepo = () => {
@@ -46,6 +48,7 @@ function Navbar() {
     return (
     <>
         <ScrollRestoration />
+        <TopBar idioma={idioma} />
         <header>
             <div className="navcontainer">
                 <nav>

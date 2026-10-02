@@ -1,0 +1,129 @@
+.guia-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 20, 45, .7);
+    font-family: 'Poppins', sans-serif;
+}
+
+.guia-modal__dialog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 860px;
+    height: min(92vh, 900px);
+    background: var(--white-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+}
+
+.guia-modal__header,
+.guia-modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .75rem 1.25rem;
+}
+
+.guia-modal__header {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.guia-modal__header h3 {
+    font-family: 'Lora', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.guia-modal__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    cursor: pointer;
+}
+
+.guia-modal__close:hover {
+    background: var(--light-gray);
+}
+
+.guia-modal__pdf {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #f2f4f7;
+}
+
+.guia-modal__fallback {
+    display: none;
+}
+
+.guia-modal__footer {
+    border-top: 1px solid var(--light-gray);
+    font-size: .9rem;
+}
+
+.guia-modal__footer a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.guia-modal__footer a.guia-modal__campus {
+    padding: .5rem 1.25rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.guia-modal__footer a.guia-modal__campus:hover {
+    background: #163a63;
+}
+
+@media screen and (max-width: 700px) {
+    .guia-modal {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .guia-modal__dialog {
+        height: auto;
+        max-width: none;
+    }
+
+    .guia-modal__pdf {
+        display: none;
+    }
+
+    .guia-modal__fallback {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.5rem 1.25rem;
+        color: var(--gray-color);
+    }
+
+    .guia-modal__fallback a {
+        padding: .7rem 1.5rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-weight: 500;
+    }
+
+    .guia-modal__footer a:first-child {
+        display: none;
+    }
+}
